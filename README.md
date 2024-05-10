@@ -9,7 +9,7 @@ Welcome to the Defense Evasion Techniques Repository! This repository contains a
 | Direct and Indirect Calls | Strategies for making direct and indirect function calls to evade detection mechanisms.   |
 | API Hashing         | Techniques for obfuscating and altering API calls to avoid detection.   |
 | Obfuscation         | Methods to obfuscate code and make it harder to analyze.   |
-| Obfuscation         | Use of encrption to bypass static analysis of EDRs.   |
+| Encryption         | Use of encrption to bypass static analysis of EDRs.   |
 | Egg Hunting | Syscall Instruction In-memory patching to bypass static detection.
 | Random Instructions and Prototypes | Use random NOP instructions and name of API, prototypes to avoid static analysis.   |
 | Mokingjay | Use of vulnerable dll to avoid detection of RWX memory region creation.   |
