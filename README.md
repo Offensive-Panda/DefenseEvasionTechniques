@@ -23,3 +23,6 @@ Welcome to the Defense Evasion Techniques Repository! This repository contains a
 | Unveiling the Intricacies of SamSam Ransomware: A Comprehensive Analysis Plus Proactive Threat Emulation | https://medium.com/@merasor07/unveiling-the-intricacies-of-samsam-ransomware-a-comprehensive-analysis-plus-proactive-threat-bee37979f407. |
 | Dark Crystel RAT (DCrat)Detailed Analysis | https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce. |
 
+## Disclaimer
+The content, techniques, and tools provided in this repository are intended solely for educational and research purposes within the cybersecurity community. I explicitly disclaim any responsibility for the misuse or unlawful use of the provided materials. Any actions taken based on the information are done so at the user's own risk.
+
