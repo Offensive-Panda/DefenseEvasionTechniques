@@ -1,7 +1,7 @@
 <html>
 <body>
     <div align=center>
-   <img src="https://github.com/Offensive-Panda/DefenseEvasionTechniques/assets/76246439/d59a210e-e898-4981-987a-f46952432692" alt="My-Setup" width="600">
+   <img src="https://github.com/Offensive-Panda/DefenseEvasionTechniques/blob/main/Assests/My-Setup.jpg" alt="My-Setup" width="600">
     </div>
     <h1 align=center>Defense Evasion Techniques</h1>
    <p>Welcome to the Defense Evasion Techniques Repository! This curated collection offers advanced methods to bypass sophisticated security measures in Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. Aimed at cyber security professionals and researchers, these techniques are invaluable for both Red Team and Blue Team operations.This repository includes strategies for manipulating system calls, obfuscating code, and managing memory to evade detection. By leveraging these methods, experts can enhance penetration testing, malware analysis, and develop more resilient defenses.</p>
