@@ -1,5 +1,10 @@
 <html>
 <body>
+ <div>
+  <h1>Whoami</h1>
+  <p>My name is <B>Usman Sikander</B> (a.k.a Offensive-Panda). I am passionate about identifying, researching advanced evasion techniques and analyzing real-world samples to extract TTPs to validate security posture through APT emulations. With a proven track record in developing undetected exploits across MITRE ATT&CK tactics and automating exploit processes, I excel in comprehensive endpoint simulations in controlled environment with the presence of security controls. </p>
+ </div>
+ <br>
  <div align=center>
 <img src="https://github.com/Offensive-Panda/DefenseEvasionTechniques/raw/main/My-Setup.jpg" alt="MYSETUP" width="1200" height="500">
 </div>
