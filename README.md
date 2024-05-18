@@ -5,6 +5,7 @@
     </div>
     <h1 align=center>Defense Evasion Techniques</h1>
    <p>Welcome to the Defense Evasion Techniques Repository! This curated collection offers advanced methods to bypass sophisticated security measures in Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. Aimed at cyber security professionals and researchers, these techniques are invaluable for both Red Team and Blue Team operations.This repository includes strategies for manipulating system calls, obfuscating code, and managing memory to evade detection. By leveraging these methods, experts can enhance penetration testing, malware analysis, and develop more resilient defenses.</p>
+    <h2>Evasion Techniques</h2>
  <table>
         <tr>
             <th>Technique</th>
@@ -114,6 +115,8 @@
             <td><a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop</a></td>
         </tr>
     </table>
+</div>
+
   <div class="disclaimer">
         <h2>Disclaimer</h2>
         <p>The content, techniques, and tools provided in this repository are intended solely for educational and research purposes within the cybersecurity community. I explicitly disclaim any responsibility for the misuse or unlawful use of the provided materials. Any actions taken based on the information are done so at the user's own risk.</p>
