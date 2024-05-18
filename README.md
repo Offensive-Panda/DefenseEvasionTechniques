@@ -60,7 +60,7 @@
             <td>Resolving SSN and Native API's on run-time using PEB lookup for 32bits & 64bits.</td>
         </tr>
     </table>
-   <h2>Blogs</h2>
+   <h2>My Blogs</h2>
     <table class="blogs-table">
         <tr>
             <th>Blogs</th>
@@ -98,7 +98,10 @@
             <td>Dark Crystel RAT (DCrat) Detailed Analysis</td>
             <td><a href="https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce">https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce</a></td>
         </tr>
-        <tr>
+    </table>
+ <h2>My Posts</h2>
+ <table class="my-posts">
+   <tr>
             <td>Dirty vanity implementaion using direct syscalls</td>
             <td><a href="https://www.linkedin.com/posts/usman-sikander13_malwaredevelopment-syscalls-forking-activity-7193958115556343808-8UzK?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_malwaredevelopment-syscalls-forking-activity-7193958115556343808-8UzK?utm_source=share&utm_medium=member_desktop</a></td>
         </tr>
@@ -114,7 +117,7 @@
             <td>Direct syscalls to dump lsass.exe memory and offline dumping</td>
             <td><a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop</a></td>
         </tr>
-    </table>
+ </table>
     <br>
  <iframe src="Defense_Evasion.pdf" width="600px" height="750px">
  </iframe>
