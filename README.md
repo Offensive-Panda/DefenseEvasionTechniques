@@ -117,8 +117,18 @@
             <td>Direct syscalls to dump lsass.exe memory and offline dumping</td>
             <td><a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop</a></td>
         </tr>
+   <tr>
+            <td>Remote Template Injection</td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_remote-template-injection-today-i-created-activity-6936948079807844353-UQQ8?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_remote-template-injection-today-i-created-activity-6936948079807844353-UQQ8?utm_source=share&utm_medium=member_desktop</a></td>
+        </tr>
+   <tr>
+            <td>Mark-of-the-Web for Red Team</td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_bypass-macro-vba-activity-6900000010717458433-lAH2?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_bypass-macro-vba-activity-6900000010717458433-lAH2?utm_source=share&utm_medium=member_desktop</a></td>
+        </tr>
  </table>
     <br>
+ <h2> Evasion Mastery and Deep dive into threats. </h2>
+ <br>
  <iframe src="Defense_Evasion.pdf" width="600px" height="750px">
  </iframe>
     
