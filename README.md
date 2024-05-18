@@ -1,11 +1,46 @@
-![My-Setup](https://github.com/Offensive-Panda/DefenseEvasionTechniques/assets/76246439/d59a210e-e898-4981-987a-f46952432692)                                                             
-<h1 align="center">Defense Evasion Techniques</h1>
-  
-Welcome to the Defense Evasion Techniques Repository! This repository contains a collection of techniques designed to bypass Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. These techniques include:
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Defense Evasion Techniques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        .blogs-table {
+            margin-top: 40px;
+        }
+        .disclaimer {
+            margin-top: 40px;
+            font-style: italic;
+        }
+    </style>
+</head>
 <body>
-    <table border="1" cellspacing="0" cellpadding="10">
+    <img src="https://github.com/Offensive-Panda/DefenseEvasionTechniques/assets/76246439/d59a210e-e898-4981-987a-f46952432692" alt="My-Setup" width="600">
+    <h1>Defense Evasion Techniques</h1>
+  
+    <p>Welcome to the Defense Evasion Techniques Repository! This repository contains a collection of techniques designed to bypass Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. These techniques include:</p>
+
+    <table>
         <tr>
             <th>Technique</th>
             <th>Description</th>
@@ -59,27 +94,66 @@ Welcome to the Defense Evasion Techniques Repository! This repository contains a
             <td>Resolving SSN and Native API's on run-time using PEB lookup for 32bits & 64bits.</td>
         </tr>
     </table>
+
+    <h2>Blogs</h2>
+    <table class="blogs-table">
+        <tr>
+            <th>Blogs</th>
+            <th>Links</th>
+        </tr>
+        <tr>
+            <td>Arsenal: Bypass EDR’s/XDR’s and make malware analysis harder</td>
+            <td><a href="https://systemweakness.com/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5">https://systemweakness.com/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5</a></td>
+        </tr>
+        <tr>
+            <td>On-Disk Detection: Bypass AV’s/EDR’s using syscalls with legacy instruction, series of instructions and random nop instructions</td>
+            <td><a href="https://medium.com/system-weakness/on-disk-detection-bypass-avs-edr-s-using-syscalls-with-legacy-instruction-series-of-instructions-5c1f31d1af7d">https://medium.com/system-weakness/on-disk-detection-bypass-avs-edr-s-using-syscalls-with-legacy-instruction-series-of-instructions-5c1f31d1af7d</a></td>
+        </tr>
+        <tr>
+            <td>EASE POST-EXPLOITATION: Getting elevated reverse shell using DLL Hijacking and Mock Directories</td>
+            <td><a href="https://medium.com/system-weakness/ease-post-exploitation-getting-elevated-reverse-shell-using-dll-hijacking-and-mock-directories-2fc2c7a3cdae">https://medium.com/system-weakness/ease-post-exploitation-getting-elevated-reverse-shell-using-dll-hijacking-and-mock-directories-2fc2c7a3cdae</a></td>
+        </tr>
+        <tr>
+            <td>AV/EDR Evasion Using Direct System Calls (User-Mode vs kernel-Mode)</td>
+            <td><a href="https://medium.com/@merasor07/av-edr-evasion-using-direct-system-calls-user-mode-vs-kernel-mode-fad2fdfed01a">https://medium.com/@merasor07/av-edr-evasion-using-direct-system-calls-user-mode-vs-kernel-mode-fad2fdfed01a</a></td>
+        </tr>
+        <tr>
+            <td>Bypass “Mimikatz” using the Process Injection Technique</td>
+            <td><a href="https://medium.com/system-weakness/bypass-mimikatz-using-process-injection-technique-6d2a8415fcd6">https://medium.com/system-weakness/bypass-mimikatz-using-process-injection-technique-6d2a8415fcd6</a></td>
+        </tr>
+        <tr>
+            <td>Unveiling the Intricacies of AsyncRAT: A deployment in Colombia by the Blind Eagle Cyber Group</td>
+            <td><a href="https://medium.com/@merasor07/unveiling-the-intricacies-of-asyncrat-a-deployment-in-colombia-by-the-blind-eagle-cyber-group-83b48cc415a7">https://medium.com/@merasor07/unveiling-the-intricacies-of-asyncrat-a-deployment-in-colombia-by-the-blind-eagle-cyber-group-83b48cc415a7</a></td>
+        </tr>
+        <tr>
+            <td>Unveiling the Intricacies of SamSam Ransomware: A Comprehensive Analysis Plus Proactive Threat Emulation</td>
+            <td><a href="https://medium.com/@merasor07/unveiling-the-intricacies-of-samsam-ransomware-a-comprehensive-analysis-plus-proactive-threat-bee37979f407">https://medium.com/@merasor07/unveiling-the-intricacies-of-samsam-ransomware-a-comprehensive-analysis-plus-proactive-threat-bee37979f407</a></td>
+        </tr>
+        <tr>
+            <td>Dark Crystel RAT (DCrat) Detailed Analysis</td>
+            <td><a href="https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce">https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce</a></td>
+        </tr>
+        <tr>
+            <td>Dirty vanity implementaion using direct syscalls</td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_malwaredevelopment-syscalls-forking-activity-7193958115556343808-8UzK?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_malwaredevelopment-syscalls-forking-activity-7193958115556343808-8UzK?utm_source=share&utm_medium=member_desktop</a></td>
+        </tr>
+        <tr>
+            <td>Mokingjay Technique Implementaion to avoid RWX region detection</td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-cybersecurity-malwaredevelopement-activity-7191049164409991168-fLwR?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-cybersecurity-malwaredevelopement-activity-7191049164409991168-fLwR?utm_source=share&utm_medium=member_desktop</a></td>
+        </tr>
+        <tr>
+            <td>Combining Unhooking and ETW patching to dump lsass.exe memory</td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F-activity-7188865881580453890-iakH?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F-activity-7188865881580453890-iakH?utm_source=share&utm_medium=member_desktop</a></td>
+        </tr>
+        <tr>
+            <td>Direct syscalls to dump lsass.exe memory and offline dumping</td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop</a></td>
+        </tr>
+    </table>
+
+    <div class="disclaimer">
+        <h2>Disclaimer</h2>
+        <p>The content, techniques, and tools provided in this repository are intended solely for educational and research purposes within the cybersecurity community. I explicitly disclaim any responsibility for the misuse or unlawful use of the provided materials. Any actions taken based on the information are done so at the user's own risk.</p>
+    </div>
 </body>
 </html>
-
-
-| Blogs          | Links                                    |
-|---------------------|--------------------------------------------------|
-| Arsenal: Bypass EDR’s/XDR’s and make malware analysis harder | https://systemweakness.com/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5 |
-| On-Disk Detection: Bypass AV’s/EDR’s using syscalls with legacy instruction, series of instructions and random nop instructions | https://medium.com/system-weakness/on-disk-detection-bypass-avs-edr-s-using-syscalls-with-legacy-instruction-series-of-instructions-5c1f31d1af7d |
-| EASE POST-EXPLOITATION: Getting elevated reverse shell using DLL Hijacking and Mock Directories | https://medium.com/system-weakness/ease-post-exploitation-getting-elevated-reverse-shell-using-dll-hijacking-and-mock-directories-2fc2c7a3cdae. |
-| AV/EDR Evasion Using Direct System Calls (User-Mode vs kernel-Mode) | https://medium.com/@merasor07/av-edr-evasion-using-direct-system-calls-user-mode-vs-kernel-mode-fad2fdfed01a. |
-| Bypass “Mimikatz” using the Process Injection Technique | https://medium.com/system-weakness/bypass-mimikatz-using-process-injection-technique-6d2a8415fcd6. |
-| AV/EDR Evasion Using Direct System Calls (User-Mode vs kernel-Mode) | https://medium.com/@merasor07/av-edr-evasion-using-direct-system-calls-user-mode-vs-kernel-mode-fad2fdfed01a. |
-| Unveiling the Intricacies of AsyncRAT: A deployment in Colombia by the Blind Eagle Cyber Group | https://medium.com/@merasor07/unveiling-the-intricacies-of-asyncrat-a-deployment-in-colombia-by-the-blind-eagle-cyber-group-83b48cc415a7. |
-| Unveiling the Intricacies of SamSam Ransomware: A Comprehensive Analysis Plus Proactive Threat Emulation | https://medium.com/@merasor07/unveiling-the-intricacies-of-samsam-ransomware-a-comprehensive-analysis-plus-proactive-threat-bee37979f407. |
-| Dark Crystel RAT (DCrat)Detailed Analysis | https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce. |
-| Dirty vanity implementaion using direct syscalls | https://www.linkedin.com/posts/usman-sikander13_malwaredevelopment-syscalls-forking-activity-7193958115556343808-8UzK?utm_source=share&utm_medium=member_desktop |
-| Mokingjay Technique Implementaion to avoid RWX region detection | https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-cybersecurity-malwaredevelopement-activity-7191049164409991168-fLwR?utm_source=share&utm_medium=member_desktop |
-| Combining Unhooking and ETW patching to dump lsass.exe memory | https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F-activity-7188865881580453890-iakH?utm_source=share&utm_medium=member_desktop |
-| Direct syscalls to dump lsass.exe memory and offline dumping | https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop |
-
-
-## Disclaimer
-The content, techniques, and tools provided in this repository are intended solely for educational and research purposes within the cybersecurity community. I explicitly disclaim any responsibility for the misuse or unlawful use of the provided materials. Any actions taken based on the information are done so at the user's own risk.
-
