@@ -1,5 +1,4 @@
 # DefenseEvasionTechniques
-Defense Evasion Techniques Repository
 
 Welcome to the Defense Evasion Techniques Repository! This repository contains a collection of techniques designed to bypass Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. These techniques include:
 
