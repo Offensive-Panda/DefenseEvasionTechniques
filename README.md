@@ -115,7 +115,8 @@
             <td><a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop</a></td>
         </tr>
     </table>
-    
+ 
+ <iframe src="Defense_Evasion.pdf" width="600px" height="750px"></iframe>
     
 <div class="disclaimer">
         <h2>Disclaimer</h2>
