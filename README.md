@@ -116,7 +116,7 @@
         </tr>
     </table>
     <br>
- <iframe src="https://github.com/Offensive-Panda/DefenseEvasionTechniques/blob/main/Assests/Defense_Evasion.pdf" width="600px" height="750px">
+ <iframe src="Defense_Evasion.pdf" width="600px" height="750px">
  </iframe>
     
 <div class="disclaimer">
