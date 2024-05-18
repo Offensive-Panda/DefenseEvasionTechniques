@@ -115,9 +115,6 @@
             <td><a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop</a></td>
         </tr>
     </table>
-</div>
-    
-
   <div class="disclaimer">
         <h2>Disclaimer</h2>
         <p>The content, techniques, and tools provided in this repository are intended solely for educational and research purposes within the cybersecurity community. I explicitly disclaim any responsibility for the misuse or unlawful use of the provided materials. Any actions taken based on the information are done so at the user's own risk.</p>
