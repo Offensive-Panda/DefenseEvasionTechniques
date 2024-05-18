@@ -118,7 +118,6 @@
     <br>
  <iframe src="https://github.com/Offensive-Panda/DefenseEvasionTechniques/blob/main/Assests/Defense_Evasion.pdf" width="600px" height="750px">
  </iframe>
-</br>
     
 <div class="disclaimer">
         <h2>Disclaimer</h2>
