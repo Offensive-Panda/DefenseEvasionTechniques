@@ -156,8 +156,7 @@
     <tr>
             <td>C2_Elevated_Shell_DLL_Hijcking</td>
             <td><a href="https://github.com/Offensive-Panda/C2_Elevated_Shell_DLL_Hijcking">https://github.com/Offensive-Panda/C2_Elevated_Shell_DLL_Hijcking</a></td>
-        </tr>
-   <tr>     
+        </tr>  
  </table>
     <br>
  <h2> Evasion Mastery and Deep dive into threats. </h2>
