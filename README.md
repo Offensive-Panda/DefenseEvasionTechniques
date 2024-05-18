@@ -141,8 +141,7 @@
             <td>Combination of multiple evasion techniques to evade defenses. (Dirty Vanity)</td>
             <td><a href="https://github.com/Offensive-Panda/DV_NEW">https://github.com/Offensive-Panda/DV_NEW</a></td>
         </tr>
-
-        <tr>
+    <tr>
             <td>Capture_attacks_using_honeypots</td>
             <td><a href="https://github.com/Offensive-Panda/Capture_attacks_using_honeypots">https://github.com/Offensive-Panda/Capture_attacks_using_honeypots</a></td>
         </tr>
