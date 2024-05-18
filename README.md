@@ -1,11 +1,10 @@
-![My-Setup](https://github.com/Offensive-Panda/DefenseEvasionTechniques/assets/76246439/d59a210e-e898-4981-987a-f46952432692)                                                             
-  <h1 align="center">Defense Evasion Techniques</h1>
-  
-
-
-Welcome to the Defense Evasion Techniques Repository! This repository contains a collection of techniques designed to bypass Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. These techniques include:
 <!DOCTYPE html>
 <html>
+![My-Setup](https://github.com/Offensive-Panda/DefenseEvasionTechniques/assets/76246439/d59a210e-e898-4981-987a-f46952432692)                                                             
+<h1 align="center">Defense Evasion Techniques</h1>
+  
+Welcome to the Defense Evasion Techniques Repository! This repository contains a collection of techniques designed to bypass Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. These techniques include:
+
 <head>
     <title>Techniques Table</title>
 </head>
@@ -66,23 +65,6 @@ Welcome to the Defense Evasion Techniques Repository! This repository contains a
     </table>
 </body>
 </html>
-
-
-
-| Technique           | Description                                      |
-|---------------------|--------------------------------------------------|
-| Syscalls            | Exploring ways to manipulate system calls to evade detection.   |
-| Direct and Indirect Calls | Strategies for making direct and indirect function calls to evade detection mechanisms.   |
-| API Hashing         | Techniques for obfuscating and altering API calls to avoid detection.   |
-| Obfuscation         | Methods to obfuscate code and make it harder to analyze.   |
-| Encryption         | Use of encrption to bypass static analysis of EDRs.   |
-| Egg Hunting | Syscall Instruction In-memory patching to bypass static detection.
-| Random Instructions and Prototypes | Use random NOP instructions and name of API, prototypes to avoid static analysis.   |
-| Mokingjay | Use of vulnerable dll to avoid detection of RWX memory region creation.   |
-| Forking Technique | Use of windows fork API to clone parent process after injecting shellcode, avoid detection of CreateRemoteThread.   |
-| Unhookig | Unhooking EDRs user mode hooks using clean copy of dll, raw copy from remote server, suspended process to bypass EDRs.   |
-| ETW Patching | Applying ETW patching to avoid event based detection.   |
-| PEB Lookup | Resolving SSN and Native API's on run-time using PEB lookup for 32bits & 64bits.   |
 
 
 | Blogs          | Links                                    |
