@@ -1,5 +1,8 @@
 # DefenseEvasionTechniques
 
+![My-Setup](https://github.com/Offensive-Panda/DefenseEvasionTechniques/assets/76246439/d59a210e-e898-4981-987a-f46952432692)
+
+
 Welcome to the Defense Evasion Techniques Repository! This repository contains a collection of techniques designed to bypass Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. These techniques include:
 
 | Technique           | Description                                      |
