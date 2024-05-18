@@ -131,6 +131,38 @@
             <td><a href="https://www.linkedin.com/posts/usman-sikander13_bypass-macro-vba-activity-6900000010717458433-lAH2?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_bypass-macro-vba-activity-6900000010717458433-lAH2?utm_source=share&utm_medium=member_desktop</a></td>
         </tr>
  </table>
+  <h2>Github Repo</h2>
+ <table class="my-code">
+   <tr>
+            <td>"D3MPSEC" is a memory dumping tool designed to extract memory dump from Lsass process using various techniques, including direct system calls, randomized procedures, and prototype name obfuscation. Its primary purpose is to bypass both static and dynamic analysis techniques commonly employed by security measures.</td>
+            <td><a href="https://github.com/Offensive-Panda/D3MPSEC">https://github.com/Offensive-Panda/D3MPSEC</a></td>
+        </tr>
+        <tr>
+            <td>Combination of multiple evasion techniques to evade defenses. (Dirty Vanity)</td>
+            <td><a href="">https://github.com/Offensive-Panda/D3MPSEC</a></td>
+        </tr>
+        <tr>
+            <td>Combining Unhooking and ETW patching to dump lsass.exe memory</td>
+            <td><a href="https://github.com/Offensive-Panda/DV_NEW">https://github.com/Offensive-Panda/DV_NEW</a></td>
+        </tr>
+        <tr>
+            <td>Capture_attacks_using_honeypots</td>
+            <td><a href="https://github.com/Offensive-Panda/Capture_attacks_using_honeypots">https://github.com/Offensive-Panda/Capture_attacks_using_honeypots</a></td>
+        </tr>
+   <tr>
+            <td>Persistence_AND_Anti_Sandbox</td>
+            <td><a href="https://github.com/Offensive-Panda/Persistence_AND_Anti_Sandbox">https://github.com/Offensive-Panda/Persistence_AND_Anti_Sandbox</a></td>
+        </tr>
+    <tr>
+            <td>on-disk-detection-bypass</td>
+            <td><a href="https://github.com/Offensive-Panda/on-disk-detection-bypass">https://github.com/Offensive-Panda/on-disk-detection-bypass</a></td>
+        </tr>
+    <tr>
+            <td>C2_Elevated_Shell_DLL_Hijcking</td>
+            <td><a href="https://github.com/Offensive-Panda/C2_Elevated_Shell_DLL_Hijcking">https://github.com/Offensive-Panda/C2_Elevated_Shell_DLL_Hijcking</a></td>
+        </tr>
+   <tr>     
+ </table>
     <br>
  <h2> Evasion Mastery and Deep dive into threats. </h2>
  <br>
