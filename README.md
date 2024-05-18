@@ -4,6 +4,70 @@
 
 
 Welcome to the Defense Evasion Techniques Repository! This repository contains a collection of techniques designed to bypass Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. These techniques include:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Techniques Table</title>
+</head>
+<body>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <th>Technique</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Syscalls</td>
+            <td>Exploring ways to manipulate system calls to evade detection.</td>
+        </tr>
+        <tr>
+            <td>Direct and Indirect Calls</td>
+            <td>Strategies for making direct and indirect function calls to evade detection mechanisms.</td>
+        </tr>
+        <tr>
+            <td>API Hashing</td>
+            <td>Techniques for obfuscating and altering API calls to avoid detection.</td>
+        </tr>
+        <tr>
+            <td>Obfuscation</td>
+            <td>Methods to obfuscate code and make it harder to analyze.</td>
+        </tr>
+        <tr>
+            <td>Encryption</td>
+            <td>Use of encryption to bypass static analysis of EDRs.</td>
+        </tr>
+        <tr>
+            <td>Egg Hunting</td>
+            <td>Syscall Instruction In-memory patching to bypass static detection.</td>
+        </tr>
+        <tr>
+            <td>Random Instructions and Prototypes</td>
+            <td>Use random NOP instructions and name of API, prototypes to avoid static analysis.</td>
+        </tr>
+        <tr>
+            <td>Mokingjay</td>
+            <td>Use of vulnerable dll to avoid detection of RWX memory region creation.</td>
+        </tr>
+        <tr>
+            <td>Forking Technique</td>
+            <td>Use of windows fork API to clone parent process after injecting shellcode, avoid detection of CreateRemoteThread.</td>
+        </tr>
+        <tr>
+            <td>Unhooking</td>
+            <td>Unhooking EDRs user mode hooks using clean copy of dll, raw copy from remote server, suspended process to bypass EDRs.</td>
+        </tr>
+        <tr>
+            <td>ETW Patching</td>
+            <td>Applying ETW patching to avoid event based detection.</td>
+        </tr>
+        <tr>
+            <td>PEB Lookup</td>
+            <td>Resolving SSN and Native API's on run-time using PEB lookup for 32bits & 64bits.</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
 
 | Technique           | Description                                      |
 |---------------------|--------------------------------------------------|
