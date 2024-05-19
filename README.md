@@ -130,6 +130,14 @@
             <td>Mark-of-the-Web for Red Team</td>
             <td><a href="https://www.linkedin.com/posts/usman-sikander13_bypass-macro-vba-activity-6900000010717458433-lAH2?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_bypass-macro-vba-activity-6900000010717458433-lAH2?utm_source=share&utm_medium=member_desktop</a></td>
         </tr>
+   <tr>
+            <td>Memory dump using outflank dumpert and Windows process injection</td>
+            <td><a href="https://www.linkedin.com/feed/update/urn:li:activity:7056950152242094080?utm_source=share&utm_medium=member_android">https://www.linkedin.com/feed/update/urn:li:activity:7056950152242094080?utm_source=share&utm_medium=member_android</a></td>
+        </tr>
+   <tr>
+            <td>Nt-Authority Shell using Fodhelper</td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F-activity-7072507221774917632-T0LK?utm_source=share&utm_medium=member_android">https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F-activity-7072507221774917632-T0LK?utm_source=share&utm_medium=member_android</a></td>
+        </tr>
  </table>
   <h2>Github Repo</h2>
  <table class="my-code">
