@@ -1,27 +1,27 @@
+<!DOCTYPE html>
 <html>
 <body>
  <div>
   <h1>C:\Users\Offensive-Panda>whoami</h1>
   <p>My name is <B>Usman Sikander</B> (a.k.a Offensive-Panda). I am passionate about identifying, researching advanced evasion techniques and analyzing real-world samples to extract TTPs to validate security posture through APT emulations. With a proven track record in developing undetected exploits across MITRE ATT&CK tactics and automating exploit processes, I excel in comprehensive endpoint simulations in controlled environment with the presence of security controls. </p>
 </div>
-   <div class="container">
+ <div class="container">
         <h1>My Social Profiles</h1>
-
-   <div class="profile">
-            <h2>LinkedIn</h2>
-            <a href="https://www.linkedin.com/in/usman-sikander13/" target="_blank">Connect with me on LinkedIn</a>
-        </div>
-        <br>
-   <div class="blogs">
-            <h2>Medium Blogs</h2>
-            <a href="https://medium.com/@merasor07">Read My Blogs</a>
-        </div>
-        <br>
-   <div class="twitter">
-            <h2>Twitter</h2>
-            <a href="https://x.com/UsmanSikander13">Follow me on Twitter</a>
-        </div>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 20px;">
+        <a href="https://www.linkedin.com/in/usman-sikander13/" target="_blank" style="text-decoration: none; color: #000; display: flex; align-items: center; gap: 10px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 24px; height: 24px;">
+            LinkedIn
+        </a>
+        <a href="https://medium.com/@merasor07" target="_blank" style="text-decoration: none; color: #000; display: flex; align-items: center; gap: 10px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111505.png" alt="Medium" style="width: 24px; height: 24px;">
+            Medium
+        </a>
+        <a href="https://twitter.com/UsmanSikander13" target="_blank" style="text-decoration: none; color: #000; display: flex; align-items: center; gap: 10px;">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" style="width: 24px; height: 24px;">
+            Twitter
+        </a>
     </div>
+ </div>
  <br>
  <div align=center>
 <img src="https://github.com/Offensive-Panda/DefenseEvasionTechniques/raw/main/My-Setup.jpg" alt="MYSETUP" width="1200" height="500">
