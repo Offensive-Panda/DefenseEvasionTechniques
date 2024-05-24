@@ -191,6 +191,10 @@
             <td>C2_Elevated_Shell_DLL_Hijcking</td>
             <td><a href="https://github.com/Offensive-Panda/C2_Elevated_Shell_DLL_Hijcking">https://github.com/Offensive-Panda/C2_Elevated_Shell_DLL_Hijcking</a></td>
         </tr>  
+      <tr>
+            <td>Rwx Hunting and Injection using Fork API</td>
+            <td><a href="https://github.com/Offensive-Panda/RWX_MEMEORY_HUNT_AND_INJECTION_DV">https://github.com/Offensive-Panda/RWX_MEMEORY_HUNT_AND_INJECTION_DV</a></td>
+        </tr>  
  </table>
     <br>
  <h2> Evasion Mastery and Deep dive into threats. </h2>
