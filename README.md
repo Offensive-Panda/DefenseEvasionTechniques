@@ -11,12 +11,12 @@
             <h2>LinkedIn</h2>
             <a href="https://www.linkedin.com/in/usman-sikander13/" target="_blank">Connect with me on LinkedIn</a>
         </div>
-
+        <br>
    <div class="blogs">
             <h2>Medium Blogs</h2>
             <a href="https://medium.com/@merasor07">Read My Blogs</a>
         </div>
-
+        <br>
    <div class="twitter">
             <h2>Twitter</h2>
             <a href="https://x.com/UsmanSikander13">Follow me on Twitter</a>
