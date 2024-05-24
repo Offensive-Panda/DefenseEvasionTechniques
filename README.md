@@ -64,6 +64,10 @@
             <td>PEB Lookup</td>
             <td>Resolving SSN and Native API's on run-time using PEB lookup for 32bits & 64bits.</td>
         </tr>
+   <tr>
+            <td>RWX Memory Block Hunt</td>
+            <td>Hunt for already created RWX region to write and execute shellcode. This technique remove the dependencies of vulnerable DLL with RWX and API to allocate RWX.</td>
+        </tr>
     </table>
    <h2>My Blogs</h2>
     <table class="blogs-table">
