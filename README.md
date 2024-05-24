@@ -142,6 +142,10 @@
             <td>Nt-Authority Shell using Fodhelper</td>
             <td><a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F-activity-7072507221774917632-T0LK?utm_source=share&utm_medium=member_android">https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F-activity-7072507221774917632-T0LK?utm_source=share&utm_medium=member_android</a></td>
         </tr>
+    <tr>
+            <td>RWX-Memory hunt and injection with CreateRemoteThread</td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F-%3F%3F%3F%3F%3F%3F-activity-7196426924351488001-RXOk?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F-%3F%3F%3F%3F%3F%3F-activity-7196426924351488001-RXOk?utm_source=share&utm_medium=member_desktop</a></td>
+        </tr>
  </table>
   <h2>Github Repo</h2>
  <table class="my-code">
