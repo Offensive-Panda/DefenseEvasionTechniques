@@ -176,7 +176,7 @@
         </tr>
     <tr>
             <td>Capture_attacks_using_honeypots</td>
-            <td><a href="https://github.com/Offensive-Panda/Capture_attacks_using_honeypots">https://github.com/Offensive-Panda/Capture_attacks_using_honeypots</a></td>
+            <td><a href="https://github.com/Offensive-Panda/Collect_Threat_Intel_AND_Malware_Using_Honeypots">https://github.com/Offensive-Panda/Collect_Threat_Intel_AND_Malware_Using_Honeypots</a></td>
         </tr>
    <tr>
             <td>Persistence_AND_Anti_Sandbox</td>
