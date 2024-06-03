@@ -87,7 +87,7 @@
         </tr>
    <tr>
             <td>BYOVD</td>
-            <td>Bring your own vulnerable driver which involves deploying drivers that are legitimately signed and can be successfully loaded into Windows systems tp execute code in kernel context.</td>
+            <td>Bring your own vulnerable driver which involves deploying drivers that are legitimately signed and can be successfully loaded into Windows systems to execute code in kernel context.</td>
         </tr>
     </table>
    <h2>My Blogs</h2>
