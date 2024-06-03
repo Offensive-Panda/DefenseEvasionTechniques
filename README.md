@@ -85,6 +85,10 @@
             <td>RWX Memory Block Hunt</td>
             <td>Hunt for already created RWX region to write and execute shellcode. This technique remove the dependencies of vulnerable DLL with RWX and API to allocate RWX.</td>
         </tr>
+   <tr>
+            <td>BYOVD</td>
+            <td>Bring your own vulnerable driver which involves deploying drivers that are legitimately signed and can be successfully loaded into Windows systems tp execute code in kernel context.</td>
+        </tr>
     </table>
    <h2>My Blogs</h2>
     <table class="blogs-table">
