@@ -42,7 +42,7 @@
             <td>Techniques for obfuscating and altering API calls to avoid detection.</td>
         </tr>
         <tr>
-            <td>aPI Imports Obfuscation</td>
+            <td>API Imports Obfuscation</td>
             <td>Methods to obfuscate code and make it harder to analyze.</td>
         </tr>
         <tr>
@@ -205,6 +205,10 @@
       <tr>
             <td>Rwx Hunting and Injection using Fork API</td>
             <td><a href="https://github.com/Offensive-Panda/RWX_MEMEORY_HUNT_AND_INJECTION_DV">https://github.com/Offensive-Panda/RWX_MEMEORY_HUNT_AND_INJECTION_DV</a></td>
+        </tr>  
+   <tr>
+            <td>WPM-MAJIC-ENTRY-POINT-INJECTION</td>
+            <td><a href="https://github.com/Offensive-Panda/WPM-MAJIC-ENTRY-POINT-INJECTION">https://github.com/Offensive-Panda/WPM-MAJIC-ENTRY-POINT-INJECTION</a></td>
         </tr>  
  </table>
     <br>
