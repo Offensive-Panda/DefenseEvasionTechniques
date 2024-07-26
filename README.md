@@ -38,6 +38,10 @@
             <td><a href="https://medium.com/@merasor07/arsenal-2-0-elevating-malware-stealth-tactics-to-bypass-static-detection-5238c573ab02">https://medium.com/@merasor07/arsenal-2-0-elevating-malware-stealth-tactics-to-bypass-static-detection-5238c573ab02</a></td>
         </tr>
       <tr>
+            <td>PEB Walk: Avoid API function calls inspection in IAT by analyst and also bypass static detection of AV/EDR</td>
+            <td><a href="https://medium.com/@merasor07/peb-walk-avoid-api-calls-inspection-in-iat-by-analyst-and-bypass-static-detection-of-1a2ef9bd4c94">https://medium.com/@merasor07/peb-walk-avoid-api-calls-inspection-in-iat-by-analyst-and-bypass-static-detection-of-1a2ef9bd4c94</a></td>
+        </tr>
+      <tr>
             <td>Arsenal: Bypass EDR’s/XDR’s and make malware analysis harder</td>
             <td><a href="https://systemweakness.com/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5">https://systemweakness.com/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5</a></td>
         </tr>
