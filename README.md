@@ -34,11 +34,7 @@
             <th>Description</th>
         </tr>
         <tr>
-            <td>Syscalls</td>
-            <td>Exploring ways to manipulate system calls to evade detection.</td>
-        </tr>
-        <tr>
-            <td>Direct and Indirect Calls</td>
+            <td>Direct and Indirect Syscalls</td>
             <td>Strategies for making direct and indirect function calls to evade detection mechanisms.</td>
         </tr>
         <tr>
@@ -46,11 +42,11 @@
             <td>Techniques for obfuscating and altering API calls to avoid detection.</td>
         </tr>
         <tr>
-            <td>Obfuscation</td>
+            <td>aPI Imports Obfuscation</td>
             <td>Methods to obfuscate code and make it harder to analyze.</td>
         </tr>
         <tr>
-            <td>Encryption</td>
+            <td>Payload Encryption</td>
             <td>Use of encryption to bypass static analysis of EDRs.</td>
         </tr>
         <tr>
@@ -66,11 +62,11 @@
             <td>Use of vulnerable dll to avoid detection of RWX memory region creation.</td>
         </tr>
         <tr>
-            <td>Forking Technique</td>
+            <td>Forking Technique Memory Dumps</td>
             <td>Use of windows fork API to clone parent process after injecting shellcode, avoid detection of CreateRemoteThread.</td>
         </tr>
         <tr>
-            <td>Unhooking</td>
+            <td>API Unhooking</td>
             <td>Unhooking EDRs user mode hooks using clean copy of dll, raw copy from remote server, suspended process to bypass EDRs.</td>
         </tr>
         <tr>
@@ -97,6 +93,10 @@
             <th>Links</th>
         </tr>
         <tr>
+            <td>Arsenal 2.0: Elevating Malware Stealth Tactics to bypass static detection</td>
+            <td><a href="https://medium.com/@merasor07/arsenal-2-0-elevating-malware-stealth-tactics-to-bypass-static-detection-5238c573ab02">https://medium.com/@merasor07/arsenal-2-0-elevating-malware-stealth-tactics-to-bypass-static-detection-5238c573ab02</a></td>
+        </tr>
+      <tr>
             <td>Arsenal: Bypass EDR’s/XDR’s and make malware analysis harder</td>
             <td><a href="https://systemweakness.com/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5">https://systemweakness.com/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5</a></td>
         </tr>
