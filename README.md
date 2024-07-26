@@ -214,6 +214,10 @@
             <td>WPM-MAJIC-ENTRY-POINT-INJECTION</td>
             <td><a href="https://github.com/Offensive-Panda/WPM-MAJIC-ENTRY-POINT-INJECTION">https://github.com/Offensive-Panda/WPM-MAJIC-ENTRY-POINT-INJECTION</a></td>
         </tr>  
+    <tr>
+            <td>PEB_WALK_AND_API_OBFUSCATION_INJECTION</td>
+            <td><a href="https://github.com/Offensive-Panda/PEB_WALK_AND_API_OBFUSCATION_INJECTION">https://github.com/Offensive-Panda/PEB_WALK_AND_API_OBFUSCATION_INJECTION</a></td>
+        </tr>  
  </table>
     <br>
  <h2> Evasion Mastery and Deep dive into threats. </h2>
