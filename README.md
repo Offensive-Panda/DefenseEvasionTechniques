@@ -27,6 +27,49 @@
 </div>
     <h1 align=center>Defense Evasion Techniques</h1>
    <p>Welcome to the Defense Evasion Techniques Repository! This curated collection offers advanced methods to bypass sophisticated security measures in Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. Aimed at cyber security professionals and researchers, these techniques are invaluable for both Red Team and Blue Team operations.This repository includes strategies for manipulating system calls, obfuscating code, managing memory to evade detection and other advanced evasion techniques. By leveraging these methods, experts can enhance penetration testing, red teaming, malware analysis, and develop more resilient defenses.</p>
+ <h2>My Blogs</h2>
+    <table class="blogs-table">
+        <tr>
+            <th>Blogs</th>
+            <th>Links</th>
+        </tr>
+        <tr>
+            <td>Arsenal 2.0: Elevating Malware Stealth Tactics to bypass static detection</td>
+            <td><a href="https://medium.com/@merasor07/arsenal-2-0-elevating-malware-stealth-tactics-to-bypass-static-detection-5238c573ab02">https://medium.com/@merasor07/arsenal-2-0-elevating-malware-stealth-tactics-to-bypass-static-detection-5238c573ab02</a></td>
+        </tr>
+      <tr>
+            <td>Arsenal: Bypass EDR’s/XDR’s and make malware analysis harder</td>
+            <td><a href="https://systemweakness.com/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5">https://systemweakness.com/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5</a></td>
+        </tr>
+        <tr>
+            <td>On-Disk Detection: Bypass AV’s/EDR’s using syscalls with legacy instruction, series of instructions and random nop instructions</td>
+            <td><a href="https://medium.com/system-weakness/on-disk-detection-bypass-avs-edr-s-using-syscalls-with-legacy-instruction-series-of-instructions-5c1f31d1af7d">https://medium.com/system-weakness/on-disk-detection-bypass-avs-edr-s-using-syscalls-with-legacy-instruction-series-of-instructions-5c1f31d1af7d</a></td>
+        </tr>
+        <tr>
+            <td>EASE POST-EXPLOITATION: Getting elevated reverse shell using DLL Hijacking and Mock Directories</td>
+            <td><a href="https://medium.com/system-weakness/ease-post-exploitation-getting-elevated-reverse-shell-using-dll-hijacking-and-mock-directories-2fc2c7a3cdae">https://medium.com/system-weakness/ease-post-exploitation-getting-elevated-reverse-shell-using-dll-hijacking-and-mock-directories-2fc2c7a3cdae</a></td>
+        </tr>
+        <tr>
+            <td>AV/EDR Evasion Using Direct System Calls (User-Mode vs kernel-Mode)</td>
+            <td><a href="https://medium.com/@merasor07/av-edr-evasion-using-direct-system-calls-user-mode-vs-kernel-mode-fad2fdfed01a">https://medium.com/@merasor07/av-edr-evasion-using-direct-system-calls-user-mode-vs-kernel-mode-fad2fdfed01a</a></td>
+        </tr>
+        <tr>
+            <td>Bypass “Mimikatz” using the Process Injection Technique</td>
+            <td><a href="https://medium.com/system-weakness/bypass-mimikatz-using-process-injection-technique-6d2a8415fcd6">https://medium.com/system-weakness/bypass-mimikatz-using-process-injection-technique-6d2a8415fcd6</a></td>
+        </tr>
+        <tr>
+            <td>Unveiling the Intricacies of AsyncRAT: A deployment in Colombia by the Blind Eagle Cyber Group</td>
+            <td><a href="https://medium.com/@merasor07/unveiling-the-intricacies-of-asyncrat-a-deployment-in-colombia-by-the-blind-eagle-cyber-group-83b48cc415a7">https://medium.com/@merasor07/unveiling-the-intricacies-of-asyncrat-a-deployment-in-colombia-by-the-blind-eagle-cyber-group-83b48cc415a7</a></td>
+        </tr>
+        <tr>
+            <td>Unveiling the Intricacies of SamSam Ransomware: A Comprehensive Analysis Plus Proactive Threat Emulation</td>
+            <td><a href="https://medium.com/@merasor07/unveiling-the-intricacies-of-samsam-ransomware-a-comprehensive-analysis-plus-proactive-threat-bee37979f407">https://medium.com/@merasor07/unveiling-the-intricacies-of-samsam-ransomware-a-comprehensive-analysis-plus-proactive-threat-bee37979f407</a></td>
+        </tr>
+        <tr>
+            <td>Dark Crystel RAT (DCrat) Detailed Analysis</td>
+            <td><a href="https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce">https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce</a></td>
+        </tr>
+    </table>
     <h2>Evasion Techniques</h2>
  <table>
         <tr>
@@ -84,49 +127,6 @@
    <tr>
             <td>BYOVD</td>
             <td>Bring your own vulnerable driver which involves deploying drivers that are legitimately signed and can be successfully loaded into Windows systems to execute code in kernel context.</td>
-        </tr>
-    </table>
-   <h2>My Blogs</h2>
-    <table class="blogs-table">
-        <tr>
-            <th>Blogs</th>
-            <th>Links</th>
-        </tr>
-        <tr>
-            <td>Arsenal 2.0: Elevating Malware Stealth Tactics to bypass static detection</td>
-            <td><a href="https://medium.com/@merasor07/arsenal-2-0-elevating-malware-stealth-tactics-to-bypass-static-detection-5238c573ab02">https://medium.com/@merasor07/arsenal-2-0-elevating-malware-stealth-tactics-to-bypass-static-detection-5238c573ab02</a></td>
-        </tr>
-      <tr>
-            <td>Arsenal: Bypass EDR’s/XDR’s and make malware analysis harder</td>
-            <td><a href="https://systemweakness.com/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5">https://systemweakness.com/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5</a></td>
-        </tr>
-        <tr>
-            <td>On-Disk Detection: Bypass AV’s/EDR’s using syscalls with legacy instruction, series of instructions and random nop instructions</td>
-            <td><a href="https://medium.com/system-weakness/on-disk-detection-bypass-avs-edr-s-using-syscalls-with-legacy-instruction-series-of-instructions-5c1f31d1af7d">https://medium.com/system-weakness/on-disk-detection-bypass-avs-edr-s-using-syscalls-with-legacy-instruction-series-of-instructions-5c1f31d1af7d</a></td>
-        </tr>
-        <tr>
-            <td>EASE POST-EXPLOITATION: Getting elevated reverse shell using DLL Hijacking and Mock Directories</td>
-            <td><a href="https://medium.com/system-weakness/ease-post-exploitation-getting-elevated-reverse-shell-using-dll-hijacking-and-mock-directories-2fc2c7a3cdae">https://medium.com/system-weakness/ease-post-exploitation-getting-elevated-reverse-shell-using-dll-hijacking-and-mock-directories-2fc2c7a3cdae</a></td>
-        </tr>
-        <tr>
-            <td>AV/EDR Evasion Using Direct System Calls (User-Mode vs kernel-Mode)</td>
-            <td><a href="https://medium.com/@merasor07/av-edr-evasion-using-direct-system-calls-user-mode-vs-kernel-mode-fad2fdfed01a">https://medium.com/@merasor07/av-edr-evasion-using-direct-system-calls-user-mode-vs-kernel-mode-fad2fdfed01a</a></td>
-        </tr>
-        <tr>
-            <td>Bypass “Mimikatz” using the Process Injection Technique</td>
-            <td><a href="https://medium.com/system-weakness/bypass-mimikatz-using-process-injection-technique-6d2a8415fcd6">https://medium.com/system-weakness/bypass-mimikatz-using-process-injection-technique-6d2a8415fcd6</a></td>
-        </tr>
-        <tr>
-            <td>Unveiling the Intricacies of AsyncRAT: A deployment in Colombia by the Blind Eagle Cyber Group</td>
-            <td><a href="https://medium.com/@merasor07/unveiling-the-intricacies-of-asyncrat-a-deployment-in-colombia-by-the-blind-eagle-cyber-group-83b48cc415a7">https://medium.com/@merasor07/unveiling-the-intricacies-of-asyncrat-a-deployment-in-colombia-by-the-blind-eagle-cyber-group-83b48cc415a7</a></td>
-        </tr>
-        <tr>
-            <td>Unveiling the Intricacies of SamSam Ransomware: A Comprehensive Analysis Plus Proactive Threat Emulation</td>
-            <td><a href="https://medium.com/@merasor07/unveiling-the-intricacies-of-samsam-ransomware-a-comprehensive-analysis-plus-proactive-threat-bee37979f407">https://medium.com/@merasor07/unveiling-the-intricacies-of-samsam-ransomware-a-comprehensive-analysis-plus-proactive-threat-bee37979f407</a></td>
-        </tr>
-        <tr>
-            <td>Dark Crystel RAT (DCrat) Detailed Analysis</td>
-            <td><a href="https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce">https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce</a></td>
         </tr>
     </table>
  <h2>My Posts</h2>
