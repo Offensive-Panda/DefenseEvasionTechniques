@@ -137,7 +137,7 @@
  <table class="my-posts">
    <tr>
             <td>Dirty vanity implementaion using direct syscalls</td>
-            <td><a href="https://www.linkedin.com/posts/usman-sikander13_malwaredevelopment-syscalls-forking-activity-7193958115556343808-8UzK?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_malwaredevelopment-syscalls-forking-activity-7193958115556343808-8UzK?utm_source=share&utm_medium=member_desktop</a></td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_malwaredevelopment-syscalls-forking-activity-7193958115556343808-8UzK?utm_source=share&utm_medium=member_desktop">https://shorturl.at/UwIHA</a></td>
         </tr>
         <tr>
             <td>Mokingjay Technique Implementaion to avoid RWX region detection</td>
