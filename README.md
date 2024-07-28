@@ -1,7 +1,7 @@
 <html>
 <body>
  <div>
-  <h1>  <img src="https://github.com/Offensive-Panda/DefenseEvasionTechniques/blob/main/Assests/panda.jpg" width="100" height="100" style="margin-right: 20px;"> C:\Users\Offensive-Panda>whoami</h1>
+  <h1>  <img src="https://github.com/Offensive-Panda/DefenseEvasionTechniques/raw/main/panda.jpg" width="100" height="100" style="margin-right: 20px;"> C:\Users\Offensive-Panda>whoami</h1>
   <p>My name is <B>Usman Sikander</B> (a.k.a Offensive-Panda). My professional interests encompass adversary emulation, malware development, malware analysis, red teaming, security control validation, and detection engineering. My expertise extends to analyzing real-world samples to extract TTPs (Tactics, Techniques, and Procedures), validating security postures through APT (Advanced Persistent Threat) emulations, and developing undetected exploits across MITRE ATT&CK tactics. I am committed to enhancing security measures and defenses through meticulous research and practical application.</p>
 
 </div>
