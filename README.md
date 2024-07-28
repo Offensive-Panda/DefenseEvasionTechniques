@@ -2,7 +2,7 @@
 <body>
  <div>
   <h1>C:\Users\Offensive-Panda>whoami</h1>
-  <p>My name is <B>Usman Sikander</B> (a.k.a Offensive-Panda). I am passionate about identifying, researching advanced evasion techniques and analyzing real-world samples to extract TTPs to validate security posture through APT emulations. With a proven track record in developing undetected exploits across MITRE ATT&CK tactics and automating exploit processes, I excel in comprehensive endpoint simulations in controlled environment with the presence of security controls. </p>
+  <p>My name is <B>Usman Sikander</B> (a.k.a Offensive-Panda). My professional interests encompass adversary emulation, malware development, malware analysis, red teaming, security control validation, and detection engineering. My expertise extends to analyzing real-world samples to extract TTPs (Tactics, Techniques, and Procedures), validating security postures through APT (Advanced Persistent Threat) emulations, and developing undetected exploits across MITRE ATT&CK tactics. I am committed to enhancing security measures and defenses through meticulous research and practical application.</p>
 </div>
  <div class="container">
         <h1>My Social Profiles</h1>
@@ -26,7 +26,7 @@
 <img src="https://github.com/Offensive-Panda/DefenseEvasionTechniques/raw/main/My-Setup.jpg" alt="MYSETUP" width="1200" height="500">
 </div>
     <h1 align=center>Defense Evasion Techniques</h1>
-   <p>Welcome to the Defense Evasion Techniques Repository! This curated collection offers advanced methods to bypass sophisticated security measures in Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. Aimed at cyber security professionals and researchers, these techniques are invaluable for both Red Team and Blue Team operations.This repository includes strategies for manipulating system calls, obfuscating code, managing memory to evade detection and other advanced evasion techniques. By leveraging these methods, experts can enhance penetration testing, red teaming, malware analysis, and develop more resilient defenses.</p>
+   <p>Welcome to the Defense Evasion Techniques Repository! This curated collection offers advanced methods to bypass sophisticated security measures in Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. This comprehensive and central repository is designed for cybersecurity enthusiasts, researchers, and professionals seeking to stay ahead in the field. It provides a valuable resource for those dedicated to improving their skills, security defenses and  measures. This repository includes strategies for manipulating system calls, obfuscating code, managing memory to evade detection and other advanced evasion techniques. By leveraging these methods, experts can enhance penetration testing, red teaming, malware analysis, and develop more resilient defenses.</p>
  <h2>My Blogs</h2>
     <table class="blogs-table">
         <tr>
