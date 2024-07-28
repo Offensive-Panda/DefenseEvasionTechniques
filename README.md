@@ -125,27 +125,27 @@
   <h2>Github Repo</h2>
  <table class="my-code">
    <tr>
-            <td>"D3MPSEC" is a memory dumping tool.</td>
+            <td>"D3MPSEC" lsass.exe memory dumping.</td>
             <td><a href="https://github.com/Offensive-Panda/D3MPSEC">https://github.com/Offensive-Panda/D3MPSEC</a></td>
         </tr>
         <tr>
-            <td>Combination of multiple evasion techniques to evade defenses. (Dirty Vanity)</td>
+            <td>Combination of multiple evasion techniques to evade defenses (Dirty Vanity).</td>
             <td><a href="https://github.com/Offensive-Panda/DV_NEW">https://github.com/Offensive-Panda/DV_NEW</a></td>
         </tr>
     <tr>
-            <td>Capture_attacks_using_honeypots</td>
+            <td>Deploy Honeypots and Decoys to Gather Threat Intelligence</td>
             <td><a href="https://github.com/Offensive-Panda/Collect_Threat_Intel_AND_Malware_Using_Honeypots">https://github.com/Offensive-Panda/Collect_Threat_Intel_AND_Malware_Using_Honeypots</a></td>
         </tr>
    <tr>
-            <td>Persistence_AND_Anti_Sandbox</td>
+            <td>Persistence and Anti-Sandox Techniques</td>
             <td><a href="https://github.com/Offensive-Panda/Persistence_AND_Anti_Sandbox">https://github.com/Offensive-Panda/Persistence_AND_Anti_Sandbox</a></td>
         </tr>
     <tr>
-            <td>on-disk-detection-bypass</td>
+            <td>Bypass Malware Static Analysis</td>
             <td><a href="https://github.com/Offensive-Panda/on-disk-detection-bypass">https://github.com/Offensive-Panda/on-disk-detection-bypass</a></td>
         </tr>
     <tr>
-            <td>C2_Elevated_Shell_DLL_Hijcking</td>
+            <td>Get elevated shell on C2 server with DLL Hijacking</td>
             <td><a href="https://github.com/Offensive-Panda/C2_Elevated_Shell_DLL_Hijcking">https://github.com/Offensive-Panda/C2_Elevated_Shell_DLL_Hijcking</a></td>
         </tr>  
       <tr>
@@ -153,11 +153,11 @@
             <td><a href="https://github.com/Offensive-Panda/RWX_MEMEORY_HUNT_AND_INJECTION_DV">https://github.com/Offensive-Panda/RWX_MEMEORY_HUNT_AND_INJECTION_DV</a></td>
         </tr>  
    <tr>
-            <td>WPM-MAJIC-ENTRY-POINT-INJECTION</td>
+            <td>WriteProcessMemory Magic and Injection (Address of Entry Point) </td>
             <td><a href="https://github.com/Offensive-Panda/WPM-MAJIC-ENTRY-POINT-INJECTION">https://github.com/Offensive-Panda/WPM-MAJIC-ENTRY-POINT-INJECTION</a></td>
         </tr>  
     <tr>
-            <td>PEB_WALK_AND_API_OBFUSCATION_INJECTION</td>
+            <td>PEB Walk and API Obfuscation to bypass AV/EDR static analysis</td>
             <td><a href="https://github.com/Offensive-Panda/PEB_WALK_AND_API_OBFUSCATION_INJECTION">https://github.com/Offensive-Panda/PEB_WALK_AND_API_OBFUSCATION_INJECTION</a></td>
         </tr>  
  </table>
