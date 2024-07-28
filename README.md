@@ -160,6 +160,10 @@
             <td>PEB Walk and API Obfuscation to bypass AV/EDR static analysis</td>
             <td><a href="https://github.com/Offensive-Panda/PEB_WALK_AND_API_OBFUSCATION_INJECTION">https://github.com/Offensive-Panda/PEB_WALK_AND_API_OBFUSCATION_INJECTION</a></td>
         </tr>  
+    <tr>
+            <td>Malware Analysis Series</td>
+            <td><a href="https://github.com/Offensive-Panda/MalwareAnalysis">https://github.com/Offensive-Panda/MalwareAnalysis</a></td>
+        </tr>  
  </table>
      <h2>Evasion Techniques</h2>
  <table>
