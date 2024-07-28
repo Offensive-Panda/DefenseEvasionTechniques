@@ -28,7 +28,7 @@
 </div>
     <h1 align=center>Defense Evasion Techniques</h1>
    <p>Welcome to the Defense Evasion Techniques Repository! This curated collection offers advanced methods to bypass sophisticated security measures in Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. This comprehensive and central repository is designed for cybersecurity enthusiasts, researchers, and professionals seeking to stay ahead in the field. It provides a valuable resource for those dedicated to improving their skills, security defenses and  measures. This repository includes strategies for manipulating system calls, obfuscating code, managing memory to evade detection and other advanced evasion techniques. By leveraging these methods, experts can enhance penetration testing, red teaming, malware analysis, and develop more resilient defenses.</p>
- <h2>My Blogs</h2>
+ <h2>Open Source Work</h2>
     <table class="blogs-table">
         <tr>
             <th>Blogs</th>
