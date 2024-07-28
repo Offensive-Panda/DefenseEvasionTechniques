@@ -118,7 +118,7 @@
             <td><a href="https://www.linkedin.com/posts/usman-sikander13_edrkiller-malwaredevelopment-mdebypass-activity-7201848552522711042-vySE?utm_source=share&utm_medium=member_desktop">Post Link</a></td>
         </tr>
    <tr>
-            <td>𝘓𝘴𝘢𝘴𝘴.𝘦𝘹𝘦 𝘔𝘦𝘮𝘰𝘳𝘺 𝘋𝘶𝘮𝘱𝘪𝘯𝘨 𝘶𝘴𝘪𝘯𝘨 𝘤𝘰𝘮𝘣𝘪𝘯𝘢𝘵𝘪𝘰𝘯 𝘰𝘧 𝘵𝘩𝘳𝘦𝘦 𝘵𝘦𝘤𝘩𝘯𝘪𝘲𝘶𝘦𝘴 [𝐋𝐚𝐠𝐨𝐬 𝐈𝐬𝐥𝐚𝐧𝐝 𝐌𝐞𝐭𝐡𝐨𝐝 (𝐚.𝐤.𝐚 𝐑𝐞𝐟𝐥𝐞𝐜𝐭𝐢𝐯𝐞𝐋𝐨𝐚𝐝𝐢𝐧𝐠), 𝐖𝐢𝐧𝐝𝐨𝐰𝐬 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐈𝐧𝐣𝐞𝐜𝐭𝐢𝐨𝐧: 𝐂𝐨𝐧𝐬𝐨𝐥𝐞𝐖𝐢𝐧𝐝𝐨𝐰𝐂𝐥𝐚𝐬𝐬, 𝐖𝐢𝐧𝐝𝐨𝐰𝐬 𝐅𝐨𝐫𝐤𝐢𝐧𝐠]</td>
+            <td>Lsass.exe memory dumping using multiple techniques [𝐋𝐚𝐠𝐨𝐬 𝐈𝐬𝐥𝐚𝐧𝐝 𝐌𝐞𝐭𝐡𝐨𝐝 (𝐚.𝐤.𝐚 𝐑𝐞𝐟𝐥𝐞𝐜𝐭𝐢𝐯𝐞𝐋𝐨𝐚𝐝𝐢𝐧𝐠), 𝐖𝐢𝐧𝐝𝐨𝐰𝐬 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐈𝐧𝐣𝐞𝐜𝐭𝐢𝐨𝐧: 𝐂𝐨𝐧𝐬𝐨𝐥𝐞𝐖𝐢𝐧𝐝𝐨𝐰𝐂𝐥𝐚𝐬𝐬, 𝐖𝐢𝐧𝐝𝐨𝐰𝐬 𝐅𝐨𝐫𝐤𝐢𝐧𝐠]</td>
             <td><a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F-activity-7210623488255000576-cEYF?utm_source=share&utm_medium=member_desktop">Post Link</a></td>
         </tr>
  </table>
