@@ -225,10 +225,16 @@
         </tr>
     </table>
     <br>
- <h2> Evasion Mastery and Deep dive into threats. </h2>
+ <h2>Writeups For Cyber Community</h2>
  <br>
- <iframe src="Defense_Evasion.pdf" width="900px" height="750px" style="display: inline-block; margin-right: 20px;"></iframe>
-    <iframe src="PEB Walk.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
+ <iframe src="PEB Walk.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
+    <iframe src="EDRBYPASS.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
+     <iframe src="Defense_Evasion.pdf" width="900px" height="750px" style="display: inline-block; margin-right: 20px;"></iframe>
+       <iframe src="DCRAT" width="900px" height="750px" style="display: inline-block;"></iframe>
+          <iframe src="SamSam.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
+             <iframe src="AsyncRAT.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
+
+ 
     
 <div class="disclaimer">
         <h2>Disclaimer</h2>
