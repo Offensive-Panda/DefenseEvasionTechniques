@@ -230,7 +230,7 @@
  <iframe src="PEB Walk.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
     <iframe src="EDRBYPASS.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
      <iframe src="Defense_Evasion.pdf" width="900px" height="750px" style="display: inline-block; margin-right: 20px;"></iframe>
-       <iframe src="DCRAT" width="900px" height="750px" style="display: inline-block;"></iframe>
+       <iframe src="DCRAT.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
           <iframe src="SamSam.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
              <iframe src="AsyncRAT.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
 
