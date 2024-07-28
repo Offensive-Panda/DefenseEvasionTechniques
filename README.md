@@ -75,65 +75,6 @@
             <td><a href="https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce">https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce</a></td>
         </tr>
     </table>
-    <h2>Evasion Techniques</h2>
- <table>
-        <tr>
-            <th>Technique</th>
-            <th>Description</th>
-        </tr>
-        <tr>
-            <td>Direct and Indirect Syscalls</td>
-            <td>Strategies for making direct and indirect function calls to evade detection mechanisms.</td>
-        </tr>
-        <tr>
-            <td>API Hashing</td>
-            <td>Techniques for obfuscating and altering API calls to avoid detection.</td>
-        </tr>
-        <tr>
-            <td>API Imports Obfuscation</td>
-            <td>Methods to obfuscate code and make it harder to analyze.</td>
-        </tr>
-        <tr>
-            <td>Payload Encryption</td>
-            <td>Use of encryption to bypass static analysis of EDRs.</td>
-        </tr>
-        <tr>
-            <td>Egg Hunting</td>
-            <td>Syscall Instruction In-memory patching to bypass static detection.</td>
-        </tr>
-        <tr>
-            <td>Random Instructions and Prototypes</td>
-            <td>Use random NOP instructions and name of API, prototypes to avoid static analysis.</td>
-        </tr>
-        <tr>
-            <td>Mokingjay</td>
-            <td>Use of vulnerable dll to avoid detection of RWX memory region creation.</td>
-        </tr>
-        <tr>
-            <td>Forking Technique Memory Dumps</td>
-            <td>Use of windows fork API to clone parent process after injecting shellcode, avoid detection of CreateRemoteThread.</td>
-        </tr>
-        <tr>
-            <td>API Unhooking</td>
-            <td>Unhooking EDRs user mode hooks using clean copy of dll, raw copy from remote server, suspended process to bypass EDRs.</td>
-        </tr>
-        <tr>
-            <td>ETW Patching</td>
-            <td>Applying ETW patching to avoid event based detection.</td>
-        </tr>
-        <tr>
-            <td>PEB Lookup</td>
-            <td>Resolving SSN and Native API's on run-time using PEB lookup for 32bits & 64bits.</td>
-        </tr>
-   <tr>
-            <td>RWX Memory Block Hunt</td>
-            <td>Hunt for already created RWX region to write and execute shellcode. This technique remove the dependencies of vulnerable DLL with RWX and API to allocate RWX.</td>
-        </tr>
-   <tr>
-            <td>BYOVD</td>
-            <td>Bring your own vulnerable driver which involves deploying drivers that are legitimately signed and can be successfully loaded into Windows systems to execute code in kernel context.</td>
-        </tr>
-    </table>
  <h2>Top Posts</h2>
  <table class="my-posts">
    <tr>
@@ -220,6 +161,65 @@
             <td><a href="https://github.com/Offensive-Panda/PEB_WALK_AND_API_OBFUSCATION_INJECTION">https://github.com/Offensive-Panda/PEB_WALK_AND_API_OBFUSCATION_INJECTION</a></td>
         </tr>  
  </table>
+     <h2>Evasion Techniques</h2>
+ <table>
+        <tr>
+            <th>Technique</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Direct and Indirect Syscalls</td>
+            <td>Strategies for making direct and indirect function calls to evade detection mechanisms.</td>
+        </tr>
+        <tr>
+            <td>API Hashing</td>
+            <td>Techniques for obfuscating and altering API calls to avoid detection.</td>
+        </tr>
+        <tr>
+            <td>API Imports Obfuscation</td>
+            <td>Methods to obfuscate code and make it harder to analyze.</td>
+        </tr>
+        <tr>
+            <td>Payload Encryption</td>
+            <td>Use of encryption to bypass static analysis of EDRs.</td>
+        </tr>
+        <tr>
+            <td>Egg Hunting</td>
+            <td>Syscall Instruction In-memory patching to bypass static detection.</td>
+        </tr>
+        <tr>
+            <td>Random Instructions and Prototypes</td>
+            <td>Use random NOP instructions and name of API, prototypes to avoid static analysis.</td>
+        </tr>
+        <tr>
+            <td>Mokingjay</td>
+            <td>Use of vulnerable dll to avoid detection of RWX memory region creation.</td>
+        </tr>
+        <tr>
+            <td>Forking Technique Memory Dumps</td>
+            <td>Use of windows fork API to clone parent process after injecting shellcode, avoid detection of CreateRemoteThread.</td>
+        </tr>
+        <tr>
+            <td>API Unhooking</td>
+            <td>Unhooking EDRs user mode hooks using clean copy of dll, raw copy from remote server, suspended process to bypass EDRs.</td>
+        </tr>
+        <tr>
+            <td>ETW Patching</td>
+            <td>Applying ETW patching to avoid event based detection.</td>
+        </tr>
+        <tr>
+            <td>PEB Lookup</td>
+            <td>Resolving SSN and Native API's on run-time using PEB lookup for 32bits & 64bits.</td>
+        </tr>
+   <tr>
+            <td>RWX Memory Block Hunt</td>
+            <td>Hunt for already created RWX region to write and execute shellcode. This technique remove the dependencies of vulnerable DLL with RWX and API to allocate RWX.</td>
+        </tr>
+   <tr>
+            <td>BYOVD</td>
+            <td>Bring your own vulnerable driver which involves deploying drivers that are legitimately signed and can be successfully loaded into Windows systems to execute code in kernel context.</td>
+        </tr>
+    </table>
     <br>
  <h2> Evasion Mastery and Deep dive into threats. </h2>
  <br>
