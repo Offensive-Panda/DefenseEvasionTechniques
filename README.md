@@ -137,53 +137,53 @@
  <table class="my-posts">
    <tr>
             <td>Dirty vanity implementaion using direct syscalls</td>
-            <td><a href="https://www.linkedin.com/posts/usman-sikander13_malwaredevelopment-syscalls-forking-activity-7193958115556343808-8UzK?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_malwaredevelopment-syscalls-forking-activity-7193958115556343808-8UzK?utm_source=share&utm_medium=member_desktop</a></td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_malwaredevelopment-syscalls-forking-activity-7193958115556343808-8UzK?utm_source=share&utm_medium=member_desktop">Post Link</a></td>
         </tr>
         <tr>
             <td>Mokingjay Technique Implementaion to avoid RWX region detection</td>
-            <td><a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-cybersecurity-malwaredevelopement-activity-7191049164409991168-fLwR?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-cybersecurity-malwaredevelopement-activity-7191049164409991168-fLwR?utm_source=share&utm_medium=member_desktop</a></td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-cybersecurity-malwaredevelopement-activity-7191049164409991168-fLwR?utm_source=share&utm_medium=member_desktop">Post Link</a></td>
         </tr>
         <tr>
             <td>Combining Unhooking and ETW patching to dump lsass.exe memory</td>
-            <td><a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F-activity-7188865881580453890-iakH?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F-activity-7188865881580453890-iakH?utm_source=share&utm_medium=member_desktop</a></td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F-activity-7188865881580453890-iakH?utm_source=share&utm_medium=member_desktop">Post Link</a></td>
         </tr>
         <tr>
             <td>Direct syscalls to dump lsass.exe memory and offline dumping</td>
-            <td><a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop</a></td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop">Post Link</a></td>
         </tr>
    <tr>
             <td>Remote Template Injection</td>
-            <td><a href="https://www.linkedin.com/posts/usman-sikander13_remote-template-injection-today-i-created-activity-6936948079807844353-UQQ8?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_remote-template-injection-today-i-created-activity-6936948079807844353-UQQ8?utm_source=share&utm_medium=member_desktop</a></td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_remote-template-injection-today-i-created-activity-6936948079807844353-UQQ8?utm_source=share&utm_medium=member_desktop">Post Link</a></td>
         </tr>
    <tr>
             <td>Mark-of-the-Web for Red Team</td>
-            <td><a href="https://www.linkedin.com/posts/usman-sikander13_bypass-macro-vba-activity-6900000010717458433-lAH2?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_bypass-macro-vba-activity-6900000010717458433-lAH2?utm_source=share&utm_medium=member_desktop</a></td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_bypass-macro-vba-activity-6900000010717458433-lAH2?utm_source=share&utm_medium=member_desktop">Post Link</a></td>
         </tr>
    <tr>
             <td>Memory dump using outflank dumpert and Windows process injection</td>
-            <td><a href="https://www.linkedin.com/feed/update/urn:li:activity:7056950152242094080?utm_source=share&utm_medium=member_android">https://www.linkedin.com/feed/update/urn:li:activity:7056950152242094080?utm_source=share&utm_medium=member_android</a></td>
+            <td><a href="https://www.linkedin.com/feed/update/urn:li:activity:7056950152242094080?utm_source=share&utm_medium=member_android">Post Link</a></td>
         </tr>
    <tr>
             <td>Nt-Authority Shell using Fodhelper</td>
-            <td><a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F-activity-7072507221774917632-T0LK?utm_source=share&utm_medium=member_android">https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F-activity-7072507221774917632-T0LK?utm_source=share&utm_medium=member_android</a></td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F-activity-7072507221774917632-T0LK?utm_source=share&utm_medium=member_android">Post Link</a></td>
         </tr>
     <tr>
             <td>RWX-Memory hunt and injection with CreateRemoteThread</td>
-            <td><a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F-%3F%3F%3F%3F%3F%3F-activity-7196426924351488001-RXOk?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F-%3F%3F%3F%3F%3F%3F-activity-7196426924351488001-RXOk?utm_source=share&utm_medium=member_desktop</a></td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F-%3F%3F%3F%3F%3F%3F-activity-7196426924351488001-RXOk?utm_source=share&utm_medium=member_desktop">Post Link</a></td>
         </tr>
     <tr>
             <td>EDR Terminator (call it killer)</td>
-            <td><a href="https://www.linkedin.com/posts/usman-sikander13_edrkiller-malwaredevelopment-mdebypass-activity-7201848552522711042-vySE?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_edrkiller-malwaredevelopment-mdebypass-activity-7201848552522711042-vySE?utm_source=share&utm_medium=member_desktop</a></td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_edrkiller-malwaredevelopment-mdebypass-activity-7201848552522711042-vySE?utm_source=share&utm_medium=member_desktop">Post Link</a></td>
         </tr>
    <tr>
             <td>𝘓𝘴𝘢𝘴𝘴.𝘦𝘹𝘦 𝘔𝘦𝘮𝘰𝘳𝘺 𝘋𝘶𝘮𝘱𝘪𝘯𝘨 𝘶𝘴𝘪𝘯𝘨 𝘤𝘰𝘮𝘣𝘪𝘯𝘢𝘵𝘪𝘰𝘯 𝘰𝘧 𝘵𝘩𝘳𝘦𝘦 𝘵𝘦𝘤𝘩𝘯𝘪𝘲𝘶𝘦𝘴 [𝐋𝐚𝐠𝐨𝐬 𝐈𝐬𝐥𝐚𝐧𝐝 𝐌𝐞𝐭𝐡𝐨𝐝 (𝐚.𝐤.𝐚 𝐑𝐞𝐟𝐥𝐞𝐜𝐭𝐢𝐯𝐞𝐋𝐨𝐚𝐝𝐢𝐧𝐠), 𝐖𝐢𝐧𝐝𝐨𝐰𝐬 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐈𝐧𝐣𝐞𝐜𝐭𝐢𝐨𝐧: 𝐂𝐨𝐧𝐬𝐨𝐥𝐞𝐖𝐢𝐧𝐝𝐨𝐰𝐂𝐥𝐚𝐬𝐬, 𝐖𝐢𝐧𝐝𝐨𝐰𝐬 𝐅𝐨𝐫𝐤𝐢𝐧𝐠]</td>
-            <td><a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F-activity-7210623488255000576-cEYF?utm_source=share&utm_medium=member_desktop">https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F-activity-7210623488255000576-cEYF?utm_source=share&utm_medium=member_desktop</a></td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F-activity-7210623488255000576-cEYF?utm_source=share&utm_medium=member_desktop">Post Link</a></td>
         </tr>
  </table>
   <h2>Github Repo</h2>
  <table class="my-code">
    <tr>
-            <td>"D3MPSEC" is a memory dumping tool designed to extract memory dump from Lsass process using various techniques, including direct system calls, randomized procedures, and prototype name obfuscation. Its primary purpose is to bypass both static and dynamic analysis techniques commonly employed by security measures.</td>
+            <td>"D3MPSEC" is a memory dumping tool.</td>
             <td><a href="https://github.com/Offensive-Panda/D3MPSEC">https://github.com/Offensive-Panda/D3MPSEC</a></td>
         </tr>
         <tr>
