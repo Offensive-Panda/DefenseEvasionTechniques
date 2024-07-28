@@ -229,7 +229,7 @@
  <br>
  <iframe src="Defense_Evasion.pdf" width="600px" height="750px">
  </iframe>
-  <iframe src="PEB Walk.pdf" width="600px" height="750px">
+  <iframe src="PEB Walk.pdf" width="600px" height="750px" margin-right: 20px>
  </iframe>
     
 <div class="disclaimer">
