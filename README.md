@@ -165,7 +165,7 @@
             <td><a href="https://github.com/Offensive-Panda/PEB_WALK_AND_API_OBFUSCATION_INJECTION">https://github.com/Offensive-Panda/PEB_WALK_AND_API_OBFUSCATION_INJECTION</a></td>
         </tr>  
     <tr>
-            <td>>NET Profiler DLL Loading UAC Bypass</td>
+            <td>.NET Profiler DLL Loading UAC Bypass</td>
             <td><a href="https://github.com/Offensive-Panda/.NET_PROFILER_DLL_LOADING">https://github.com/Offensive-Panda/.NET_PROFILER_DLL_LOADING</a></td>
         </tr>  
     <tr>
