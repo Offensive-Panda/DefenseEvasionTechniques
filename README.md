@@ -121,6 +121,10 @@
             <td>Lsass.exe memory dumping using multiple techniques [𝐋𝐚𝐠𝐨𝐬 𝐈𝐬𝐥𝐚𝐧𝐝 𝐌𝐞𝐭𝐡𝐨𝐝 (𝐚.𝐤.𝐚 𝐑𝐞𝐟𝐥𝐞𝐜𝐭𝐢𝐯𝐞𝐋𝐨𝐚𝐝𝐢𝐧𝐠), 𝐖𝐢𝐧𝐝𝐨𝐰𝐬 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐈𝐧𝐣𝐞𝐜𝐭𝐢𝐨𝐧: 𝐂𝐨𝐧𝐬𝐨𝐥𝐞𝐖𝐢𝐧𝐝𝐨𝐰𝐂𝐥𝐚𝐬𝐬, 𝐖𝐢𝐧𝐝𝐨𝐰𝐬 𝐅𝐨𝐫𝐤𝐢𝐧𝐠]</td>
             <td><a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F-activity-7210623488255000576-cEYF?utm_source=share&utm_medium=member_desktop">Post Link</a></td>
         </tr>
+   <tr>
+            <td>UAC Bypass Using .NET profiler DLL Loading Vulnerability</td>
+            <td><a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F-%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F-%3F%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F-activity-7223665314146713601-rySG?utm_source=share&utm_medium=member_desktop">Post Link</a></td>
+        </tr>
  </table>
   <h2>Github Repo</h2>
  <table class="my-code">
@@ -161,9 +165,14 @@
             <td><a href="https://github.com/Offensive-Panda/PEB_WALK_AND_API_OBFUSCATION_INJECTION">https://github.com/Offensive-Panda/PEB_WALK_AND_API_OBFUSCATION_INJECTION</a></td>
         </tr>  
     <tr>
+            <td>>NET Profiler DLL Loading UAC Bypass</td>
+            <td><a href="https://github.com/Offensive-Panda/.NET_PROFILER_DLL_LOADING">https://github.com/Offensive-Panda/.NET_PROFILER_DLL_LOADING</a></td>
+        </tr>  
+    <tr>
             <td>Malware Analysis Series</td>
             <td><a href="https://github.com/Offensive-Panda/MalwareAnalysis">https://github.com/Offensive-Panda/MalwareAnalysis</a></td>
         </tr>  
+  
  </table>
      <h2>Evasion Techniques</h2>
  <table>
