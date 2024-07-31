@@ -44,7 +44,7 @@
         </tr>
       <tr>
             <td>Arsenal: Bypass EDR’s/XDR’s and make malware analysis harder</td>
-            <td><a href="https://systemweakness.com/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5">https://systemweakness.com/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5</a></td>
+            <td><a href="https://medium.com/system-weakness/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5">https://medium.com/system-weakness/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5</a></td>
         </tr>
         <tr>
             <td>On-Disk Detection: Bypass AV’s/EDR’s using syscalls with legacy instruction, series of instructions and random nop instructions</td>
