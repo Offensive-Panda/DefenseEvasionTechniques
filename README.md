@@ -6,7 +6,7 @@
 
 </div>
  <div class="container">
-        <h1>My Social Profiles</h1>
+        <h2>My Social Profiles</h2>
     <div style="display: flex; justify-content: center; align-items: center; gap: 20px; padding: 20px;">
         <a href="https://www.linkedin.com/in/usman-sikander13/" target="_blank" style="text-decoration: none; color: #000; display: flex; align-items: center; gap: 10px;">
             <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 24px; height: 24px;">
