@@ -169,7 +169,7 @@
 <table class="my-code" style="width: 100%; border-collapse: collapse;">
     <tr style="background-color: #f2f2f2;">
         <th style="border: 1px solid black; padding: 8px; text-align: left;">
-            <a href="#" style="text-decoration: underline; color: inherit; font-weight: bold;">Projects</a>
+            <a href="#" style="text-decoration: underline; color: inherit; font-weight: bold;">Project</a>
         </th>
         <th style="border: 1px solid black; padding: 8px; text-align: left;">
             <a href="#" style="text-decoration: underline; color: inherit; font-weight: bold;">Link</a>
