@@ -29,52 +29,77 @@
     <h1 align=center>Defense Evasion Techniques</h1>
    <p>This collection offers advanced methods to bypass sophisticated security measures in Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. This comprehensive and central repository is designed for cybersecurity enthusiasts, researchers, and professionals seeking to stay ahead in the field. It provides a valuable resource for those dedicated to improving their skills, security defenses and  measures. This repository includes strategies for manipulating system calls, obfuscating code, managing memory to evade detection and other advanced evasion techniques. By leveraging these methods, experts can enhance penetration testing, red teaming, malware analysis, and develop more resilient defenses.</p>
  <h2>Open Source Work</h2>
-    <table class="blogs-table">
-        <tr>
-            <th>Blogs</th>
-            <th>Links</th>
-        </tr>
-        <tr>
-            <td>Arsenal 2.0: Elevating Malware Stealth Tactics to bypass static detection</td>
-            <td><a href="https://medium.com/@merasor07/arsenal-2-0-elevating-malware-stealth-tactics-to-bypass-static-detection-5238c573ab02">https://medium.com/@merasor07/arsenal-2-0-elevating-malware-stealth-tactics-to-bypass-static-detection-5238c573ab02</a></td>
-        </tr>
-      <tr>
-            <td>PEB Walk: Avoid API function calls inspection in IAT by analyst and also bypass static detection of AV/EDR</td>
-            <td><a href="https://medium.com/@merasor07/peb-walk-avoid-api-calls-inspection-in-iat-by-analyst-and-bypass-static-detection-of-1a2ef9bd4c94">https://medium.com/@merasor07/peb-walk-avoid-api-calls-inspection-in-iat-by-analyst-and-bypass-static-detection-of-1a2ef9bd4c94</a></td>
-        </tr>
-      <tr>
-            <td>Arsenal: Bypass EDR’s/XDR’s and make malware analysis harder</td>
-            <td><a href="https://medium.com/system-weakness/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5">https://medium.com/system-weakness/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5</a></td>
-        </tr>
-        <tr>
-            <td>On-Disk Detection: Bypass AV’s/EDR’s using syscalls with legacy instruction, series of instructions and random nop instructions</td>
-            <td><a href="https://medium.com/system-weakness/on-disk-detection-bypass-avs-edr-s-using-syscalls-with-legacy-instruction-series-of-instructions-5c1f31d1af7d">https://medium.com/system-weakness/on-disk-detection-bypass-avs-edr-s-using-syscalls-with-legacy-instruction-series-of-instructions-5c1f31d1af7d</a></td>
-        </tr>
-        <tr>
-            <td>EASE POST-EXPLOITATION: Getting elevated reverse shell using DLL Hijacking and Mock Directories</td>
-            <td><a href="https://medium.com/system-weakness/ease-post-exploitation-getting-elevated-reverse-shell-using-dll-hijacking-and-mock-directories-2fc2c7a3cdae">https://medium.com/system-weakness/ease-post-exploitation-getting-elevated-reverse-shell-using-dll-hijacking-and-mock-directories-2fc2c7a3cdae</a></td>
-        </tr>
-        <tr>
-            <td>AV/EDR Evasion Using Direct System Calls (User-Mode vs kernel-Mode)</td>
-            <td><a href="https://medium.com/@merasor07/av-edr-evasion-using-direct-system-calls-user-mode-vs-kernel-mode-fad2fdfed01a">https://medium.com/@merasor07/av-edr-evasion-using-direct-system-calls-user-mode-vs-kernel-mode-fad2fdfed01a</a></td>
-        </tr>
-        <tr>
-            <td>Bypass “Mimikatz” using the Process Injection Technique</td>
-            <td><a href="https://medium.com/system-weakness/bypass-mimikatz-using-process-injection-technique-6d2a8415fcd6">https://medium.com/system-weakness/bypass-mimikatz-using-process-injection-technique-6d2a8415fcd6</a></td>
-        </tr>
-        <tr>
-            <td>Unveiling the Intricacies of AsyncRAT: A deployment in Colombia by the Blind Eagle Cyber Group</td>
-            <td><a href="https://medium.com/@merasor07/unveiling-the-intricacies-of-asyncrat-a-deployment-in-colombia-by-the-blind-eagle-cyber-group-83b48cc415a7">https://medium.com/@merasor07/unveiling-the-intricacies-of-asyncrat-a-deployment-in-colombia-by-the-blind-eagle-cyber-group-83b48cc415a7</a></td>
-        </tr>
-        <tr>
-            <td>Unveiling the Intricacies of SamSam Ransomware: A Comprehensive Analysis Plus Proactive Threat Emulation</td>
-            <td><a href="https://medium.com/@merasor07/unveiling-the-intricacies-of-samsam-ransomware-a-comprehensive-analysis-plus-proactive-threat-bee37979f407">https://medium.com/@merasor07/unveiling-the-intricacies-of-samsam-ransomware-a-comprehensive-analysis-plus-proactive-threat-bee37979f407</a></td>
-        </tr>
-        <tr>
-            <td>Dark Crystel RAT (DCrat) Detailed Analysis</td>
-            <td><a href="https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce">https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce</a></td>
-        </tr>
-    </table>
+ <table class="blogs-table" style="width: 100%; border-collapse: collapse;">
+    <tr style="background-color: #f2f2f2;">
+        <th style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="#" style="text-decoration: underline; color: inherit; font-weight: bold;">Blogs Detail</a>
+        </th>
+        <th style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="#" style="text-decoration: underline; color: inherit; font-weight: bold;">Blogs Link</a>
+        </th>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">Arsenal 2.0: Elevating Malware Stealth Tactics to bypass static detection</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="https://medium.com/@merasor07/arsenal-2-0-elevating-malware-stealth-tactics-to-bypass-static-detection-5238c573ab02" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/@merasor07/arsenal-2-0-elevating-malware-stealth-tactics-to-bypass-static-detection-5238c573ab02</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">PEB Walk: Avoid API function calls inspection in IAT by analyst and also bypass static detection of AV/EDR</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="https://medium.com/@merasor07/peb-walk-avoid-api-calls-inspection-in-iat-by-analyst-and-bypass-static-detection-of-1a2ef9bd4c94" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/@merasor07/peb-walk-avoid-api-calls-inspection-in-iat-by-analyst-and-bypass-static-detection-of-1a2ef9bd4c94</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">Arsenal: Bypass EDR’s/XDR’s and make malware analysis harder</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="https://medium.com/system-weakness/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/system-weakness/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">On-Disk Detection: Bypass AV’s/EDR’s using syscalls with legacy instruction, series of instructions and random nop instructions</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="https://medium.com/system-weakness/on-disk-detection-bypass-avs-edr-s-using-syscalls-with-legacy-instruction-series-of-instructions-5c1f31d1af7d" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/system-weakness/on-disk-detection-bypass-avs-edr-s-using-syscalls-with-legacy-instruction-series-of-instructions-5c1f31d1af7d</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">EASE POST-EXPLOITATION: Getting elevated reverse shell using DLL Hijacking and Mock Directories</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="https://medium.com/system-weakness/ease-post-exploitation-getting-elevated-reverse-shell-using-dll-hijacking-and-mock-directories-2fc2c7a3cdae" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/system-weakness/ease-post-exploitation-getting-elevated-reverse-shell-using-dll-hijacking-and-mock-directories-2fc2c7a3cdae</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">AV/EDR Evasion Using Direct System Calls (User-Mode vs kernel-Mode)</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="https://medium.com/@merasor07/av-edr-evasion-using-direct-system-calls-user-mode-vs-kernel-mode-fad2fdfed01a" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/@merasor07/av-edr-evasion-using-direct-system-calls-user-mode-vs-kernel-mode-fad2fdfed01a</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">Bypass “Mimikatz” using the Process Injection Technique</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="https://medium.com/system-weakness/bypass-mimikatz-using-process-injection-technique-6d2a8415fcd6" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/system-weakness/bypass-mimikatz-using-process-injection-technique-6d2a8415fcd6</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">Unveiling the Intricacies of AsyncRAT: A deployment in Colombia by the Blind Eagle Cyber Group</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="https://medium.com/@merasor07/unveiling-the-intricacies-of-asyncrat-a-deployment-in-colombia-by-the-blind-eagle-cyber-group-83b48cc415a7" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/@merasor07/unveiling-the-intricacies-of-asyncrat-a-deployment-in-colombia-by-the-blind-eagle-cyber-group-83b48cc415a7</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">Unveiling the Intricacies of SamSam Ransomware: A Comprehensive Analysis Plus Proactive Threat Emulation</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="https://medium.com/@merasor07/unveiling-the-intricacies-of-samsam-ransomware-a-comprehensive-analysis-plus-proactive-threat-bee37979f407" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/@merasor07/unveiling-the-intricacies-of-samsam-ransomware-a-comprehensive-analysis-plus-proactive-threat-bee37979f407</a>
+        </td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">Dark Crystel RAT (DCrat) Detailed Analysis</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce</a>
+        </td>
+    </tr>
+</table>
+
  <h2>Top Posts</h2>
  <table class="my-posts">
    <tr>
