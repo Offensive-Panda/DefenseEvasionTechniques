@@ -80,24 +80,6 @@
             <a href="https://medium.com/system-weakness/bypass-mimikatz-using-process-injection-technique-6d2a8415fcd6" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/system-weakness/bypass-mimikatz-using-process-injection-technique-6d2a8415fcd6</a>
         </td>
     </tr>
-    <tr>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">Unveiling the Intricacies of AsyncRAT: A deployment in Colombia by the Blind Eagle Cyber Group</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">
-            <a href="https://medium.com/@merasor07/unveiling-the-intricacies-of-asyncrat-a-deployment-in-colombia-by-the-blind-eagle-cyber-group-83b48cc415a7" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/@merasor07/unveiling-the-intricacies-of-asyncrat-a-deployment-in-colombia-by-the-blind-eagle-cyber-group-83b48cc415a7</a>
-        </td>
-    </tr>
-    <tr>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">Unveiling the Intricacies of SamSam Ransomware: A Comprehensive Analysis Plus Proactive Threat Emulation</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">
-            <a href="https://medium.com/@merasor07/unveiling-the-intricacies-of-samsam-ransomware-a-comprehensive-analysis-plus-proactive-threat-bee37979f407" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/@merasor07/unveiling-the-intricacies-of-samsam-ransomware-a-comprehensive-analysis-plus-proactive-threat-bee37979f407</a>
-        </td>
-    </tr>
-    <tr>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">Dark Crystel RAT (DCrat) Detailed Analysis</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">
-            <a href="https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/system-weakness/dark-crystel-rat-dcrat-detailed-analysis-94a2bcccd5ce</a>
-        </td>
-    </tr>
 </table>
 
  <h2>Top Posts</h2>
@@ -253,12 +235,6 @@
             <a href="https://github.com/Offensive-Panda/.NET_PROFILER_DLL_LOADING" style="text-decoration: underline; color: inherit; font-weight: bold;">https://github.com/Offensive-Panda/.NET_PROFILER_DLL_LOADING</a>
         </td>
     </tr>
-    <tr>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">Malware Analysis Series</td>
-        <td style="border: 1px solid black; padding: 8px; text-align: left;">
-            <a href="https://github.com/Offensive-Panda/MalwareAnalysis" style="text-decoration: underline; color: inherit; font-weight: bold;">https://github.com/Offensive-Panda/MalwareAnalysis</a>
-        </td>
-    </tr>
 </table>
      <h2>Evasion Techniques</h2>
 <table style="width: 100%; border-collapse: collapse;">
@@ -329,9 +305,6 @@
  <iframe src="PEB Walk.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
     <iframe src="EDRBYPASS.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
      <iframe src="Defense_Evasion.pdf" width="900px" height="750px" style="display: inline-block; margin-right: 20px;"></iframe>
-       <iframe src="DCRAT.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
-          <iframe src="SamSam.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
-             <iframe src="AsyncRAT.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
 
 <div class="disclaimer">
         <h2>Disclaimer</h2>
