@@ -235,6 +235,12 @@
             <a href="https://github.com/Offensive-Panda/.NET_PROFILER_DLL_LOADING" style="text-decoration: underline; color: inherit; font-weight: bold;">https://github.com/Offensive-Panda/.NET_PROFILER_DLL_LOADING</a>
         </td>
     </tr>
+     <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">BYOVD to escalate privileges to SYSTEM</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="https://github.com/Offensive-Panda/NT-AUTHORITY-SYSTEM-CONTEXT-RTCORE" style="text-decoration: underline; color: inherit; font-weight: bold;">https://github.com/Offensive-Panda/NT-AUTHORITY-SYSTEM-CONTEXT-RTCORE</a>
+        </td>
+    </tr>
 </table>
      <h2>Evasion Techniques</h2>
 <table style="width: 100%; border-collapse: collapse;">
