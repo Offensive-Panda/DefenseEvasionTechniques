@@ -38,6 +38,12 @@
             <a href="#" style="text-decoration: underline; color: inherit; font-weight: bold;">Blog Link</a>
         </th>
     </tr>
+      <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">BYOVD A Kernel Attack: Stealthy Threat to Endpoint Security</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="https://medium.com/@merasor07/byovd-a-kernel-attack-stealthy-threat-to-endpoint-security-ec809272e505" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/@merasor07/byovd-a-kernel-attack-stealthy-threat-to-endpoint-security-ec809272e505</a>
+        </td>
+    </tr>
     <tr>
         <td style="border: 1px solid black; padding: 8px; text-align: left;">Arsenal 2.0: Elevating Malware Stealth Tactics to bypass static detection</td>
         <td style="border: 1px solid black; padding: 8px; text-align: left;">
