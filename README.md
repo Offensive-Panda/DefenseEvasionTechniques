@@ -167,7 +167,19 @@
     <tr>
         <td style="border: 1px solid black; padding: 8px; text-align: left;">UAC Bypass Using .NET profiler DLL Loading Vulnerability</td>
         <td style="border: 1px solid black; padding: 8px; text-align: left;">
-            <a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F-%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F-%3F%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F-activity-7223665314146713601-rySG?utm_source=share&utm_medium=member_desktop" style="text-decoration: underline; color: inherit; font-weight: bold;">Post Link</a>
+            <a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F-%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F-%3F%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F-activity-7223665314146713601-rySG?utm_source=share&utm_medium=member_deskto" style="text-decoration: underline; color: inherit; font-weight: bold;">Post Link</a>
+        </td>
+    </tr>
+  <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">Remove EDR callbacks using vulnerable driver</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="https://www.linkedin.com/posts/usman-sikander13_edrs-are-complex-solutions-and-key-components-activity-7227289675130916864-deG5?utm_source=share&utm_medium=member_desktop" style="text-decoration: underline; color: inherit; font-weight: bold;">Post Link</a>
+        </td>
+    </tr>
+   <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">Privileges Escalation using Vulnerable Driver</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F-%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F-ugcPost-7226278965731069952-o6dD?utm_source=share&utm_medium=member_desktop" style="text-decoration: underline; color: inherit; font-weight: bold;">Post Link</a>
         </td>
     </tr>
 </table>
