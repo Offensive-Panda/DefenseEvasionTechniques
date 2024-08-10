@@ -326,6 +326,7 @@
     <br>
  <h2>Writeups For Cyber Community</h2>
  <br>
+ <iframe src="BYOVD.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
  <iframe src="PEB Walk.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
     <iframe src="EDRBYPASS.pdf" width="900px" height="750px" style="display: inline-block;"></iframe>
      <iframe src="Defense_Evasion.pdf" width="900px" height="750px" style="display: inline-block; margin-right: 20px;"></iframe>
