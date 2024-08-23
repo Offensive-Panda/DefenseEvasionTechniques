@@ -10,71 +10,75 @@ layout: default
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Source Work</title>
     <style>
+
         /* Card Container Styling */
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center; /* Center cards on the page */
-            padding: 20px; /* Add some padding around the cards */
-        }
-
-        /* Individual Card Styling */
-        .card {
-            display: flex;
-            width: 100%;
-            max-width: 600px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s, box-shadow 0.3s;
-            background-color: #fff;
-        }
-
-    /* Image Styling */
-.card-image {
+.card-container {
     display: flex;
-    align-items: center; /* Center image vertically */
-    justify-content: flex-start; /* Align image to the left */
-    width: 100%; /* Full width of the card */
-    height: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center cards on the page */
+    padding: 20px; /* Add some padding around the cards */
+}
+
+/* Individual Card Styling */
+.card {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+}
+
+/* Image Styling */
+.card-image {
+    width: 300px; /* Fixed width for image */
+    height: 200px; /* Fixed height for image */
+    overflow: hidden; /* Ensure image doesn't overflow container */
 }
 
 .card-image img {
-    width: 300px; /* Adjust size as needed */
-    height: auto;
+    width: 100%; /* Ensure image covers the entire container */
+    height: 100%;
     object-fit: cover;
-    margin-right: 20px; /* Add some spacing between image and text */
 }
-        /* Card Content Styling */
-        .card-content {
-            padding: 16px;
-            flex-grow: 1;
-        }
 
-        .card-content h3 {
-            margin: 0;
-            font-size: 1.2em;
-        }
+/* Card Content Styling */
+.card-content {
+    padding: 16px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced properly */
+    max-width: calc(100% - 300px); /* Adjust based on image width */
+}
 
-        .card-content p {
-            margin: 8px 0 16px;
-            font-size: 0.9em;
-            color: #555;
-        }
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
 
-        .card-content .card-link {
-            text-decoration: none;
-            color: #0073e6;
-            font-weight: bold;
-        }
+.card-content p {
+    margin: 8px 0 16px;
+    font-size: 0.9em;
+    color: #555;
+}
 
-        /* Hover Effect */
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            border-color: #0073e6;
-        }
+.card-content .card-link {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-color: #0073e6;
+}
+
          /* General styling for the page */
          body {
             font-family: Arial, sans-serif;
