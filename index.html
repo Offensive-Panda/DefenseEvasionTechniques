@@ -10,8 +10,7 @@ layout: default
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Source Work</title>
     <style>
-
-       /* Card Container Styling */
+/* Card Container Styling */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -30,48 +29,40 @@ layout: default
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     background-color: #fff;
-    flex-direction: row; /* Arrange image and content horizontally */
 }
 
-/* Image Styling */
-.card-image {
-    width: 300px; /* Fixed width for image */
-    height: 200px; /* Fixed height for image */
-    display: flex;
-    align-items: center; /* Center image vertically */
-    overflow: hidden;
-}
-
-.card-image img {
-    width: 100%; /* Ensure image covers the entire container */
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Card Content Styling */
+/* Left Part Styling (Heading and Description) */
 .card-content {
+    width: 40%; /* Adjust width as needed */
     padding: 16px;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center; /* Center content vertically */
 }
 
+/* Heading Styling */
 .card-content h3 {
     margin: 0;
     font-size: 1.2em;
-    margin-bottom: 16px; /* Space between heading and content */
+    margin-bottom: 8px; /* Space between heading and description */
 }
 
+/* Description Styling */
 .card-content p {
-    margin: 0 0 16px;
+    margin: 0;
     font-size: 0.9em;
     color: #555;
 }
 
-.card-content .card-link {
-    text-decoration: none;
-    color: #0073e6;
-    font-weight: bold;
+/* Right Part Styling (Image) */
+.card-image {
+    width: 60%; /* Adjust width as needed */
+}
+
+.card-image img {
+    width: 100%; /* Full width of the right part */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container properly */
 }
 
 /* Hover Effect */
