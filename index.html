@@ -31,14 +31,21 @@ layout: default
             background-color: #fff;
         }
 
-        /* Image Styling */
-        .card-image img {
-            width: 600px;
-            height: auto;
-            align: center;
-            object-fit: cover;
-        }
+    /* Image Styling */
+.card-image {
+    display: flex;
+    align-items: center; /* Center image vertically */
+    justify-content: flex-start; /* Align image to the left */
+    width: 100%; /* Full width of the card */
+    height: auto;
+}
 
+.card-image img {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px; /* Add some spacing between image and text */
+}
         /* Card Content Styling */
         .card-content {
             padding: 16px;
@@ -192,7 +199,7 @@ layout: default
     <!-- Card 1 -->
     <div class="card">
         <div class="card-image">
-            <img src="Assets/BYOVD_AI.jpg" alt="BYOVD A Kernel Attack">
+            <img src="Assets/BYOVD_AI.png" alt="BYOVD A Kernel Attack">
         </div>
         <div class="card-content">
             <h3>BYOVD A Kernel Attack: Stealthy Threat to Endpoint Security</h3>
@@ -240,7 +247,7 @@ layout: default
     <!-- Card 5 -->
     <div class="card">
         <div class="card-image">
-            <img src="Assets/Arsenal_AI.jpg" alt="On-Disk Detection">
+            <img src="Assets/Disk_AI.jpg" alt="On-Disk Detection">
         </div>
         <div class="card-content">
             <h3>On-Disk Detection: Bypass AV’s/EDR’s using syscalls with legacy instruction, series of instructions and random nop instructions</h3>
@@ -328,7 +335,7 @@ layout: default
     <!-- Card 4 -->
     <div class="card">
         <div class="card-image">
-            <img src="Asset/pers_AI.jpg" alt="Persistence">
+            <img src="Assets/pers_AI.jpg" alt="Persistence">
         </div>
         <div class="card-content">
             <h3>Persistence and Anti-Sandbox</h3>
@@ -340,7 +347,7 @@ layout: default
     <!-- Card 5 -->
     <div class="card">
         <div class="card-image">
-            <img src="Assets/disk_AI.jpg" alt="Static Analysis">
+            <img src="Assets/diskon_AI.jpg" alt="Static Analysis">
         </div>
         <div class="card-content">
             <h3>Bypass Malware Static Analysis</h3>
@@ -388,7 +395,7 @@ layout: default
     <!-- Card 9 -->
     <div class="card">
         <div class="card-image">
-            <img src="https://via.placeholder.com/150" alt="PEB Walk">
+            <img src="Assets/pebwalk_AI.jpg" alt="PEB Walk">
         </div>
         <div class="card-content">
             <h3>PEB Walk and API Obfuscation</h3>
@@ -400,7 +407,7 @@ layout: default
     <!-- Card 10 -->
     <div class="card">
         <div class="card-image">
-            <img src="Assets.dotnet_AI.jpg" alt=".NET Profiler">
+            <img src="Assets/dotnet_AI.jpg" alt=".NET Profiler">
         </div>
         <div class="card-content">
             <h3>.NET Profiler DLL Loading UAC Bypass</h3>
@@ -498,7 +505,7 @@ layout: default
     <!-- Card 7 -->
     <div class="card">
         <div class="card-image">
-        <img src="Assets/outflank_AI,jpg" alt="Memory dump using Outflank Dumpert and Windows process injection">
+        <img src="Assets/outflank_AI.jpg" alt="Memory dump using Outflank Dumpert and Windows process injection">
         </div>
         <div class="card-content">
             <h3>Memory Dump Using Outflank Dumpert and Windows Process Injection</h3>
@@ -576,7 +583,7 @@ layout: default
     </div>
     <div class="card">
         <div class="card-image">
-        <img src="Assets/PE_Ai.jpg" alt="PE BYOVD">
+        <img src="Assets/PE_AI.jpg" alt="PE BYOVD">
         </div>
         <div class="card-content">
             <h3>Privilege Escalation Using Vulnerable Driver</h3>
