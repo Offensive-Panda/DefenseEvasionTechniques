@@ -10,63 +10,63 @@ layout: default
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Source Work</title>
     <style>
-/* Container for cards */
+
+/* Card Container Styling */
 .card-container {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the cards horizontally */
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center; /* Center cards on the page */
+    padding: 20px; /* Add some padding around the cards */
 }
 
-/* Individual card */
+/* Individual Card Styling */
 .card {
-    background: #dbd7d7;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 100%; /* Make the card 40% of the page width */
-    max-width: 600px; /* Optional: Set a max width to prevent the card from becoming too wide on large screens */
-    text-decoration: none;
-    color: #333;
-    font-family: 'Carter One', sans-serif;
     display: flex;
-    flex-direction: row; /* Horizontal layout inside the card */
+    flex-direction: column; /* Change to column for vertical layout */
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
 }
 
-/* Card hover */
-.card:hover {
-    transform: scaleY(1.04);
-}
-
-/* Card image */
-.card img {
-    width: 30%;
-    height: auto;
-    object-fit: cover;
-}
-
-/* Card content */
+/* Left Part Styling (Heading and Description) */
 .card-content {
-    padding: 15px;
-    flex-grow: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
 }
 
-/* Card title */
-.card-title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+/* Heading Styling */
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2em;
+    margin-bottom: 8px; /* Space between heading and description */
 }
 
-/* Card description */
-.card-description {
-    font-size: 1em;
-    margin-bottom: 15px;
+/* Description Styling */
+.card-content p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
 }
 
-/* Meta info */
-.card-meta {
-    font-size: 0.85em;
-    color: #777;
+/* Right Part Styling (Image) */
+.card-image {
+    display: flex; /* Add flexbox for centered image */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Adjust width as needed */
+}
+
+.card-image img {
+    max-width: 100%; /* Ensure image doesn't exceed card width */
+    max-height: 100%; /* Ensure image doesn't exceed card height */
+    object-fit: contain; /* Prevent image from stretching */
 }
 
 /* Hover Effect */
