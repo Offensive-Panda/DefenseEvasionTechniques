@@ -10,59 +10,63 @@ layout: default
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Source Work</title>
     <style>
-/* Card Container Styling */
+/* Container for cards */
 .card-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center; /* Center cards on the page */
-    padding: 20px; /* Add some padding around the cards */
-}
-
-/* Individual Card Styling */
-.card {
-    display: flex;
-    width: 100%;
-    max-width: 600px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-    background-color: #fff;
-}
-
-/* Left Part Styling (Heading and Description) */
-.card-content {
-    width: 40%; /* Adjust width as needed */
-    padding: 16px;
-    display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center the cards horizontally */
+    gap: 20px;
 }
 
-/* Heading Styling */
-.card-content h3 {
-    margin: 0;
-    font-size: 1.2em;
-    margin-bottom: 8px; /* Space between heading and description */
+/* Individual card */
+.card {
+    background: #dbd7d7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%; /* Make the card 40% of the page width */
+    max-width: 600px; /* Optional: Set a max width to prevent the card from becoming too wide on large screens */
+    text-decoration: none;
+    color: #333;
+    font-family: 'Carter One', sans-serif;
+    display: flex;
+    flex-direction: row; /* Horizontal layout inside the card */
 }
 
-/* Description Styling */
-.card-content p {
-    margin: 0;
-    font-size: 0.9em;
-    color: #555;
+/* Card hover */
+.card:hover {
+    transform: scaleY(1.04);
 }
 
-/* Right Part Styling (Image) */
-.card-image {
-    width: 60%; /* Adjust width as needed */
+/* Card image */
+.card img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
 }
 
-.card-image img {
-    width: 100%; /* Full width of the right part */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure the image covers the container properly */
+/* Card content */
+.card-content {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+/* Card title */
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Card description */
+.card-description {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Meta info */
+.card-meta {
+    font-size: 0.85em;
+    color: #777;
 }
 
 /* Hover Effect */
