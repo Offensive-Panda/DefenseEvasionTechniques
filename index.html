@@ -22,7 +22,7 @@ layout: default
 /* Individual Card Styling */
 .card {
     display: flex;
-    flex-direction: column; /* Change to column for vertical layout */
+    flex-direction: row; /* Change to row for horizontal layout */
     width: 100%;
     max-width: 600px;
     border: 1px solid #ddd;
@@ -32,8 +32,21 @@ layout: default
     background-color: #fff;
 }
 
-/* Left Part Styling (Heading and Description) */
+/* Left Part Styling (Image) */
+.card-image {
+    width: 30%; /* Adjust width as needed */
+    padding: 16px;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Right Part Styling (Heading and Description) */
 .card-content {
+    width: 70%; /* Adjust width as needed */
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -52,20 +65,6 @@ layout: default
     margin: 0;
     font-size: 0.9em;
     color: #555;
-}
-
-/* Right Part Styling (Image) */
-.card-image {
-    display: flex; /* Add flexbox for centered image */
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Adjust width as needed */
-}
-
-.card-image img {
-    max-width: 100%; /* Ensure image doesn't exceed card width */
-    max-height: 300px; /* Adjust this value as needed */ /* Set a maximum height for the image */
-    object-fit: contain; /* Prevent image from stretching */
 }
 
 /* Hover Effect */
