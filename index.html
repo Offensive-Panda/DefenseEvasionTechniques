@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Source Work</title>
+    <style>
+        /* Card Container Styling */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center; /* Center cards on the page */
+            padding: 20px; /* Add some padding around the cards */
+        }
+
+        /* Individual Card Styling */
+        .card {
+            display: flex;
+            width: 100%;
+            max-width: 600px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background-color: #fff;
+        }
+
+        /* Image Styling */
+        .card-image img {
+            width: 150px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Card Content Styling */
+        .card-content {
+            padding: 16px;
+            flex-grow: 1;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .card-content p {
+            margin: 8px 0 16px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .card-content .card-link {
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
+        }
+
+        /* Hover Effect */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-color: #0073e6;
+        }
+         /* General styling for the page */
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Heading styling */
+        h2 {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 2em; /* Increased font size */
+        }
+
+      .heatmap {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .heatmap-item {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .heatmap-item:hover {
+            background-color: #f0f0f0;
+            color: #000;
+        }
+        .heatmap-item::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 3px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 14px;
+        }
+        .heatmap-item:hover::after {
+            opacity: 1;
+        }
+
+        /* Color coding for heatmap items */
+        .low-intensity { background-color: #ffcccc; } /* Light Red */
+        .medium-intensity { background-color: #ff9966; } /* Medium Orange */
+        .high-intensity { background-color: #ff6600; } /* Dark Orange */
+        .very-high-intensity { background-color: #cc0000; } /* Dark Red */
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Space between containers */
+            padding: 20px;
+        }
+
+        .iframe-container {
+            border: 2px solid #ccc; /* Border around iframes */
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden;
+            background-color: #fff; /* Background color of container */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+            padding: 10px; /* Space inside the border */
+            max-width: 1000px; /* Maximum width for large screens */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+
+        iframe {
+            width: 100%;
+            height: 750px; /* Fixed height for all iframes */
+            border: none; /* Remove default border */
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <img width="400px" src="Assets/MD.jpg" alt="Evasion Series" />
+        <br />
+    </div>
+    <div class="content-section">
+        <h2>C:\Users\Offensive-Panda>whoami</h2>
+         <p> <B>Usman Sikander</B> (a.k.a Offensive-Panda) is a seasoned security professional specializing in adversary emulation, malware analysis, and red teaming. With a focus on practical application, he excels in analyzing real-world threats to extract Tactics, Techniques, and Procedures (TTPs), validating security postures through Advanced Persistent Threat (APT) emulations, and developing exploits across MITRE ATT&CK tactics. His expertise lies in enhancing security measures by leveraging meticulous research and hands-on experience.</p>
+         <h2>Purpose</h2>
+         <p>This collection offers advanced methods to bypass sophisticated security measures in Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. This comprehensive and central repository is designed for cybersecurity enthusiasts, researchers, and professionals seeking to stay ahead in the field. It provides a valuable resource for those dedicated to improving their skills, security defenses and  measures. This repository includes strategies for manipulating system calls, obfuscating code, managing memory to evade detection and other advanced evasion techniques. By leveraging these methods, experts can enhance penetration testing, red teaming, malware analysis, and develop more resilient defenses.</p>
+        </div>
+    <h2>Evasion Techniques Heatmap</h2>
+    <div class="heatmap">
+        <div class="heatmap-item very-high-intensity" data-tooltip="Strategies for making direct and indirect function calls to evade detection mechanisms.">Direct and Indirect Syscalls</div>
+        <div class="heatmap-item medium-intensity" data-tooltip="Techniques for obfuscating and altering API calls to avoid detection.">API Hashing</div>
+        <div class="heatmap-item medium-intensity" data-tooltip="Methods to obfuscate code and make it harder to analyze.">API Imports Obfuscation</div>
+        <div class="heatmap-item high-intensity" data-tooltip="Use of encryption to bypass static analysis of EDRs.">Payload Encryption</div>
+        <div class="heatmap-item high-intensity" data-tooltip="Syscall Instruction In-memory patching to bypass static detection.">Egg Hunting</div>
+        <div class="heatmap-item high-intensity" data-tooltip="A technique to circumvent User Account Control (UAC) prompts to gain elevated privileges without user consent.">UAC Bypass</div>
+        <div class="heatmap-item high-intensity" data-tooltip="A .NET technique that leverages the COR_PROFILER environment variable to load a profiler DLL, which can be used to manipulate or monitor .NET applications.">COR_PROFILER</div>
+        <div class="heatmap-item high-intensity" data-tooltip="Use random NOP instructions and name of API, prototypes to avoid static analysis.">Random Instructions and Prototypes</div>
+        <div class="heatmap-item very-high-intensity" data-tooltip="Use of vulnerable dll to avoid detection of RWX memory region creation.">Mokingjay</div>
+        <div class="heatmap-item very-high-intensity" data-tooltip="Use of windows fork API to clone parent process after injecting shellcode, avoid detection of CreateRemoteThread.">Forking Technique Memory Dumps</div>
+        <div class="heatmap-item very-high-intensity" data-tooltip="Unhooking EDRs user mode hooks using clean copy of dll, raw copy from remote server, suspended process to bypass EDRs.">API Unhooking</div>
+        <div class="heatmap-item medium-intensity" data-tooltip="Applying ETW patching to avoid event based detection.">ETW Patching</div>
+        <div class="heatmap-item medium-intensity" data-tooltip="Resolving SSN and Native API's on run-time using PEB lookup for 32bits & 64bits.">PEB Lookup</div>
+        <div class="heatmap-item high-intensity" data-tooltip="Techniques that involve disabling or tampering with security tools or monitoring systems ">Disable and Modify Tools</div>
+        <div class="heatmap-item very-high-intensity" data-tooltip="Lagos Island, also known as Reflective Loading, is a sophisticated technique for loading a Dynamic Link Library (DLL) directly into a process’s memory space">Lagos Island (Reflective Loading)</div>
+        <div class="heatmap-item high-intensity" data-tooltip="Hunt for already created RWX region to write and execute shellcode. This technique remove the dependencies of vulnerable DLL with RWX and API to allocate RWX.">RWX Memory Block Hunt</div>
+        <div class="heatmap-item very-high-intensity" data-tooltip="Bring your own vulnerable driver which involves deploying drivers that are legitimately signed and can be successfully loaded into Windows systems to execute code in kernel context.">BYOVD</div>
+    </div>
+<h2>Read My Blogs</h2>
+<div class="card-container">
+    <!-- Card 1 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/BYOVD_AI.jpg" alt="BYOVD A Kernel Attack">
+        </div>
+        <div class="card-content">
+            <h3>BYOVD A Kernel Attack: Stealthy Threat to Endpoint Security</h3>
+            <p>Delve into the intricacies of BYOVD attacks, exploring how malicious actors exploit this technique to blind, terminate, and manipulate endpoint detection and response (EDR) solutions. We will dissect the mechanisms used to obtain NT Authority context and remove EDR callbacks, providing practical demonstrations of these attacks.</p>
+            <a href="https://medium.com/@merasor07/byovd-a-kernel-attack-stealthy-threat-to-endpoint-security-ec809272e505" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/static_AI.jpg" alt="Arsenal 2.0">
+        </div>
+        <div class="card-content">
+            <h3>Arsenal 2.0: Elevating Malware Stealth Tactics to Bypass Static Detection</h3>
+            <p>Diving into advanced techniques for malware to evade static detection by EDR/XDR solutions. This blog is an extension of my previous post, “Arsenal: Bypass EDR’s/XDR’s and make malware analysis harder.” In this follow-up, i explore additional static detection bypass techniques, offering advanced strategies to enhance your toolkit.</p>
+            <a href="https://medium.com/@merasor07/arsenal-2-0-elevating-malware-stealth-tactics-to-bypass-static-detection-5238c573ab02" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/IAT_AI.jpg" alt="PEB Walk">
+        </div>
+        <div class="card-content">
+            <h3>PEB Walk: Avoid API function calls inspection in IAT by analyst and also bypass static detection of AV/EDR</h3>
+            <p>Techniques to evade static detection methods used by AV/EDR solutions. We divide our arsenal preparation into 4 main stages, we try to hide strings, API imports by obfuscating them, resolve API using different ways such as dynamically walking the process environment block (PEB) and resolve export functions by parsing kernel32.dll in-memory to hide imports</p>
+            <a href="https://medium.com/@merasor07/peb-walk-avoid-api-calls-inspection-in-iat-by-analyst-and-bypass-static-detection-of-1a2ef9bd4c94" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/Arsenal_AI.jpg" alt="Arsenal">
+        </div>
+        <div class="card-content">
+            <h3>Arsenal: Bypass EDR’s/XDR’s and make malware analysis harder</h3>
+            <p>An exploration of methods to bypass modern EDR/XDR. Multiple techniques to bypass AV/EDR/XDR security solutions. As a red teamer and security guy, I always try to explore new methods and approaches to bypass security controls.</p>
+            <a href="https://medium.com/system-weakness/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/Arsenal_AI.jpg" alt="On-Disk Detection">
+        </div>
+        <div class="card-content">
+            <h3>On-Disk Detection: Bypass AV’s/EDR’s using syscalls with legacy instruction, series of instructions and random nop instructions</h3>
+            <p>Techniques to bypass AV/EDR’s static as well as dynamic detection. The main focus is to bypass on-disk detection of binary which is using direct syscalls.</p>
+            <a href="https://medium.com/system-weakness/on-disk-detection-bypass-avs-edr-s-using-syscalls-with-legacy-instruction-series-of-instructions-5c1f31d1af7d" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/Post_AI.jpg" alt="EASE POST-EXPLOITATION">
+        </div>
+        <div class="card-content">
+            <h3>EASE POST-EXPLOITATION: Getting elevated reverse shell using DLL Hijacking and Mock Directories</h3>
+            <p>DLL Hijacking and Mock directories technique to bypass Windows UAC security feature and getting high-level privileged reverse shell.</p>
+            <a href="https://medium.com/system-weakness/ease-post-exploitation-getting-elevated-reverse-shell-using-dll-hijacking-and-mock-directories-2fc2c7a3cdae" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/Sys_AI.jpg" alt="AV/EDR Evasion Using Direct System Calls">
+        </div>
+        <div class="card-content">
+            <h3>AV/EDR Evasion Using Direct System Calls (User-Mode vs Kernel-Mode)</h3>
+            <p>Hooking is a method used by AV/EDRs to intercept a function call and redirect the code flow to a controlled environment where they can analyze the call and decide whether or not it is malicious. Looking at the Windows Architecture, we can see that the interaction between the OS’s surface and depths is managed by a library named NTDLL.DLL.</p>
+            <a href="https://medium.com/@merasor07/av-edr-evasion-using-direct-system-calls-user-mode-vs-kernel-mode-fad2fdfed01a" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/Mimi_AI.jpg" alt="Bypass Mimikatz">
+        </div>
+        <div class="card-content">
+            <h3>Bypass “Mimikatz” using the Process Injection Technique</h3>
+            <p>Bypass Mimikatz using process injection. Most of the EDR’s/AV often identify mimikatz signatures and destroy it. There are many ways to bypass mimikatz from AV/EDR’s.</p>
+            <a href="https://medium.com/system-weakness/bypass-mimikatz-using-process-injection-technique-6d2a8415fcd6" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+</div>
+
+
+<h2>GitHub Repositories</h2>
+<div class="card-container">
+    <!-- Card 1 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/d3mp_AI.jpg" alt="D3MPSEC">
+        </div>
+        <div class="card-content">
+            <h3>D3MPSEC</h3>
+            <p>"D3MPSEC" is a memory dumping tool designed to extract memory dump from Lsass process using various techniques, including direct system calls, randomized procedures, and prototype name obfuscation. Its primary purpose is to bypass both static and dynamic analysis techniques commonly employed by security measures.</p>
+            <a href="https://github.com/Offensive-Panda/D3MPSEC" target="_blank" class="card-link">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/syscall_AI.jpg" alt="Dirty Vanity">
+        </div>
+        <div class="card-content">
+            <h3>Dirty Vanity (DV_NEW)</h3>
+            <p>This is the combination of multiple evasion techniques. It is using direct syscalls to bypass user-mode EDR hooking and also to avoid static detection of syscalls instruction in stub I am using egg hunt technique. Egg hunt will place random bytes using DB instruction in syscall stub in the place of syscalls instructions and on run time it patch again those bytes with syscall instruction to transit into kernel.</p>
+            <a href="https://github.com/Offensive-Panda/DV_NEW" target="_blank" class="card-link">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/honey_AI.jpg" alt="Honeypots">
+        </div>
+        <div class="card-content">
+            <h3>Honeypots for Threat Intelligence</h3>
+            <p>Run as a service and monitoring all sysmon event logs and take action based on events generated by attacker's activities. Upload all dropped and created malwares, files on server for further analysis. This captures all commands executed by attacker on a system.</p>
+            <a href="https://github.com/Offensive-Panda/Collect_Threat_Intel_AND_Malware_Using_Honeypots" target="_blank" class="card-link">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Asset/pers_AI.jpg" alt="Persistence">
+        </div>
+        <div class="card-content">
+            <h3>Persistence and Anti-Sandbox</h3>
+            <p>This reposiorty contains the c# code which is using latest persistence technique and multiple anti-vm, anti-sandboxes techniques. In this program, I am using 4 anti-vm and anti-sanboxe techniques, I am also using persistence technique using powershell and task scheduler.</p>
+            <a href="https://github.com/Offensive-Panda/Persistence_AND_Anti_Sandbox" target="_blank" class="card-link">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/disk_AI.jpg" alt="Static Analysis">
+        </div>
+        <div class="card-content">
+            <h3>Bypass Malware Static Analysis</h3>
+            <p>Direct syscalls Injection to bypass AV/EDR. The main purpose of this repository is to understand the static detection and how to bypass it. When I was using direct syscalls in my implant, after compiling the code MDE was detecting the binary in static analysis. I found that MDE is looking for "syscall" instructions because for sure it is not a common behaviour to use these instructions directly into binary. So i added some nop instructions and series of extra instructions to bypass the static analysis.</p>
+            <a href="https://github.com/Offensive-Panda/on-disk-detection-bypass" target="_blank" class="card-link">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/dll_AI.jpg" alt="DLL Hijacking">
+        </div>
+        <div class="card-content">
+            <h3>C2 Elevated Shell via DLL Hijacking</h3>
+            <p>DLL Hijacking and Mock directories technique to bypass Windows UAC security feature and getting high-level privileged reverse shell. Security researchers identified this technique which uses a simplified process of DLL hijacking and mock folders to bypass UAC control.</p>
+            <a href="https://github.com/Offensive-Panda/C2_Elevated_Shell_DLL_Hijcking" target="_blank" class="card-link">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/rwx_AI.jpg" alt="RWX Memory">
+        </div>
+        <div class="card-content">
+            <h3>RWX Memory Hunt and Injection</h3>
+            <p>Abusing Windows fork API and OneDrive.exe process to inject the malicious shellcode without allocating new RWX memory region. This technique is finding RWX region in already running processes in this case OneDrive.exe and Write shellcode into that region and execute it without calling VirtualProtect, VirtualAllocEx, VirtualAlloc.</p>
+            <a href="https://github.com/Offensive-Panda/RWX_MEMEORY_HUNT_AND_INJECTION_DV" target="_blank" class="card-link">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/wpm_AI.jpg" alt="WPM Magic">
+        </div>
+        <div class="card-content">
+            <h3>WPM Magic and Injection</h3>
+            <p>Utilising AddressOfEntryPoint of process which is RX and using WriteProcessMemory internal magic to change the permission and write the shellcode. Exploit also using direct syscalls to bypass user-mode hooking of AV/EDRs. This technique is avoiding the usage of VirtualAlloc, VirtualProtect APIs directly inside the code. The working of VirtualProtect will be covered by WPM magic.</p>
+            <a href="https://github.com/Offensive-Panda/WPM-MAJIC-ENTRY-POINT-INJECTION" target="_blank" class="card-link">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="https://via.placeholder.com/150" alt="PEB Walk">
+        </div>
+        <div class="card-content">
+            <h3>PEB Walk and API Obfuscation</h3>
+            <p>PEB Walk and API Obfuscation to bypass AV/EDR static analysis.</p>
+            <a href="https://github.com/Offensive-Panda/PEB_WALK_AND_API_OBFUSCATION_INJECTION" target="_blank" class="card-link">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets.dotnet_AI.jpg" alt=".NET Profiler">
+        </div>
+        <div class="card-content">
+            <h3>.NET Profiler DLL Loading UAC Bypass</h3>
+            <p>.NET profiler DLL loading can be abused to make a legit .NET application load a malicious DLL using environment variables. This exploit is loading a malicious DLL using Task Scheduler (MMC) to bypass UAC and getting admin privileges.</p>
+            <a href="https://github.com/Offensive-Panda/.NET_PROFILER_DLL_LOADING" target="_blank" class="card-link">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Card 11 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/byovd_AI.jpg" alt="BYOVD">
+        </div>
+        <div class="card-content">
+            <h3>BYOVD for Privilege Escalation</h3>
+            <p>This exploit rebuilds and exploit the CVE-2019-16098 which is in driver Micro-Star MSI Afterburner 4.6.2.15658 (aka RTCore64.sys and RTCore32.sys) allows any authenticated user to read and write to arbitrary memory, I/O ports, and MSRs. Instead of hardcoded base address of Ntoskrnl.exe, I calculated it dynamically and recalculated all offsets for new version of windows.</p>
+            <a href="https://github.com/Offensive-Panda/NT-AUTHORITY-SYSTEM-CONTEXT-RTCORE" target="_blank" class="card-link">View on GitHub</a>
+        </div>
+    </div>
+</div>
+<h2>Read My Posts</h2>
+<div class="card-container">
+    <!-- Card 1 -->
+    <div class="card">
+        <div class="card-image">
+        <img src="Assets/fork_AI.jpg" alt="Dirty Vanity Implementation Using Direct Syscalls">
+        </div>
+        <div class="card-content">
+            <h3>Dirty Vanity Implementation Using Direct Syscalls</h3>
+            <p>This is the combination of multiple evasion techniques. It is using direct syscalls to bypass user-mode EDR hooking and also to avoid static detection of syscalls instruction in stub I am using egg hunt technique. Egg hunt will place random bytes using DB instruction in syscall stub in the place of syscalls instructions and on run time it patch again those bytes with syscall instruction to transit into kernel. Also I am using random prototypes and procedures in order to bypass static analysis. This technique is testing on 𝐛𝐢𝐭𝐝𝐞𝐟𝐞𝐧𝐝𝐞𝐫 𝐚𝐧𝐝 𝐌𝐃𝐄 both are bypassed. </p>
+            <a href="https://www.linkedin.com/posts/usman-sikander13_malwaredevelopment-syscalls-forking-activity-7193958115556343808-8UzK?utm_source=share&utm_medium=member_desktop" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <div class="card-image">
+        <img src="Assets/rwxd_AI.jpg" alt="Mockingjay Technique to Avoid RWX Region Detection">
+        </div>
+        <div class="card-content">
+            <h3>Mockingjay Technique to Avoid RWX Region Detection</h3>
+            <p>Utilizes vulnerable DLLs to avoid detection of RWX (Read-Write-Execute) memory regions. This technique helps bypass security mechanisms that monitor or restrict RWX memory allocations by exploiting existing vulnerabilities. </p>
+            <a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-cybersecurity-malwaredevelopement-activity-7191049164409991168-fLwR?utm_source=share&utm_medium=member_desktop" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <div class="card-image">
+        <img src="Assets/etw_AI.jpg" alt="Combining Unhooking and ETW Patching to Dump LSASS Memory">
+        </div>
+        <div class="card-content">
+            <h3>Combining Unhooking and ETW Patching to Dump LSASS Memory</h3>
+            <p>Explores advanced techniques for evading defenses to dump lsass,exe process memory. Combining Unhooking and ETW Patching: Integrates unhooking techniques with ETW (Event Tracing for Windows) patching to effectively dump LSASS (Local Security Authority Subsystem Service) memory. </p>
+            <a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F-activity-7188865881580453890-iakH?utm_source=share&utm_medium=member_desktop" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+        <div class="card-image">
+        <img src="Assets/lsass_AI.jpg" alt="Direct syscalls to dump LSASS.exe memory and offline dumping">
+        </div>
+        <div class="card-content">
+            <h3>Direct Syscalls to Dump LSASS.exe Memory and Offline Dumping</h3>
+            <p>Dumping LSASS memory using direct syscalls to bypass EDR detections. Bypassing traditional APIs hooking and security mechanisms.</p>
+            <a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o?utm_source=share&utm_medium=member_desktop" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+        <div class="card-image">
+        <img src="Assets/remote_AI.jpg" alt="Remote Template Injection">
+        </div>
+        <div class="card-content">
+            <h3>Remote Template Injection</h3>
+            <p>An exploration of techniques for injecting remote templates to achieve initial access. Created a attack cycle using remote template injection. Remote template injection is still working on Windows and has been used in many APT campaigns.</p>
+            <a href="https://www.linkedin.com/posts/usman-sikander13_remote-template-injection-today-i-created-activity-6936948079807844353-UQQ8?utm_source=share&utm_medium=member_desktop" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+        <div class="card-image">
+        <img src="Assets/mark_AI.jpg" alt="Mark-of-the-Web for Red Team">
+        </div>
+        <div class="card-content">
+            <h3>Mark-of-the-Web for Red Team</h3>
+            <p>Bypass security features related to Mark-of-the-Web in Red Team engagements. For macros in files obtained from the internet, users will no longer be able to enable content with a click of a button. A message bar will appear for users notifying them with a button to learn more. The default is more secure and is expected to keep more users safe including home users and information workers in managed organizations. Windows added attribute MOTW (Mark of the Web) to files downloaded by untrusted location (Internet or Restricted Zone).</p>
+            <a href="https://www.linkedin.com/posts/usman-sikander13_bypass-macro-vba-activity-6900000010717458433-lAH2?utm_source=share&utm_medium=member_desktop" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card">
+        <div class="card-image">
+        <img src="Assets/outflank_AI,jpg" alt="Memory dump using Outflank Dumpert and Windows process injection">
+        </div>
+        <div class="card-content">
+            <h3>Memory Dump Using Outflank Dumpert and Windows Process Injection</h3>
+            <p>Utilizes the Outflank Dumpert tool to dump lsass.exe memory and combines it with process injection techniques.</p>
+            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7056950152242094080?utm_source=share&utm_medium=member_android" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card">
+        <div class="card-image">
+        <img src="Assets/fod.jpg" alt="NT-Authority Shell using Fodhelper">
+        </div>
+        <div class="card-content">
+            <h3>NT-Authority Shell using Fodhelper</h3>
+            <p>How to exploit Fodhelper to gain NT-Authority level access on compromised systems.</p>
+            <a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F-activity-7072507221774917632-T0LK?utm_source=share&utm_medium=member_android" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="card">
+        <div class="card-image">
+        <img src="Assets/rwx_AI.jpg" alt="RWX-Memory Hunt and Injection with CreateRemoteThread">
+        </div>
+        <div class="card-content">
+            <h3>RWX-Memory Hunt and Injection with CreateRemoteThread</h3>
+            <p>Identifying and exploiting RWX memory regions to inject code via CreateRemoteThread technique. Identifies and utilizes RWX (Read-Write-Execute) memory regions for code injection, leveraging CreateRemoteThread to execute the injected code within the target process.</p>
+            <a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F-activity-7061008530221033472-_3X6?utm_source=share&utm_medium=member_desktop" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+
+   
+    <div class="card">
+        <div class="card-image">
+        <img src="Assets/terminate_AI.jpg" alt="Terminator">
+        </div>
+        <div class="card-content">
+            <h3>EDR Terminator (Call It Killer)</h3>
+            <p>Attack and Kill the guards, so that you can perform rest of your work easily.
+                𝐓𝐞𝐫𝐦𝐢𝐧𝐚𝐭𝐢𝐧𝐠 𝐖𝐢𝐧𝐝𝐨𝐰𝐬 𝐃𝐞𝐟𝐞𝐧𝐝𝐞𝐫 by using BYOVD technique. . A technique designed to disable or bypass Endpoint Detection and Response (EDR) systems, often by targeting and manipulating EDR processes or services to evade detection.</p>
+            <a href="https://www.linkedin.com/posts/usman-sikander13_edrkiller-malwaredevelopment-mdebypass-activity-7201848552522711042-vySE?utm_source=share&utm_medium=member_desktop" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-image">
+        <img src="Assets/lagos_AI.jpg" alt="Lagos Island">
+        </div>
+        <div class="card-content">
+            <h3>LSASS.exe Memory Dumping Using Multiple Techniques</h3>
+            <p>𝘓𝘴𝘢𝘴𝘴.𝘦𝘹𝘦 𝘔𝘦𝘮𝘰𝘳𝘺 𝘋𝘶𝘮𝘱𝘪𝘯𝘨 𝘶𝘴𝘪𝘯𝘨 𝘤𝘰𝘮𝘣𝘪𝘯𝘢𝘵𝘪𝘰𝘯 𝘰𝘧 𝘵𝘩𝘳𝘦𝘦 𝘵𝘦𝘤𝘩𝘯𝘪𝘲𝘶𝘦𝘴 [𝐋𝐚𝐠𝐨𝐬 𝐈𝐬𝐥𝐚𝐧𝐝 𝐌𝐞𝐭𝐡𝐨𝐝 (𝐚.𝐤.𝐚 𝐑𝐞𝐟𝐥𝐞𝐜𝐭𝐢𝐯𝐞𝐋𝐨𝐚𝐝𝐢𝐧𝐠), 𝐖𝐢𝐧𝐝𝐨𝐰𝐬 𝐏𝐫𝐨𝐜𝐞𝐬𝐬 𝐈𝐧𝐣𝐞𝐜𝐭𝐢𝐨𝐧: 𝐂𝐨𝐧𝐬𝐨𝐥𝐞𝐖𝐢𝐧𝐝𝐨𝐰𝐂𝐥𝐚𝐬𝐬, 𝐖𝐢𝐧𝐝𝐨𝐰𝐬 𝐅𝐨𝐫𝐤𝐢𝐧𝐠].</p>
+            <a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F-activity-7210623488255000576-cEYF?utm_source=share&utm_medium=member_desktop" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-image">
+        <img src="Assets/uac_AI.jpg" alt=".NET Profiler">
+        </div>
+        <div class="card-content">
+            <h3>UAC Bypass Using .NET Profiler DLL Loading Vulnerability</h3>
+            <p>.NET profiler DLL loading can be abused to make a legit .NET application load a malicious DLL using environment variables. This exploit is loading a malicious DLL using Task Scheduler (MMC) to bypass UAC and getting admin privileges.</p>
+            <a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F-%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F-%3F%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F-activity-7223665314146713601-rySG?utm_source=share&utm_medium=member_deskto" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-image">
+        <img src="Assets/callback_AI.jpg" alt="EDR Callbacks">
+        </div>
+        <div class="card-content">
+            <h3>Remove EDR Callbacks Using Vulnerable Driver</h3>
+            <p>Explores the use of a vulnerable driver to disable EDR callbacks. BYOVD technique to remove 𝐌𝐢𝐜𝐫𝐨𝐬𝐨𝐟𝐭 𝐃𝐞𝐟𝐞𝐧𝐝𝐞𝐫 𝐏𝐬𝐒𝐞𝐭𝐂𝐫𝐞𝐚𝐭𝐞𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐍𝐨𝐭𝐢𝐟𝐲𝐑𝐨𝐮𝐭𝐢𝐧𝐞 callback routine. EDRs are using different callback routines to monitor the activities and sending telemetry for further analysis, 𝐏𝐬𝐒𝐞𝐭𝐂𝐫𝐞𝐚𝐭𝐞𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐍𝐨𝐭𝐢𝐟𝐲𝐑𝐨𝐮𝐭𝐢𝐧𝐞 is responsible when any new process is created this function called. </p>
+            <a href="https://www.linkedin.com/posts/usman-sikander13_edrs-are-complex-solutions-and-key-components-activity-7227289675130916864-deG5?utm_source=share&utm_medium=member_desktop" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-image">
+        <img src="Assets/PE_Ai.jpg" alt="PE BYOVD">
+        </div>
+        <div class="card-content">
+            <h3>Privilege Escalation Using Vulnerable Driver</h3>
+            <p>A guide to exploiting vulnerabilities in drivers to escalate privileges on compromised systems. Driver Micro-Star MSI Afterburner 4.6.2.15658 (aka 𝐑𝐓𝐂𝐨𝐫𝐞64.𝐬𝐲𝐬 and 𝐑𝐓𝐂𝐨𝐫𝐞32.𝐬𝐲𝐬) allows any authenticated user to read and write to arbitrary memory, I/O ports, and MSRs.</p>
+            <a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F-%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F-ugcPost-7226278965731069952-o6dD?utm_source=share&utm_medium=member_desktop" target="_blank" class="card-link">Read More</a>
+        </div>
+    </div>
+</div>
+
+<h2>Writeups For Cyber Community</h2>
+
+<div class="container">
+    <div class="iframe-container">
+        <iframe src="BYOVD.pdf"></iframe>
+    </div>
+    <div class="iframe-container">
+        <iframe src="PEB Walk.pdf"></iframe>
+    </div>
+    <div class="iframe-container">
+        <iframe src="EDRBYPASS.pdf"></iframe>
+    </div>
+    <div class="iframe-container">
+        <iframe src="Defense_Evasion.pdf"></iframe>
+    </div>
+</div>
+<div class="references" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;">
+    <h2>References</h2>
+    <ul style="list-style-type: none; padding: 0;">
+        <li style="margin-bottom: 10px;">
+            <a href="https://github.com/deepinstinct/Dirty-Vanity" style="text-decoration: none; color: #007bff;">Reference 1</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="https://www.securityjoes.com/post/process-mockingjay-echoing-rwx-in-userland-to-achieve-code-execution" style="text-decoration: none; color: #007bff;">Reference 2</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="https://github.com/outflanknl/Dumpert" style="text-decoration: none; color: #007bff;">Reference 3</a>
+        </li>
+        <!-- Add more references as needed -->
+    </ul>
+</div>
+
+<div class="disclaimer">
+    <h2>Disclaimer</h2>
+    <p>The content, techniques, and tools provided in this repository are intended solely for educational and research purposes within the cybersecurity community. I explicitly disclaim any responsibility for the misuse or unlawful use of the provided materials. Any actions taken based on the information are done so at the user's own risk.</p>
+</div>
+</body>
+</html>
