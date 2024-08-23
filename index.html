@@ -11,7 +11,7 @@ layout: default
     <title>Open Source Work</title>
     <style>
 
-        /* Card Container Styling */
+       /* Card Container Styling */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -30,13 +30,16 @@ layout: default
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     background-color: #fff;
+    flex-direction: row; /* Arrange image and content horizontally */
 }
 
 /* Image Styling */
 .card-image {
     width: 300px; /* Fixed width for image */
     height: 200px; /* Fixed height for image */
-    overflow: hidden; /* Ensure image doesn't overflow container */
+    display: flex;
+    align-items: center; /* Center image vertically */
+    overflow: hidden;
 }
 
 .card-image img {
@@ -51,17 +54,16 @@ layout: default
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensure content is spaced properly */
-    max-width: calc(100% - 300px); /* Adjust based on image width */
 }
 
 .card-content h3 {
     margin: 0;
     font-size: 1.2em;
+    margin-bottom: 16px; /* Space between heading and content */
 }
 
 .card-content p {
-    margin: 8px 0 16px;
+    margin: 0 0 16px;
     font-size: 0.9em;
     color: #555;
 }
@@ -78,6 +80,7 @@ layout: default
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-color: #0073e6;
 }
+
 
          /* General styling for the page */
          body {
