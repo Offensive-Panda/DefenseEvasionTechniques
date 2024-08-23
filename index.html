@@ -9,7 +9,9 @@ layout: default
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Source Work</title>
-    <style>
+    
+<style>
+    
 /* Card Container Styling */
 .card-container {
     display: flex;
@@ -39,14 +41,6 @@ layout: default
     display: flex;
     justify-content: center; /* Center image horizontally */
 }
- .card-windows {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 24px;
-    height: 24px;
-    opacity: 0.7;
-    }
 
 .card-image img {
     width: 100%;
@@ -75,6 +69,14 @@ layout: default
     margin: 0;
     font-size: 0.9em;
     color: #555;
+}
+    /* Windows Icon Styling */
+.windows-icon {
+    position: absolute;
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+    width: 20px; /* Adjust icon size as needed */
+    height: 20px;
 }
 
    .card:hover {
@@ -198,7 +200,7 @@ layout: default
         <div class="card-image">
             <img src="Assets/BYOVD_AI.png" alt="BYOVD A Kernel Attack">
         </div>
-         <img src="Assets/windows-icon.png" class="card-windows" alt="Windows Icon">
+         <img src="Assets/windows-icon.png" class="windows-icon" alt="Windows Icon">
         <div class="card-content">
             <h3>BYOVD A Kernel Attack: Stealthy Threat to Endpoint Security</h3>
             <p>Delve into the intricacies of BYOVD attacks, exploring how malicious actors exploit this technique to blind, terminate, and manipulate endpoint detection and response (EDR) solutions. We will dissect the mechanisms used to obtain NT Authority context and remove EDR callbacks, providing practical demonstrations of these attacks.</p>
