@@ -24,7 +24,7 @@ layout: default
     display: flex;
     flex-direction: row; /* Change to row for horizontal layout */
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
@@ -69,12 +69,9 @@ layout: default
     color: #555;
 }
 
-/* Hover Effect */
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border-color: #0073e6;
-}
+   .card:hover {
+            transform: scale(1.05);
+        }
 
          /* General styling for the page */
          body {
@@ -158,18 +155,18 @@ layout: default
     </style>
 </head>
 <body>
-    <div align="center">
+    <div align="center" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;>
         <img width="400px" src="Assets/MD.jpg" alt="Evasion Series" />
         <br />
     </div>
-    <div class="content-section">
+    <div class="content-section" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;>
         <h2>C:\Users\Offensive-Panda>whoami</h2>
          <p> <B>Usman Sikander</B> (a.k.a Offensive-Panda) is a seasoned security professional specializing in adversary emulation, malware analysis, and red teaming. With a focus on practical application, he excels in analyzing real-world threats to extract Tactics, Techniques, and Procedures (TTPs), validating security postures through Advanced Persistent Threat (APT) emulations, and developing exploits across MITRE ATT&CK tactics. His expertise lies in enhancing security measures by leveraging meticulous research and hands-on experience.</p>
          <h2>Purpose</h2>
          <p>This collection offers advanced methods to bypass sophisticated security measures in Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. This comprehensive and central repository is designed for cybersecurity enthusiasts, researchers, and professionals seeking to stay ahead in the field. It provides a valuable resource for those dedicated to improving their skills, security defenses and  measures. This repository includes strategies for manipulating system calls, obfuscating code, managing memory to evade detection and other advanced evasion techniques. By leveraging these methods, experts can enhance penetration testing, red teaming, malware analysis, and develop more resilient defenses.</p>
         </div>
     <h2>Evasion Techniques Heatmap</h2>
-    <div class="heatmap">
+    <div class="heatmap" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;>
         <div class="heatmap-item very-high-intensity" data-tooltip="Strategies for making direct and indirect function calls to evade detection mechanisms.">Direct and Indirect Syscalls</div>
         <div class="heatmap-item medium-intensity" data-tooltip="Techniques for obfuscating and altering API calls to avoid detection.">API Hashing</div>
         <div class="heatmap-item medium-intensity" data-tooltip="Methods to obfuscate code and make it harder to analyze.">API Imports Obfuscation</div>
@@ -189,7 +186,7 @@ layout: default
         <div class="heatmap-item very-high-intensity" data-tooltip="Bring your own vulnerable driver which involves deploying drivers that are legitimately signed and can be successfully loaded into Windows systems to execute code in kernel context.">BYOVD</div>
     </div>
 <h2>Read My Blogs</h2>
-<div class="card-container">
+<div class="card-container" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;>
     <!-- Card 1 -->
     <div class="card">
         <div class="card-image">
@@ -288,8 +285,8 @@ layout: default
 </div>
 
 
-<h2>GitHub Repositories</h2>
-<div class="card-container">
+<h2>Code Implementation</h2>
+<div class="card-container" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;>
     <!-- Card 1 -->
     <div class="card">
         <div class="card-image">
@@ -422,8 +419,8 @@ layout: default
         </div>
     </div>
 </div>
-<h2>Read My Posts</h2>
-<div class="card-container">
+<h2>Practical Demonstration</h2>
+<div class="card-container" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;>
     <!-- Card 1 -->
     <div class="card">
         <div class="card-image">
@@ -619,7 +616,7 @@ layout: default
     </ul>
 </div>
 
-<div class="disclaimer">
+<div class="disclaimer" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;>
     <h2>Disclaimer</h2>
     <p>The content, techniques, and tools provided in this repository are intended solely for educational and research purposes within the cybersecurity community. I explicitly disclaim any responsibility for the misuse or unlawful use of the provided materials. Any actions taken based on the information are done so at the user's own risk.</p>
 </div>
