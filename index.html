@@ -204,7 +204,7 @@ layout: default
         </div>
         <div class="card-content">
             <h3>Arsenal 2.0: Elevating Malware Stealth Tactics to Bypass Static Detection</h3>
-            <p>Diving into advanced techniques for malware to evade static detection by EDR/XDR solutions. This blog is an extension of my previous post, “Arsenal: Bypass EDR’s/XDR’s and make malware analysis harder.” In this follow-up, i explore additional static detection bypass techniques, offering advanced strategies to enhance your toolkit.</p>
+            <p>Diving into advanced techniques for malware to evade static detection by EDR/XDR solutions. This blog is an extension of my previous post, "Arsenal: Bypass EDR’s/XDR’s and make malware analysis harder".</p>
             <a href="https://medium.com/@merasor07/arsenal-2-0-elevating-malware-stealth-tactics-to-bypass-static-detection-5238c573ab02" target="_blank" class="card-link">Read More</a>
         </div>
     </div>
@@ -216,7 +216,7 @@ layout: default
         </div>
         <div class="card-content">
             <h3>PEB Walk: Avoid API function calls inspection in IAT by analyst and also bypass static detection of AV/EDR</h3>
-            <p>Techniques to evade static detection methods used by AV/EDR solutions. We divide our arsenal preparation into 4 main stages, we try to hide strings, API imports by obfuscating them, resolve API using different ways such as dynamically walking the process environment block (PEB) and resolve export functions by parsing kernel32.dll in-memory to hide imports</p>
+            <p>Techniques to evade static detection methods used by AV/EDR solutions. We divide our arsenal preparation into 4 main stages, we try to hide strings, API imports by obfuscating them, resolve API using different ways such as dynamically.</p>
             <a href="https://medium.com/@merasor07/peb-walk-avoid-api-calls-inspection-in-iat-by-analyst-and-bypass-static-detection-of-1a2ef9bd4c94" target="_blank" class="card-link">Read More</a>
         </div>
     </div>
@@ -264,7 +264,7 @@ layout: default
         </div>
         <div class="card-content">
             <h3>AV/EDR Evasion Using Direct System Calls (User-Mode vs Kernel-Mode)</h3>
-            <p>Hooking is a method used by AV/EDRs to intercept a function call and redirect the code flow to a controlled environment where they can analyze the call and decide whether or not it is malicious. Looking at the Windows Architecture, we can see that the interaction between the OS’s surface and depths is managed by a library named NTDLL.DLL.</p>
+            <p>Hooking is a method used by AV/EDRs to intercept a function call and redirect the code flow to a controlled environment where they can analyze the call and decide whether or not it is malicious.</p>
             <a href="https://medium.com/@merasor07/av-edr-evasion-using-direct-system-calls-user-mode-vs-kernel-mode-fad2fdfed01a" target="_blank" class="card-link">Read More</a>
         </div>
     </div>
@@ -291,7 +291,7 @@ layout: default
         </div>
         <div class="card-content">
             <h3>D3MPSEC</h3>
-            <p>"D3MPSEC" is a memory dumping tool designed to extract memory dump from Lsass process using various techniques, including direct system calls, randomized procedures, and prototype name obfuscation. Its primary purpose is to bypass both static and dynamic analysis techniques commonly employed by security measures.</p>
+            <p>"D3MPSEC" is a memory dumping tool designed to extract memory dump from Lsass process using various techniques, including direct system calls, randomized procedures, and prototype name obfuscation. </p>
             <a href="https://github.com/Offensive-Panda/D3MPSEC" target="_blank" class="card-link">View on GitHub</a>
         </div>
     </div>
@@ -303,7 +303,7 @@ layout: default
         </div>
         <div class="card-content">
             <h3>Dirty Vanity (DV_NEW)</h3>
-            <p>This is the combination of multiple evasion techniques. It is using direct syscalls to bypass user-mode EDR hooking and also to avoid static detection of syscalls instruction in stub I am using egg hunt technique. Egg hunt will place random bytes using DB instruction in syscall stub in the place of syscalls instructions and on run time it patch again those bytes with syscall instruction to transit into kernel.</p>
+            <p>This is the combination of multiple evasion techniques. It is using direct syscalls to bypass user-mode EDR hooking and also to avoid static detection of syscalls instruction in stub I am using egg hunt technique.</p>
             <a href="https://github.com/Offensive-Panda/DV_NEW" target="_blank" class="card-link">View on GitHub</a>
         </div>
     </div>
@@ -339,7 +339,7 @@ layout: default
         </div>
         <div class="card-content">
             <h3>Bypass Malware Static Analysis</h3>
-            <p>Direct syscalls Injection to bypass AV/EDR. The main purpose of this repository is to understand the static detection and how to bypass it. When I was using direct syscalls in my implant, after compiling the code MDE was detecting the binary in static analysis. I found that MDE is looking for "syscall" instructions because for sure it is not a common behaviour to use these instructions directly into binary. So i added some nop instructions and series of extra instructions to bypass the static analysis.</p>
+            <p>Direct syscalls Injection to bypass AV/EDR. The main purpose of this repository is to understand the static detection and how to bypass it. When I was using direct syscalls in my implant, after compiling the code MDE was detecting the binary in static analysis.</p>
             <a href="https://github.com/Offensive-Panda/on-disk-detection-bypass" target="_blank" class="card-link">View on GitHub</a>
         </div>
     </div>
@@ -375,7 +375,7 @@ layout: default
         </div>
         <div class="card-content">
             <h3>WPM Magic and Injection</h3>
-            <p>Utilising AddressOfEntryPoint of process which is RX and using WriteProcessMemory internal magic to change the permission and write the shellcode. Exploit also using direct syscalls to bypass user-mode hooking of AV/EDRs. This technique is avoiding the usage of VirtualAlloc, VirtualProtect APIs directly inside the code. The working of VirtualProtect will be covered by WPM magic.</p>
+            <p>Utilising AddressOfEntryPoint of process which is RX and using WriteProcessMemory internal magic to change the permission and write the shellcode. Exploit also using direct syscalls to bypass user-mode hooking of AV/EDRs. This technique is avoiding the usage of VirtualAlloc, VirtualProtect APIs.</p>
             <a href="https://github.com/Offensive-Panda/WPM-MAJIC-ENTRY-POINT-INJECTION" target="_blank" class="card-link">View on GitHub</a>
         </div>
     </div>
@@ -387,8 +387,7 @@ layout: default
         </div>
         <div class="card-content">
             <h3>PEB Walk and API Obfuscation</h3>
-            <p>This exploit use PEB walk technique to resolve API calls dynamically and obfuscate all API calls to perform process injection. These technqies will help to bypass static analysis of AV/EDR solutions. To outline the process, the PEB walk for resolving the addresses of LoadLibraryA and GetProcAddress is as follows. Obtain and access the PEB structure of the current process. Navigate to the PEB_LDR_DATA structure using the Ldr member of the PEB. Iterate through the InLoadOrderModuleList to locate the LDR_DATA_TABLE_ENTRY for kernel32.dll.
-Once the entry for kernel32.dll is found, extract its base address. Manually parse the export table of kernel32.dll to resolve the addresses of LoadLibraryA and GetProcAddress.</p>
+            <p>This exploit use PEB walk technique to resolve API calls dynamically and obfuscate all API calls to perform process injection. These technqies will help to bypass static analysis of AV/EDR solutions. To outline the process, the PEB walk for resolving the addresses of LoadLibraryA and GetProcAddress is as follows.</p>
             <a href="https://github.com/Offensive-Panda/PEB_WALK_AND_API_OBFUSCATION_INJECTION" target="_blank" class="card-link">View on GitHub</a>
         </div>
     </div>
@@ -412,7 +411,7 @@ Once the entry for kernel32.dll is found, extract its base address. Manually par
         </div>
         <div class="card-content">
             <h3>BYOVD for Privilege Escalation</h3>
-            <p>This exploit rebuilds and exploit the CVE-2019-16098 which is in driver Micro-Star MSI Afterburner 4.6.2.15658 (aka RTCore64.sys and RTCore32.sys) allows any authenticated user to read and write to arbitrary memory, I/O ports, and MSRs. Instead of hardcoded base address of Ntoskrnl.exe, I calculated it dynamically and recalculated all offsets for new version of windows.</p>
+            <p>This exploit rebuilds and exploit the CVE-2019-16098 which is in driver Micro-Star MSI Afterburner 4.6.2.15658 (aka RTCore64.sys and RTCore32.sys) allows any authenticated user to read and write to arbitrary memory, I/O ports, and MSRs. Instead of hardcoded base address of Ntoskrnl.exe.</p>
             <a href="https://github.com/Offensive-Panda/NT-AUTHORITY-SYSTEM-CONTEXT-RTCORE" target="_blank" class="card-link">View on GitHub</a>
         </div>
     </div>
@@ -427,7 +426,7 @@ Once the entry for kernel32.dll is found, extract its base address. Manually par
         </div>
         <div class="card-content">
             <h3>Dirty Vanity Implementation Using Direct Syscalls</h3>
-            <p>This is the combination of multiple evasion techniques. It is using direct syscalls to bypass user-mode EDR hooking and also to avoid static detection of syscalls instruction in stub I am using egg hunt technique. Egg hunt will place random bytes using DB instruction in syscall stub in the place of syscalls instructions and on run time it patch again those bytes with syscall instruction to transit into kernel. Also I am using random prototypes and procedures in order to bypass static analysis. This technique is testing on 𝐛𝐢𝐭𝐝𝐞𝐟𝐞𝐧𝐝𝐞𝐫 𝐚𝐧𝐝 𝐌𝐃𝐄 both are bypassed. </p>
+            <p>This is the combination of multiple evasion techniques. It is using direct syscalls to bypass user-mode EDR hooking and also to avoid static detection of syscalls instruction in stub I am using egg hunt technique. Egg hunt will place random bytes using DB instruction in syscall stub in the place of syscalls </p>
             <a href="https://www.linkedin.com/posts/usman-sikander13_malwaredevelopment-syscalls-forking-activity-7193958115556343808-8UzK?utm_source=share&utm_medium=member_desktop" target="_blank" class="card-link">Read More</a>
         </div>
     </div>
@@ -487,7 +486,7 @@ Once the entry for kernel32.dll is found, extract its base address. Manually par
         </div>
         <div class="card-content">
             <h3>Mark-of-the-Web for Red Team</h3>
-            <p>Bypass security features related to Mark-of-the-Web in Red Team engagements. For macros in files obtained from the internet, users will no longer be able to enable content with a click of a button. A message bar will appear for users notifying them with a button to learn more. The default is more secure and is expected to keep more users safe including home users and information workers in managed organizations. Windows added attribute MOTW (Mark of the Web) to files downloaded by untrusted location (Internet or Restricted Zone).</p>
+            <p>Bypass security features related to Mark-of-the-Web in Red Team engagements. For macros in files obtained from the internet, users will no longer be able to enable content with a click of a button. A message bar will appear for users notifying them with a button to learn more.</p>
             <a href="https://www.linkedin.com/posts/usman-sikander13_bypass-macro-vba-activity-6900000010717458433-lAH2?utm_source=share&utm_medium=member_desktop" target="_blank" class="card-link">Read More</a>
         </div>
     </div>
