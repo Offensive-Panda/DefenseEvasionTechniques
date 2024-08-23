@@ -47,6 +47,14 @@ layout: default
     height: auto;
     object-fit: cover;
 }
+.card-image windows-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 24px;
+            height: 24px;
+            opacity: 0.7;
+        }
 
 /* Right Part Styling (Heading and Description) */
 .card-content {
@@ -70,16 +78,7 @@ layout: default
     font-size: 0.9em;
     color: #555;
 }
-    /* Windows Icon Styling */
-.card-icon {
-    position: absolute;
-    top: 10px; /* Adjust top position as needed */
-    right: 10px; /* Adjust right position as needed */
-    width: 20px; /* Adjust icon size as needed */
-    height: 20px;
-}
-
-   .card:hover {
+.card:hover {
             transform: scale(1.05);
         }
 
@@ -198,10 +197,8 @@ layout: default
     <!-- Card 1 -->
     <div class="card">
         <div class="card-image">
+             <img src="Assets/windows-icon.png" class="windows-icon" alt="Windows Icon">
             <img src="Assets/BYOVD_AI.png" alt="BYOVD A Kernel Attack">
-        </div>
-        <div class="card-icon">
-         <img src="Assets/windows-icon.png" alt="Windows Icon">
         </div>
         <div class="card-content">
             <h3>BYOVD A Kernel Attack: Stealthy Threat to Endpoint Security</h3>
