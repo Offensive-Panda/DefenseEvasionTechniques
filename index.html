@@ -24,7 +24,7 @@ layout: default
     display: flex;
     flex-direction: row; /* Change to row for horizontal layout */
     width: 100%;
-    max-width: 1000px;
+    max-width: 900px;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
@@ -41,7 +41,7 @@ layout: default
 }
 
 .card-image img {
-    width: 100%;
+    width: 80%;
     height: auto;
     object-fit: cover;
 }
@@ -155,7 +155,7 @@ layout: default
     </style>
 </head>
 <body>
-    <div align="center" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;>
+    <div align="center">
         <img width="400px" src="Assets/MD.jpg" alt="Evasion Series" />
         <br />
     </div>
@@ -166,7 +166,7 @@ layout: default
          <p>This collection offers advanced methods to bypass sophisticated security measures in Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR) systems. This comprehensive and central repository is designed for cybersecurity enthusiasts, researchers, and professionals seeking to stay ahead in the field. It provides a valuable resource for those dedicated to improving their skills, security defenses and  measures. This repository includes strategies for manipulating system calls, obfuscating code, managing memory to evade detection and other advanced evasion techniques. By leveraging these methods, experts can enhance penetration testing, red teaming, malware analysis, and develop more resilient defenses.</p>
         </div>
     <h2>Evasion Techniques Heatmap</h2>
-    <div class="heatmap" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;>
+    <div class="heatmap">
         <div class="heatmap-item very-high-intensity" data-tooltip="Strategies for making direct and indirect function calls to evade detection mechanisms.">Direct and Indirect Syscalls</div>
         <div class="heatmap-item medium-intensity" data-tooltip="Techniques for obfuscating and altering API calls to avoid detection.">API Hashing</div>
         <div class="heatmap-item medium-intensity" data-tooltip="Methods to obfuscate code and make it harder to analyze.">API Imports Obfuscation</div>
@@ -186,7 +186,7 @@ layout: default
         <div class="heatmap-item very-high-intensity" data-tooltip="Bring your own vulnerable driver which involves deploying drivers that are legitimately signed and can be successfully loaded into Windows systems to execute code in kernel context.">BYOVD</div>
     </div>
 <h2>Read My Blogs</h2>
-<div class="card-container" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;>
+<div class="card-container">
     <!-- Card 1 -->
     <div class="card">
         <div class="card-image">
@@ -286,7 +286,7 @@ layout: default
 
 
 <h2>Code Implementation</h2>
-<div class="card-container" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;>
+<div class="card-container">
     <!-- Card 1 -->
     <div class="card">
         <div class="card-image">
@@ -420,7 +420,7 @@ layout: default
     </div>
 </div>
 <h2>Practical Demonstration</h2>
-<div class="card-container" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;>
+<div class="card-container">
     <!-- Card 1 -->
     <div class="card">
         <div class="card-image">
@@ -600,23 +600,29 @@ layout: default
         <iframe src="Defense_Evasion.pdf"></iframe>
     </div>
 </div>
-<div class="references" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;">
+<div class="references">
     <h2>References</h2>
     <ul style="list-style-type: none; padding: 0;">
         <li style="margin-bottom: 10px;">
-            <a href="https://github.com/deepinstinct/Dirty-Vanity" style="text-decoration: none; color: #007bff;">Reference 1</a>
+            <a href="https://attack.mitre.org/matrices/enterprise/" style="text-decoration: none; color: #007bff;">https://attack.mitre.org/matrices/enterprise/</a>
         </li>
         <li style="margin-bottom: 10px;">
-            <a href="https://www.securityjoes.com/post/process-mockingjay-echoing-rwx-in-userland-to-achieve-code-execution" style="text-decoration: none; color: #007bff;">Reference 2</a>
+            <a href="https://www.linkedin.com/in/usman-sikander13/" style="text-decoration: none; color: #007bff;">https://www.linkedin.com/in/usman-sikander13/</a>
         </li>
         <li style="margin-bottom: 10px;">
-            <a href="https://github.com/outflanknl/Dumpert" style="text-decoration: none; color: #007bff;">Reference 3</a>
+            <a href="https://github.com/deepinstinct/Dirty-Vanity" style="text-decoration: none; color: #007bff;">https://github.com/deepinstinct/Dirty-Vanity</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="https://www.securityjoes.com/post/process-mockingjay-echoing-rwx-in-userland-to-achieve-code-execution" style="text-decoration: none; color: #007bff;">https://www.securityjoes.com/post/process-mockingjay-echoing-rwx-in-userland-to-achieve-code-execution</a>
+        </li>
+        <li style="margin-bottom: 10px;">
+            <a href="https://github.com/outflanknl/Dumpert" style="text-decoration: none; color: #007bff;">https://github.com/outflanknl/Dumpert</a>
         </li>
         <!-- Add more references as needed -->
     </ul>
 </div>
 
-<div class="disclaimer" style="padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;>
+<div class="disclaimer">
     <h2>Disclaimer</h2>
     <p>The content, techniques, and tools provided in this repository are intended solely for educational and research purposes within the cybersecurity community. I explicitly disclaim any responsibility for the misuse or unlawful use of the provided materials. Any actions taken based on the information are done so at the user's own risk.</p>
 </div>
