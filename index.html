@@ -39,6 +39,14 @@ layout: default
     display: flex;
     justify-content: center; /* Center image horizontally */
 }
+ .card img.windows-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 24px;
+            height: 24px;
+            opacity: 0.7;
+        }
 
 .card-image img {
     width: 100%;
@@ -190,6 +198,7 @@ layout: default
         <div class="card-image">
             <img src="Assets/BYOVD_AI.png" alt="BYOVD A Kernel Attack">
         </div>
+         <img src="Assets/windows-icon.png" class="windows-icon" alt="Windows Icon">
         <div class="card-content">
             <h3>BYOVD A Kernel Attack: Stealthy Threat to Endpoint Security</h3>
             <p>Delve into the intricacies of BYOVD attacks, exploring how malicious actors exploit this technique to blind, terminate, and manipulate endpoint detection and response (EDR) solutions. We will dissect the mechanisms used to obtain NT Authority context and remove EDR callbacks, providing practical demonstrations of these attacks.</p>
@@ -202,6 +211,7 @@ layout: default
         <div class="card-image">
             <img src="Assets/static_AI.jpg" alt="Arsenal 2.0">
         </div>
+        
         <div class="card-content">
             <h3>Arsenal 2.0: Elevating Malware Stealth Tactics to Bypass Static Detection</h3>
             <p>Diving into advanced techniques for malware to evade static detection by EDR/XDR solutions. This blog is an extension of my previous post, "Arsenal: Bypass EDR’s/XDR’s and make malware analysis harder".</p>
@@ -566,7 +576,7 @@ layout: default
         </div>
         <div class="card-content">
             <h3>Remove EDR Callbacks Using Vulnerable Driver</h3>
-            <p>Explores the use of a vulnerable driver to disable EDR callbacks. BYOVD technique to remove 𝐌𝐢𝐜𝐫𝐨𝐬𝐨𝐟𝐭 𝐃𝐞𝐟𝐞𝐧𝐝𝐞𝐫 𝐏𝐬𝐒𝐞𝐭𝐂𝐫𝐞𝐚𝐭𝐞𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐍𝐨𝐭𝐢𝐟𝐲𝐑𝐨𝐮𝐭𝐢𝐧𝐞 callback routine. EDRs are using different callback routines to monitor the activities and sending telemetry for further analysis, 𝐏𝐬𝐒𝐞𝐭𝐂𝐫𝐞𝐚𝐭𝐞𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐍𝐨𝐭𝐢𝐟𝐲𝐑𝐨𝐮𝐭𝐢𝐧𝐞 is responsible when any new process is created this function called. </p>
+            <p>Explores the use of a vulnerable driver to disable EDR callbacks. BYOVD technique to remove 𝐌𝐢𝐜𝐫𝐨𝐬𝐨𝐟𝐭 𝐃𝐞𝐟𝐞𝐧𝐝𝐞𝐫 𝐏𝐬𝐒𝐞𝐭𝐂𝐫𝐞𝐚𝐭𝐞𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐍𝐨𝐭𝐢𝐟𝐲𝐑𝐨𝐮𝐭𝐢𝐧𝐞 callback routine. EDRs are using different callback routines to monitor the activities and sending telemetry for further analysis. </p>
             <a href="https://www.linkedin.com/posts/usman-sikander13_edrs-are-complex-solutions-and-key-components-activity-7227289675130916864-deG5?utm_source=share&utm_medium=member_desktop" target="_blank" class="card-link">Read More</a>
         </div>
     </div>
