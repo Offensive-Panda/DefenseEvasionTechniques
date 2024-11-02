@@ -310,7 +310,7 @@
 </html>
 
 ### Demo
-The following GIF showing the main page of Defense Evasion series.
+The following GIF showing the main page of defense evasion series.
 ![Demo](Assets/Demo.gif)
 
 --------------------------------------------------
