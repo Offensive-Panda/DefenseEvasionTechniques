@@ -310,7 +310,7 @@
 </html>
 
 ### Demo
-The following GIF showing the main page of process injection series.
+The following GIF showing the main page of Defense Evasion series.
 ![Demo](Assets/Demo.gif)
 
 --------------------------------------------------
