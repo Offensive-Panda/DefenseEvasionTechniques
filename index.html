@@ -185,9 +185,9 @@ layout: default
         <div class="heatmap-item medium-intensity" data-tooltip="Methods to obfuscate code and make it harder to analyze.">API Imports Obfuscation</div>
         <div class="heatmap-item high-intensity" data-tooltip="Use of encryption to bypass static analysis of EDRs.">Payload Encryption</div>
         <div class="heatmap-item high-intensity" data-tooltip="Syscall Instruction In-memory patching to bypass static detection.">Egg Hunting</div>
-        <div class="heatmap-item high-intensity" data-tooltip="A technique to circumvent User Account Control (UAC) prompts to gain elevated privileges without user consent.">UAC Bypass</div>
-        <div class="heatmap-item high-intensity" data-tooltip="A .NET technique that leverages the COR_PROFILER environment variable to load a profiler DLL, which can be used to manipulate or monitor .NET applications.">COR_PROFILER</div>
-        <div class="heatmap-item high-intensity" data-tooltip="Use random NOP instructions and name of API, prototypes to avoid static analysis.">Random Instructions and Prototypes</div>
+        <div class="heatmap-item high-intensity" data-tooltip="A technique to circumvent User Account Control (UAC) prompts to gain elevated privileges without user consent.">Privileges Escalation BYOVD</div>
+        <div class="heatmap-item high-intensity" data-tooltip="A .NET technique that leverages the COR_PROFILER environment variable to load a profiler DLL, which can be used to manipulate or monitor .NET applications.">COR_PROFILER UAC Bypass</div>
+        <div class="heatmap-item high-intensity" data-tooltip="Use random NOP instructions and name of API, prototypes to avoid static analysis.">Random Instructions and Prototypes (Static Bypass)</div>
         <div class="heatmap-item very-high-intensity" data-tooltip="Use of vulnerable dll to avoid detection of RWX memory region creation.">Mokingjay</div>
         <div class="heatmap-item very-high-intensity" data-tooltip="Use of windows fork API to clone parent process after injecting shellcode, avoid detection of CreateRemoteThread.">Forking Technique Memory Dumps</div>
         <div class="heatmap-item very-high-intensity" data-tooltip="Unhooking EDRs user mode hooks using clean copy of dll, raw copy from remote server, suspended process to bypass EDRs.">API Unhooking</div>
@@ -196,7 +196,9 @@ layout: default
         <div class="heatmap-item high-intensity" data-tooltip="Techniques that involve disabling or tampering with security tools or monitoring systems ">Disable and Modify Tools</div>
         <div class="heatmap-item very-high-intensity" data-tooltip="Lagos Island, also known as Reflective Loading, is a sophisticated technique for loading a Dynamic Link Library (DLL) directly into a process’s memory space">Lagos Island (Reflective Loading)</div>
         <div class="heatmap-item high-intensity" data-tooltip="Hunt for already created RWX region to write and execute shellcode. This technique remove the dependencies of vulnerable DLL with RWX and API to allocate RWX.">RWX Memory Block Hunt</div>
-        <div class="heatmap-item very-high-intensity" data-tooltip="Bring your own vulnerable driver which involves deploying drivers that are legitimately signed and can be successfully loaded into Windows systems to execute code in kernel context.">BYOVD</div>
+        <div class="heatmap-item very-high-intensity" data-tooltip="Bring your own vulnerable driver which involves deploying drivers that are legitimately signed and can be successfully loaded into Windows systems to execute code in kernel context.">BYOVD Techniques</div>
+        <div class="heatmap-item very-high-intensity" data-tooltip="Leverages direct syscalls to create a native dump with essential streams for offline parsing, perfect for low-noise operations.">Native Dump with Direct Syscalls</div>
+    </div>
     </div>
 <h2>Check Out My Articles</h2>
 <div class="card-container">
@@ -432,7 +434,31 @@ layout: default
         </div>
     </div>
 </div>
-    
+
+        <!-- Card 12 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/lsass_AI.jpg" alt="BYOVD">
+        </div>
+        <div class="card-content">
+            <h3>LsassReflectDumping</h3>
+            <p>This tool leverages the Process Forking technique using the RtlCreateProcessReflection API to clone the lsass.exe process. Once the clone is created, it utilizes MINIDUMP_CALLBACK_INFORMATION callbacks to generate a memory dump of the cloned process.</p>
+            <a href="https://github.com/Offensive-Panda/LsassReflectDumping" target="_blank" class="card-link">View on GitHub</a>
+        </div>
+    </div>
+</div>
+    <!-- Card 13 -->
+    <div class="card">
+        <div class="card-image">
+            <img src="Assets/shadow_AI.png" alt="BYOVD">
+        </div>
+        <div class="card-content">
+            <h3>ShadowDumper</h3>
+            <p>Shadow Dumper is a powerful tool used to dump LSASS memory, often needed in penetration testing and red teaming. It uses multiple advanced techniques to dump memory, allowing to access sensitive data in LSASS memory.</p>
+            <a href="https://github.com/Offensive-Panda/ShadowDumper" target="_blank" class="card-link">View on GitHub</a>
+        </div>
+    </div>
+</div>
 <h2>Demonstration</h2>
 <div class="card-container">
     <!-- Card 1 -->
