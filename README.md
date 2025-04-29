@@ -15,6 +15,12 @@
             <a href="#" style="text-decoration: underline; color: inherit; font-weight: bold;">Blog Link</a>
         </th>
     </tr>
+   <tr>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">Shadows of LSASS Dumping: Evasion Techniques and the Ongoing Struggle of EDR Solutions to Defend a Prime Attacker Target</td>
+        <td style="border: 1px solid black; padding: 8px; text-align: left;">
+            <a href="https://medium.com/@merasor07/shadows-of-lsass-dumping-evasion-techniques-and-the-ongoing-struggle-of-edr-solutions-to-defend-a-6701f4d6856b" style="text-decoration: underline; color: inherit; font-weight: bold;">https://medium.com/@merasor07/shadows-of-lsass-dumping-evasion-techniques-and-the-ongoing-struggle-of-edr-solutions-to-defend-a-6701f4d6856b</a>
+        </td>
+    </tr>
       <tr>
         <td style="border: 1px solid black; padding: 8px; text-align: left;">BYOVD A Kernel Attack: Stealthy Threat to Endpoint Security</td>
         <td style="border: 1px solid black; padding: 8px; text-align: left;">
