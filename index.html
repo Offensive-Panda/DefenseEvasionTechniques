@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DefenseEvasionTechniques — Offensive-Panda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:     #0b0f1a;
+  --surface:#111827;
+  --card:   #161d2e;
+  --border: #1e2d42;
+  --border2:#2a3d56;
+  --green:  #22d87e;
+  --cyan:   #22c5e8;
+  --purple: #a78bfa;
+  --orange: #fb923c;
+  --white:  #f1f5fb;
+  --silver: #c4cfe3;
+  --muted:  #8899bb;
+  --dim:    #4a5e7a;
+  --mono:'JetBrains Mono',monospace;
+  --disp:'Syne',sans-serif;
+  --body:'Inter',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--white);font-family:var(--body);line-height:1.6;overflow-x:hidden}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--surface)}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:5px}
+
+/* ── NAV ── */
+nav{
+  position:sticky;top:0;z-index:200;
+  height:62px;display:flex;align-items:center;justify-content:space-between;
+  padding:0 clamp(16px,5vw,80px);
+  background:rgba(11,15,26,.92);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--border);
+}
+.nav-logo{
+  font-family:var(--mono);font-size:14px;font-weight:700;
+  color:var(--green);text-decoration:none;letter-spacing:.02em;
+}
+.nav-logo span{color:var(--muted)}
+.nav-links{display:flex;gap:4px;list-style:none}
+.nav-links a{
+  font-family:var(--mono);font-size:11px;font-weight:500;
+  color:var(--silver);text-decoration:none;
+  letter-spacing:.08em;text-transform:uppercase;
+  padding:7px 14px;border-radius:6px;
+  transition:color .18s,background .18s;
+}
+.nav-links a:hover{color:var(--white);background:rgba(255,255,255,.06)}
+.nav-cta{
+  font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:#0b0f1a;background:var(--green);
+  padding:9px 20px;border-radius:7px;text-decoration:none;
+  box-shadow:0 2px 16px rgba(34,216,126,.3);
+  transition:filter .18s,transform .15s;
+}
+.nav-cta:hover{filter:brightness(1.1);transform:translateY(-1px)}
+
+/* ── HERO ── */
+.hero{
+  padding:90px clamp(16px,5vw,80px) 72px;
+  position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#0b0f1a 60%,#0d1728 100%);
+}
+.hero-accent{
+  position:absolute;top:-120px;right:-80px;width:640px;height:640px;border-radius:50%;
+  background:radial-gradient(circle,rgba(34,216,126,.07) 0%,transparent 65%);
+  pointer-events:none;
+}
+.hero-accent2{
+  position:absolute;bottom:-60px;left:40%;width:480px;height:480px;border-radius:50%;
+  background:radial-gradient(circle,rgba(34,197,232,.05) 0%,transparent 65%);
+  pointer-events:none;
+}
+.hero-grid-bg{
+  position:absolute;inset:0;
+  background-image:linear-gradient(rgba(34,216,126,.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(34,216,126,.04) 1px,transparent 1px);
+  background-size:56px 56px;
+  mask-image:radial-gradient(ellipse 80% 70% at 60% 0,black 30%,transparent 100%);
+}
+.hero-label{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--mono);font-size:11px;font-weight:600;
+  color:var(--green);letter-spacing:.2em;text-transform:uppercase;
+  margin-bottom:24px;
+}
+.hero-label-dot{
+  width:7px;height:7px;border-radius:50%;background:var(--green);
+  box-shadow:0 0 8px var(--green);
+  animation:blink 2s ease infinite;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+h1.hero-h{
+  font-family:var(--disp);font-size:clamp(42px,7vw,88px);
+  font-weight:800;line-height:1;letter-spacing:-.03em;
+  color:var(--white);margin-bottom:10px;
+}
+h1.hero-h .green{color:var(--green)}
+h1.hero-h .fade{color:rgba(241,245,251,.18)}
+.hero-sub{
+  font-size:clamp(15px,1.6vw,17px);color:var(--silver);
+  max-width:560px;line-height:1.78;margin:20px 0 44px;
+}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:64px}
+.btn-solid{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--green);color:#0b0f1a;
+  font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:13px 28px;border-radius:8px;text-decoration:none;
+  box-shadow:0 4px 20px rgba(34,216,126,.25);
+  transition:filter .18s,transform .15s,box-shadow .18s;
+}
+.btn-solid:hover{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 8px 32px rgba(34,216,126,.35)}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:8px;
+  background:transparent;color:var(--silver);
+  font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;
+  padding:13px 28px;border-radius:8px;text-decoration:none;
+  border:1px solid var(--border2);
+  transition:border-color .18s,color .18s,background .18s;
+}
+.btn-ghost:hover{border-color:var(--cyan);color:var(--cyan);background:rgba(34,197,232,.06)}
+
+/* STATS */
+.stats-row{
+  display:flex;flex-wrap:wrap;gap:0;
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:12px;overflow:hidden;max-width:600px;
+}
+.stat{flex:1;min-width:130px;padding:22px 28px;border-right:1px solid var(--border)}
+.stat:last-child{border-right:none}
+.stat-n{
+  font-family:var(--mono);font-size:30px;font-weight:700;
+  color:var(--green);line-height:1;margin-bottom:5px;
+}
+.stat-l{font-size:11px;font-weight:500;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+
+/* ── TERMINAL ── */
+.terminal-wrap{padding:0 clamp(16px,5vw,80px) 72px;position:relative;z-index:1}
+.terminal{
+  background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden;
+}
+.t-bar{
+  background:var(--card);border-bottom:1px solid var(--border);
+  padding:12px 18px;display:flex;align-items:center;gap:8px;
+}
+.dot{width:12px;height:12px;border-radius:50%}
+.dr{background:#ff5f56}.dy{background:#ffbd2e}.dg{background:#27c93f}
+.t-title{font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:8px}
+.t-body{padding:24px 28px;font-family:var(--mono);font-size:13px;line-height:2.1}
+.t-p{color:var(--green);font-weight:600}
+.t-c{color:var(--white)}
+.t-o{color:var(--cyan)}
+.t-g{color:var(--muted)}
+.t-w{color:#fbbf24;font-weight:600}
+.cur{display:inline-block;width:9px;height:15px;background:var(--green);vertical-align:text-bottom;animation:blink 1s step-end infinite}
+
+/* ── SECTION SHELL ── */
+.s{padding:88px clamp(16px,5vw,80px)}
+.s-alt{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+
+.sh{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;
+  margin-bottom:52px;padding-bottom:20px;
+  border-bottom:1px solid var(--border);
+}
+.sh-eye{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--green);letter-spacing:.22em;text-transform:uppercase;margin-bottom:8px}
+h2.sh-t{font-family:var(--disp);font-size:clamp(22px,3.5vw,32px);font-weight:700;color:var(--white);letter-spacing:-.02em}
+.sh-badge{
+  font-family:var(--mono);font-size:11px;font-weight:600;color:var(--muted);
+  padding:5px 14px;background:var(--card);border:1px solid var(--border);border-radius:20px;
+  white-space:nowrap;
+}
+
+/* ── WHOAMI ── */
+.who-grid{display:grid;grid-template-columns:260px 1fr;gap:60px;align-items:start}
+.who-sidebar{
+  background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:28px;position:sticky;top:78px;
+}
+.avatar{
+  width:68px;height:68px;border-radius:12px;
+  background:linear-gradient(135deg,rgba(34,216,126,.2),rgba(34,197,232,.2));
+  border:1.5px solid rgba(34,216,126,.4);
+  display:flex;align-items:center;justify-content:center;
+  font-size:28px;margin-bottom:18px;
+}
+.who-name{font-family:var(--disp);font-size:19px;font-weight:700;color:var(--white);margin-bottom:4px}
+.who-handle{font-family:var(--mono);font-size:12px;font-weight:600;color:var(--green);margin-bottom:22px}
+.who-div{height:1px;background:var(--border);margin:18px 0}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tag{
+  font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.07em;text-transform:uppercase;
+  padding:5px 10px;border-radius:5px;border:1px solid var(--border2);color:var(--silver);
+}
+.tg{border-color:rgba(34,216,126,.35);color:var(--green);background:rgba(34,216,126,.07)}
+.tb{border-color:rgba(34,197,232,.35);color:var(--cyan);background:rgba(34,197,232,.07)}
+.tp{border-color:rgba(167,139,250,.35);color:var(--purple);background:rgba(167,139,250,.07)}
+.to{border-color:rgba(251,146,60,.35);color:var(--orange);background:rgba(251,146,60,.07)}
+.dbrow{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+.dbtn{
+  font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--silver);border:1px solid var(--border2);border-radius:6px;
+  padding:7px 12px;text-decoration:none;transition:all .18s;
+}
+.dbtn:hover{border-color:rgba(251,191,36,.5);color:#fbbf24}
+
+.who-bio{font-size:15px;color:var(--silver);line-height:1.88}
+.who-bio p+p{margin-top:18px}
+.who-bio strong{color:var(--white);font-weight:600}
+
+/* ── HEATMAP ── */
+.heat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.heat-item{
+  background:var(--card);border:1px solid var(--border);border-radius:8px;
+  padding:14px 16px;display:flex;align-items:center;gap:10px;
+  font-family:var(--mono);font-size:12px;font-weight:500;color:var(--silver);
+  transition:all .2s;cursor:default;position:relative;overflow:hidden;
+}
+.heat-item::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:var(--green);transform:scaleY(0);transition:transform .2s;transform-origin:bottom;
+}
+.heat-item:hover{border-color:rgba(34,216,126,.35);color:var(--white);background:rgba(34,216,126,.05);transform:translateX(3px)}
+.heat-item:hover::before{transform:scaleY(1)}
+.hi-n{font-size:10px;color:var(--dim);min-width:22px;font-weight:600}
+
+/* ── CARDS ── */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:12px;
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:border-color .22s,transform .2s,box-shadow .22s;
+}
+.card:hover{
+  border-color:var(--border2);transform:translateY(-4px);
+  box-shadow:0 16px 40px rgba(0,0,0,.45);
+}
+.card-img-wrap{position:relative;overflow:hidden;aspect-ratio:16/8;background:var(--surface)}
+.card-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.card:hover .card-img-wrap img{transform:scale(1.05)}
+.card-img-fade{
+  position:absolute;bottom:0;left:0;right:0;height:55%;
+  background:linear-gradient(transparent,var(--card));pointer-events:none;
+}
+.card-body{padding:20px 22px 24px;flex:1;display:flex;flex-direction:column}
+.card-badges{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.badge{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:4px 9px;border-radius:4px}
+.bg{background:rgba(34,216,126,.12);color:var(--green);border:1px solid rgba(34,216,126,.25)}
+.bb{background:rgba(34,197,232,.12);color:var(--cyan);border:1px solid rgba(34,197,232,.25)}
+.bp{background:rgba(167,139,250,.12);color:var(--purple);border:1px solid rgba(167,139,250,.25)}
+.bo{background:rgba(251,146,60,.12);color:var(--orange);border:1px solid rgba(251,146,60,.25)}
+.card-title{font-family:var(--disp);font-size:15px;font-weight:700;color:var(--white);line-height:1.38;margin-bottom:10px}
+.card-desc{font-size:13px;font-weight:400;color:var(--silver);line-height:1.72;flex:1;margin-bottom:20px}
+.card-link{
+  display:inline-flex;align-items:center;gap:6px;width:fit-content;
+  font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--green);text-decoration:none;
+  padding:9px 16px;border-radius:7px;border:1px solid rgba(34,216,126,.25);background:rgba(34,216,126,.07);
+  transition:background .18s,border-color .18s,gap .18s;
+  margin-top:auto;
+}
+.card-link::after{content:'→'}
+.card-link:hover{background:rgba(34,216,126,.15);border-color:rgba(34,216,126,.5);gap:10px}
+.card-link.b{color:var(--cyan);border-color:rgba(34,197,232,.25);background:rgba(34,197,232,.07)}
+.card-link.b:hover{background:rgba(34,197,232,.15);border-color:rgba(34,197,232,.5)}
+
+/* DEMO card accent */
+.card.demo:hover{border-color:rgba(34,197,232,.3)}
+
+/* ── WRITEUPS ── */
+.wu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.wu-item{
+  background:var(--card);border:1px solid var(--border);border-radius:10px;
+  padding:18px 22px;display:flex;align-items:center;gap:16px;
+  text-decoration:none;transition:all .2s;position:relative;overflow:hidden;
+}
+.wu-item::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--orange),var(--purple));
+  transform:scaleY(0);transition:transform .2s;
+}
+.wu-item:hover{border-color:rgba(251,146,60,.3);background:rgba(251,146,60,.04);transform:translateY(-2px)}
+.wu-item:hover::before{transform:scaleY(1)}
+.wu-icon{
+  width:44px;height:44px;border-radius:10px;flex-shrink:0;
+  background:rgba(251,146,60,.12);border:1px solid rgba(251,146,60,.25);
+  display:flex;align-items:center;justify-content:center;font-size:20px;
+}
+.wu-name{font-family:var(--disp);font-size:14px;font-weight:700;color:var(--white)}
+.wu-type{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:3px}
+
+/* ── WRITEUP ENHANCEMENTS ── */
+.wu-item{justify-content:space-between}
+.wu-left{display:flex;align-items:center;gap:16px;flex:1;min-width:0}
+.wu-sub{font-family:var(--mono);font-size:10px;color:var(--dim);margin-top:4px;letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wu-dl{
+  flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:3px;
+  font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);border:1px solid var(--border2);border-radius:7px;
+  padding:7px 10px;transition:all .2s;
+}
+.wu-item:hover .wu-dl{border-color:rgba(251,146,60,.4);color:var(--orange)}
+.wu-dl-arrow{font-size:14px;line-height:1}
+.wu-icon-purple{background:rgba(167,139,250,.12);border-color:rgba(167,139,250,.3)!important}
+.wu-icon-cyan  {background:rgba(34,197,232,.12);border-color:rgba(34,197,232,.3)!important}
+.wu-icon-red   {background:rgba(239,68,68,.12);border-color:rgba(239,68,68,.3)!important}
+.wu-icon-green {background:rgba(34,216,126,.12);border-color:rgba(34,216,126,.3)!important}
+.wu-icon-orange{background:rgba(251,146,60,.12);border-color:rgba(251,146,60,.3)!important}
+
+/* ── REFS ── */
+.refs{display:flex;flex-direction:column;gap:8px}
+.ref{
+  display:flex;align-items:center;gap:14px;
+  font-family:var(--mono);font-size:12px;font-weight:500;
+  padding:14px 20px;background:var(--card);border:1px solid var(--border);border-radius:8px;
+  text-decoration:none;color:var(--silver);transition:all .2s;
+}
+.ref:hover{border-color:rgba(34,197,232,.35);color:var(--cyan);background:rgba(34,197,232,.05)}
+.ref-idx{font-size:10px;font-weight:700;color:var(--dim);min-width:22px}
+
+/* ── DISCLAIMER ── */
+.disclaimer{
+  background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.2);
+  border-radius:12px;padding:26px 30px;display:flex;gap:16px;margin-bottom:0;
+}
+.dis-icon{font-size:20px;flex-shrink:0;margin-top:2px}
+.dis-t{font-family:var(--mono);font-size:11px;font-weight:700;color:#f87171;letter-spacing:.15em;text-transform:uppercase;margin-bottom:8px}
+.dis-body{font-size:13px;color:var(--silver);line-height:1.75}
+
+/* ── DIVIDER ── */
+.gl{height:1px;background:linear-gradient(90deg,transparent,rgba(34,216,126,.2),transparent);margin:0}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--surface);border-top:1px solid var(--border);
+  padding:44px clamp(16px,5vw,80px);
+}
+.footer-in{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px}
+.fl-logo{font-family:var(--mono);font-size:14px;font-weight:700;color:var(--green)}
+.fl-sub{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:5px}
+.flinks{display:flex;gap:20px}
+.flink{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--silver);text-decoration:none;letter-spacing:.08em;text-transform:uppercase;transition:color .18s}
+.flink:hover{color:var(--green)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){.who-grid{grid-template-columns:1fr;gap:32px}.who-sidebar{position:static}}
+@media(max-width:768px){.nav-links{display:none}.stats-row{flex-direction:column}.stat{border-right:none;border-bottom:1px solid var(--border)}.stat:last-child{border-bottom:none}.sh{flex-direction:column;align-items:flex-start}}
+@media(max-width:480px){.card-grid{grid-template-columns:1fr}.heat-grid{grid-template-columns:1fr 1fr}.hero-btns{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*,.cur{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="#" class="nav-logo"><span style="color:var(--muted)">[</span>&nbsp;Offensive-Panda&nbsp;<span style="color:var(--muted)">]</span></a>
+  <ul class="nav-links">
+    <li><a href="#techniques">Techniques</a></li>
+    <li><a href="#articles">Articles</a></li>
+    <li><a href="#code">Code</a></li>
+    <li><a href="#demos">Demos</a></li>
+    <li><a href="#writeups">Writeups</a></li>
+  </ul>
+  <a href="https://github.com/Offensive-Panda/DefenseEvasionTechniques" target="_blank" class="nav-cta">⭐ GitHub</a>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-accent"></div>
+  <div class="hero-accent2"></div>
+
+  <div class="hero-label"><span class="hero-label-dot"></span>Open Source Security Research</div>
+
+  <h1 class="hero-h">
+    Defense<br>
+    <span class="green">Evasion</span><span class="cur"></span><br>
+    <span class="fade">Techniques</span>
+  </h1>
+
+  <p class="hero-sub">Advanced methods to bypass EDR and XDR systems. Syscall manipulation, code obfuscation, memory evasion — a comprehensive reference for red teamers, malware researchers, and security engineers.</p>
+
+  <div class="hero-btns">
+    <a href="https://github.com/Offensive-Panda/DefenseEvasionTechniques" target="_blank" class="btn-solid">View on GitHub &rarr;</a>
+    <a href="#techniques" class="btn-ghost">Browse Techniques</a>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat"><div class="stat-n">19+</div><div class="stat-l">Evasion Techniques</div></div>
+    <div class="stat"><div class="stat-n">9</div><div class="stat-l">Research Articles</div></div>
+    <div class="stat"><div class="stat-n">13+</div><div class="stat-l">Code Repos</div></div>
+    <div class="stat"><div class="stat-n">5</div><div class="stat-l">PDF Writeups</div></div>
+  </div>
+</section>
+
+<div class="gl"></div>
+
+<!-- ── TERMINAL ── -->
+<div class="terminal-wrap">
+  <div class="terminal">
+    <div class="t-bar">
+      <div class="dot dr"></div><div class="dot dy"></div><div class="dot dg"></div>
+      <span class="t-title">bash — usman@offensive-panda:~</span>
+    </div>
+    <div class="t-body">
+      <div><span class="t-p">$ </span><span class="t-c">whoami</span></div>
+      <div><span class="t-o">Usman Sikander</span> <span class="t-g">// a.k.a Offensive-Panda · Red Team Engineer · Malware Researcher</span></div>
+      <div style="margin-top:8px"><span class="t-p">$ </span><span class="t-c">cat mission.txt</span></div>
+      <div><span class="t-o">Identify weaknesses · Bypass EDR/XDR · Validate security postures · MITRE ATT&amp;CK aligned</span></div>
+      <div style="margin-top:8px"><span class="t-p">$ </span><span class="t-c">ls ./techniques | wc -l</span></div>
+      <div><span class="t-w">19</span> <span class="t-g">techniques indexed</span></div>
+      <div style="margin-top:8px"><span class="t-p">$ </span><span class="t-c">_</span><span class="cur"></span></div>
+    </div>
+  </div>
+</div>
+
+<div class="gl"></div>
+
+<!-- ── TECHNIQUES HEATMAP ── -->
+<section class="s" id="techniques">
+  <div class="sh">
+    <div><div class="sh-eye">Coverage Map</div><h2 class="sh-t">Evasion Techniques Heatmap</h2></div>
+    <span class="sh-badge">19 techniques</span>
+  </div>
+  <div class="heat-grid">
+    <div class="heat-item"><span class="hi-n">01</span>Direct &amp; Indirect Syscalls</div>
+    <div class="heat-item"><span class="hi-n">02</span>API Hashing</div>
+    <div class="heat-item"><span class="hi-n">03</span>API Imports Obfuscation</div>
+    <div class="heat-item"><span class="hi-n">04</span>Payload Encryption</div>
+    <div class="heat-item"><span class="hi-n">05</span>Egg Hunting</div>
+    <div class="heat-item"><span class="hi-n">06</span>Privilege Escalation BYOVD</div>
+    <div class="heat-item"><span class="hi-n">07</span>COR_PROFILER UAC Bypass</div>
+    <div class="heat-item"><span class="hi-n">08</span>Random Instructions &amp; Prototypes</div>
+    <div class="heat-item"><span class="hi-n">09</span>Mokingjay</div>
+    <div class="heat-item"><span class="hi-n">10</span>Forking Technique Memory Dumps</div>
+    <div class="heat-item"><span class="hi-n">11</span>API Unhooking</div>
+    <div class="heat-item"><span class="hi-n">12</span>ETW Patching</div>
+    <div class="heat-item"><span class="hi-n">13</span>PEB Lookup</div>
+    <div class="heat-item"><span class="hi-n">14</span>Disable and Modify Tools</div>
+    <div class="heat-item"><span class="hi-n">15</span>Lagos Island (Reflective Loading)</div>
+    <div class="heat-item"><span class="hi-n">16</span>RWX Memory Block Hunt</div>
+    <div class="heat-item"><span class="hi-n">17</span>BYOVD Techniques</div>
+    <div class="heat-item"><span class="hi-n">18</span>Native Dump with Direct Syscalls</div>
+    <div class="heat-item"><span class="hi-n">19</span>Lsass Dumping Tactics</div>
+  </div>
+</section>
+
+<!-- ── ARTICLES ── -->
+<section class="s s-alt" id="articles">
+  <div class="sh">
+    <div><div class="sh-eye">Research</div><h2 class="sh-t">Articles</h2></div>
+    <span class="sh-badge">9 articles</span>
+  </div>
+  <div class="card-grid">
+
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/lsassblog_AI.png" alt="Shadows of LSASS" loading="lazy" onerror="this.style.display='none'">
+        <div class="card-img-fade"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bg">LSASS</span><span class="badge bb">EDR</span></div>
+        <div class="card-title">Shadows of LSASS Dumping: Evasion Techniques and the Ongoing Struggle of EDR Solutions</div>
+        <div class="card-desc">Explores why LSASS is a critical target in Windows security, categorizing tools and techniques used to dump LSASS memory while evading detection.</div>
+        <a href="https://medium.com/@merasor07/shadows-of-lsass-dumping-evasion-techniques-and-the-ongoing-struggle-of-edr-solutions-to-defend-a-6701f4d6856b" target="_blank" class="card-link">Read on Medium</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/BYOVD_AI.png" alt="BYOVD" loading="lazy" onerror="this.style.display='none'">
+        <div class="card-img-fade"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bg">BYOVD</span><span class="badge bp">Kernel</span></div>
+        <div class="card-title">BYOVD A Kernel Attack: Stealthy Threat to Endpoint Security</div>
+        <div class="card-desc">Dissects how BYOVD attacks blind, terminate, and manipulate EDR solutions — obtaining NT Authority context and removing EDR callbacks.</div>
+        <a href="https://medium.com/@merasor07/byovd-a-kernel-attack-stealthy-threat-to-endpoint-security-ec809272e505" target="_blank" class="card-link">Read on Medium</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/static_AI.jpg" alt="Arsenal 2.0" loading="lazy" onerror="this.style.display='none'">
+        <div class="card-img-fade"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bo">Static Bypass</span></div>
+        <div class="card-title">Arsenal 2.0: Elevating Malware Stealth Tactics to Bypass Static Detection</div>
+        <div class="card-desc">Advanced techniques for malware to evade static detection by EDR/XDR — an extension of the original Arsenal post diving deeper into new stealth approaches.</div>
+        <a href="https://medium.com/@merasor07/arsenal-2-0-elevating-malware-stealth-tactics-to-bypass-static-detection-5238c573ab02" target="_blank" class="card-link">Read on Medium</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/IAT_AI.jpg" alt="PEB Walk" loading="lazy" onerror="this.style.display='none'">
+        <div class="card-img-fade"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bb">PEB Walk</span><span class="badge bg">IAT</span></div>
+        <div class="card-title">PEB Walk: Avoid API Inspection in IAT and Bypass Static AV/EDR Detection</div>
+        <div class="card-desc">4-stage arsenal: hiding strings, obfuscating API imports, and resolving APIs dynamically via PEB walk to evade static analysis.</div>
+        <a href="https://medium.com/@merasor07/peb-walk-avoid-api-calls-inspection-in-iat-by-analyst-and-bypass-static-detection-of-1a2ef9bd4c94" target="_blank" class="card-link">Read on Medium</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/Arsenal_AI.jpg" alt="Arsenal" loading="lazy" onerror="this.style.display='none'">
+        <div class="card-img-fade"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bp">AV/EDR/XDR</span></div>
+        <div class="card-title">Arsenal: Bypass EDR's/XDR's and Make Malware Analysis Harder</div>
+        <div class="card-desc">Multiple techniques to bypass modern AV/EDR/XDR solutions, from a red team practitioner's perspective exploring new bypass methods.</div>
+        <a href="https://medium.com/system-weakness/arsenal-bypass-edrs-xdr-s-and-make-malware-analysis-harder-6fde3e2884a5" target="_blank" class="card-link">Read on Medium</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/Disk_AI.jpg" alt="On-Disk" loading="lazy" onerror="this.style.display='none'">
+        <div class="card-img-fade"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bg">On-Disk</span><span class="badge bo">Syscalls</span></div>
+        <div class="card-title">On-Disk Detection: Bypass AV's/EDR's Using Syscalls with Legacy &amp; NOP Instructions</div>
+        <div class="card-desc">Bypasses both static and dynamic AV/EDR detection, focusing on on-disk binary detection when using direct syscalls.</div>
+        <a href="https://medium.com/system-weakness/on-disk-detection-bypass-avs-edr-s-using-syscalls-with-legacy-instruction-series-of-instructions-5c1f31d1af7d" target="_blank" class="card-link">Read on Medium</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/Post_AI.jpg" alt="Post Exploitation" loading="lazy" onerror="this.style.display='none'">
+        <div class="card-img-fade"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bo">UAC Bypass</span><span class="badge bb">DLL Hijack</span></div>
+        <div class="card-title">EASE POST-EXPLOITATION: Elevated Shell via DLL Hijacking and Mock Directories</div>
+        <div class="card-desc">DLL Hijacking and Mock directories technique to bypass Windows UAC and obtain a high-privilege reverse shell.</div>
+        <a href="https://medium.com/system-weakness/ease-post-exploitation-getting-elevated-reverse-shell-using-dll-hijacking-and-mock-directories-2fc2c7a3cdae" target="_blank" class="card-link">Read on Medium</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/Sys_AI.jpg" alt="Direct Syscalls" loading="lazy" onerror="this.style.display='none'">
+        <div class="card-img-fade"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bg">Syscalls</span><span class="badge bp">Kernel Mode</span></div>
+        <div class="card-title">AV/EDR Evasion Using Direct System Calls (User-Mode vs Kernel-Mode)</div>
+        <div class="card-desc">How hooking is used by AV/EDRs to intercept function calls — and how direct syscalls bypass this interception at the kernel boundary.</div>
+        <a href="https://medium.com/@merasor07/av-edr-evasion-using-direct-system-calls-user-mode-vs-kernel-mode-fad2fdfed01a" target="_blank" class="card-link">Read on Medium</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap">
+        <img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/Mimi_AI.jpg" alt="Mimikatz" loading="lazy" onerror="this.style.display='none'">
+        <div class="card-img-fade"></div>
+      </div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bb">Injection</span><span class="badge bo">Mimikatz</span></div>
+        <div class="card-title">Bypass "Mimikatz" Using the Process Injection Technique</div>
+        <div class="card-desc">EDR and AV solutions commonly flag Mimikatz signatures. Covers process injection as a bypass — hiding execution inside a legitimate process.</div>
+        <a href="https://medium.com/system-weakness/bypass-mimikatz-using-process-injection-technique-6d2a8415fcd6" target="_blank" class="card-link">Read on Medium</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CODE ── -->
+<section class="s" id="code">
+  <div class="sh">
+    <div><div class="sh-eye">Tooling</div><h2 class="sh-t">Code Implementations</h2></div>
+    <span class="sh-badge">13 repos</span>
+  </div>
+  <div class="card-grid">
+
+    <div class="card">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/d3mp_AI.jpg" alt="D3MPSEC" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bg">LSASS</span><span class="badge bo">Memory Dump</span></div>
+        <div class="card-title">D3MPSEC</div>
+        <div class="card-desc">Memory dumping tool extracting Lsass process dumps via direct syscalls, randomized procedures, and prototype name obfuscation.</div>
+        <a href="https://github.com/Offensive-Panda/D3MPSEC" target="_blank" class="card-link">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/syscall_AI.jpg" alt="Dirty Vanity" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bb">Syscalls</span><span class="badge bg">Egg Hunt</span></div>
+        <div class="card-title">Dirty Vanity (DV_NEW)</div>
+        <div class="card-desc">Multi-technique: direct syscalls bypass user-mode EDR hooking; egg hunt avoids static detection of syscall stubs via random DB bytes.</div>
+        <a href="https://github.com/Offensive-Panda/DV_NEW" target="_blank" class="card-link">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/honey_AI.jpg" alt="Honeypots" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bo">Threat Intel</span><span class="badge bb">Defense</span></div>
+        <div class="card-title">Honeypots for Threat Intelligence</div>
+        <div class="card-desc">Runs as a service monitoring Sysmon event logs, acting on attacker activity and uploading dropped malware for analysis.</div>
+        <a href="https://github.com/Offensive-Panda/Collect_Threat_Intel_AND_Malware_Using_Honeypots" target="_blank" class="card-link">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/pers_AI.jpg" alt="Persistence" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bp">C#</span><span class="badge bg">Anti-Sandbox</span></div>
+        <div class="card-title">Persistence and Anti-Sandbox</div>
+        <div class="card-desc">C# code with latest persistence techniques and 4 anti-VM/anti-sandbox methods, plus PowerShell and Task Scheduler persistence.</div>
+        <a href="https://github.com/Offensive-Panda/Persistence_AND_Anti_Sandbox" target="_blank" class="card-link">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/diskon_AI.jpg" alt="Static Analysis Bypass" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bg">On-Disk</span><span class="badge bb">Syscalls</span></div>
+        <div class="card-title">Bypass Malware Static Analysis</div>
+        <div class="card-desc">Direct syscall injection to bypass AV/EDR on-disk binary detection — addresses MDE detection during the static analysis phase.</div>
+        <a href="https://github.com/Offensive-Panda/on-disk-detection-bypass" target="_blank" class="card-link">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/dll_AI.jpg" alt="DLL Hijacking" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bo">UAC Bypass</span><span class="badge bb">DLL Hijack</span></div>
+        <div class="card-title">C2 Elevated Shell via DLL Hijacking</div>
+        <div class="card-desc">DLL Hijacking combined with Mock directories to bypass UAC and obtain a high-privilege reverse shell.</div>
+        <a href="https://github.com/Offensive-Panda/C2_Elevated_Shell_DLL_Hijcking" target="_blank" class="card-link">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/rwx_AI.jpg" alt="RWX Memory" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bb">Injection</span><span class="badge bg">RWX Hunt</span></div>
+        <div class="card-title">RWX Memory Hunt and Injection</div>
+        <div class="card-desc">Abuses Windows fork API with OneDrive.exe to inject shellcode without allocating new RWX regions — no VirtualProtect or VirtualAllocEx.</div>
+        <a href="https://github.com/Offensive-Panda/RWX_MEMEORY_HUNT_AND_INJECTION_DV" target="_blank" class="card-link">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/wpm_AI.jpg" alt="WPM Magic" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bg">Shellcode</span><span class="badge bo">Entry Point</span></div>
+        <div class="card-title">WPM Magic and Injection</div>
+        <div class="card-desc">Uses AddressOfEntryPoint (RX region) with WriteProcessMemory to write shellcode — avoids VirtualAlloc and VirtualProtect entirely.</div>
+        <a href="https://github.com/Offensive-Panda/WPM-MAJIC-ENTRY-POINT-INJECTION" target="_blank" class="card-link">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/pebwalk_AI.jpg" alt="PEB Walk" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bb">API Obfuscation</span><span class="badge bp">PEB</span></div>
+        <div class="card-title">PEB Walk and API Obfuscation</div>
+        <div class="card-desc">Resolves API calls dynamically via PEB walk and obfuscates all injection calls — bypasses AV/EDR static analysis.</div>
+        <a href="https://github.com/Offensive-Panda/PEB_WALK_AND_API_OBFUSCATION_INJECTION" target="_blank" class="card-link">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/dotnet_AI.jpg" alt=".NET Profiler" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bo">UAC</span><span class="badge bb">.NET Profiler</span></div>
+        <div class="card-title">.NET Profiler DLL Loading UAC Bypass</div>
+        <div class="card-desc">Abuses .NET profiler DLL loading to make a legitimate app load a malicious DLL via environment variables and Task Scheduler (MMC).</div>
+        <a href="https://github.com/Offensive-Panda/.NET_PROFILER_DLL_LOADING" target="_blank" class="card-link">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/byovd_AI.jpg" alt="BYOVD" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bp">Kernel</span><span class="badge bg">CVE-2019-16098</span></div>
+        <div class="card-title">BYOVD for Privilege Escalation</div>
+        <div class="card-desc">Exploits MSI Afterburner driver (RTCore64.sys) for arbitrary memory read/write — no hardcoded Ntoskrnl.exe base addresses required.</div>
+        <a href="https://github.com/Offensive-Panda/NT-AUTHORITY-SYSTEM-CONTEXT-RTCORE" target="_blank" class="card-link">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/lsass_AI.jpg" alt="LsassReflectDumping" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bb">Forking</span><span class="badge bg">LSASS</span></div>
+        <div class="card-title">LsassReflectDumping</div>
+        <div class="card-desc">Leverages RtlCreateProcessReflection to clone lsass.exe, then uses MINIDUMP_CALLBACK_INFORMATION to dump the cloned process.</div>
+        <a href="https://github.com/Offensive-Panda/LsassReflectDumping" target="_blank" class="card-link">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/shadow_AI.png" alt="ShadowDumper" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bo">LSASS</span><span class="badge bp">Red Team</span></div>
+        <div class="card-title">ShadowDumper</div>
+        <div class="card-desc">Powerful flexible LSASS memory dumping tool using multiple advanced techniques for penetration testing and red team engagements.</div>
+        <a href="https://github.com/Offensive-Panda/ShadowDumper" target="_blank" class="card-link">View on GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── DEMOS ── -->
+<section class="s s-alt" id="demos">
+  <div class="sh">
+    <div><div class="sh-eye">In Action</div><h2 class="sh-t">Demonstrations</h2></div>
+    <span class="sh-badge">13 demos</span>
+  </div>
+  <div class="card-grid">
+
+    <div class="card demo">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/falcon1_AI.png" alt="Bypass Falcon" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bb">CrowdStrike</span><span class="badge bg">LSASS Fork</span></div>
+        <div class="card-title">Falcon Doesn't Watch Cloned/Forked LSASS Versions</div>
+        <div class="card-desc">A forked LSASS clone with inherited memory access dumps the process without triggering CrowdStrike Falcon.</div>
+        <a href="https://www.linkedin.com/posts/usman-sikander13_redteam-penetrationtesting-edrevasion-activity-7315372879230001154-rkg_" target="_blank" class="card-link b">View Demo</a>
+      </div>
+    </div>
+
+    <div class="card demo">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/falcon2_AI.png" alt="Bypass Falcon 2" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bb">Falcon</span><span class="badge bg">System Informer</span></div>
+        <div class="card-title">Bypass CrowdStrike Falcon via System Informer (LSASS Dumping)</div>
+        <div class="card-desc">Open-source System Informer utility dumps LSASS memory without triggering CrowdStrike Falcon alerts.</div>
+        <a href="https://www.linkedin.com/posts/usman-sikander13_redteam-penetrationtesting-edrevasion-activity-7317214999720923137-eUAc" target="_blank" class="card-link b">View Demo</a>
+      </div>
+    </div>
+
+    <div class="card demo">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/own_AI.png" alt="Bypass Defender" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bb">Defender</span><span class="badge bo">Windows 11</span></div>
+        <div class="card-title">Bypassing Defender's LSASS Dump Detection Using Its Own Directory</div>
+        <div class="card-desc">Writing the dump file inside Defender's own directory causes it to skip scanning the file on Windows 11.</div>
+        <a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-redteam-lsass-activity-7311374868711706624-v-y2" target="_blank" class="card-link b">View Demo</a>
+      </div>
+    </div>
+
+    <div class="card demo">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/fork_AI.jpg" alt="Dirty Vanity" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bg">Dirty Vanity</span><span class="badge bb">Syscalls</span></div>
+        <div class="card-title">Dirty Vanity Implementation Using Direct Syscalls</div>
+        <div class="card-desc">Direct syscalls bypass user-mode EDR hooking; egg hunt places random DB bytes in stubs to avoid static detection.</div>
+        <a href="https://www.linkedin.com/posts/usman-sikander13_malwaredevelopment-syscalls-forking-activity-7193958115556343808-8UzK" target="_blank" class="card-link b">View Demo</a>
+      </div>
+    </div>
+
+    <div class="card demo">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/rwxd_AI.jpg" alt="Mockingjay" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bp">Mockingjay</span><span class="badge bg">RWX</span></div>
+        <div class="card-title">Mockingjay Technique to Avoid RWX Region Detection</div>
+        <div class="card-desc">Uses vulnerable DLLs to bypass security mechanisms monitoring RWX memory allocations without new allocations.</div>
+        <a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-cybersecurity-malwaredevelopement-activity-7191049164409991168-fLwR" target="_blank" class="card-link b">View Demo</a>
+      </div>
+    </div>
+
+    <div class="card demo">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/etw_AI.jpg" alt="ETW Patching" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bb">ETW Patching</span><span class="badge bg">Unhooking</span></div>
+        <div class="card-title">Combining Unhooking and ETW Patching to Dump LSASS</div>
+        <div class="card-desc">Integrates API unhooking with ETW patching to effectively dump LSASS process memory while evading detection.</div>
+        <a href="https://www.linkedin.com/posts/usman-sikander13_%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F-activity-7188865881580453890-iakH" target="_blank" class="card-link b">View Demo</a>
+      </div>
+    </div>
+
+    <div class="card demo">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/syscall_AI.jpg" alt="Syscalls LSASS" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bg">Syscalls</span><span class="badge bo">Offline Dump</span></div>
+        <div class="card-title">Direct Syscalls to Dump LSASS.exe and Offline Dumping</div>
+        <div class="card-desc">Dumps LSASS via direct syscalls to bypass EDR API hooking and traditional security mechanisms, with offline analysis.</div>
+        <a href="https://www.linkedin.com/posts/usman-sikander13_offensivesecurity-lsassdump-malware-activity-7187820505746325504-l25o" target="_blank" class="card-link b">View Demo</a>
+      </div>
+    </div>
+
+    <div class="card demo">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/remote_AI.jpg" alt="Remote Template" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bb">Initial Access</span><span class="badge bp">APT</span></div>
+        <div class="card-title">Remote Template Injection</div>
+        <div class="card-desc">Full attack cycle via remote template injection for initial access — functional on modern Windows, used in real APT campaigns.</div>
+        <a href="https://www.linkedin.com/posts/usman-sikander13_remote-template-injection-today-i-created-activity-6936948079807844353-UQQ8" target="_blank" class="card-link b">View Demo</a>
+      </div>
+    </div>
+
+    <div class="card demo">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/mark_AI.jpg" alt="MOTW" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bo">MOTW Bypass</span><span class="badge bb">Macro</span></div>
+        <div class="card-title">Mark-of-the-Web Bypass for Red Teams</div>
+        <div class="card-desc">Bypasses MOTW security restrictions including macro-blocking introduced in recent Windows builds.</div>
+        <a href="https://www.linkedin.com/posts/usman-sikander13_bypass-macro-vba-activity-6900000010717458433-lAH2" target="_blank" class="card-link b">View Demo</a>
+      </div>
+    </div>
+
+    <div class="card demo">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/outflank_AI.jpg" alt="Outflank" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bg">Dumpert</span><span class="badge bb">Injection</span></div>
+        <div class="card-title">Memory Dump via Outflank Dumpert and Process Injection</div>
+        <div class="card-desc">Combines Outflank Dumpert for lsass.exe memory dumping with process injection techniques for maximum stealth.</div>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7056950152242094080" target="_blank" class="card-link b">View Demo</a>
+      </div>
+    </div>
+
+    <div class="card demo">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/terminate_AI.jpg" alt="EDR Terminator" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bp">BYOVD</span><span class="badge bo">Defender Kill</span></div>
+        <div class="card-title">EDR Terminator: Disable Windows Defender via BYOVD</div>
+        <div class="card-desc">Terminates Windows Defender using BYOVD — targeting and manipulating EDR processes and services.</div>
+        <a href="https://www.linkedin.com/posts/usman-sikander13_edrkiller-malwaredevelopment-mdebypass-activity-7201848552522711042-vySE" target="_blank" class="card-link b">View Demo</a>
+      </div>
+    </div>
+
+    <div class="card demo">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/callback_AI.jpg" alt="EDR Callbacks" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bp">Callbacks</span><span class="badge bb">BYOVD</span></div>
+        <div class="card-title">Remove EDR Callbacks Using Vulnerable Driver</div>
+        <div class="card-desc">BYOVD removes Microsoft Defender PsSetCreateProcessNotifyRoutine callbacks — disabling process monitoring and telemetry.</div>
+        <a href="https://www.linkedin.com/posts/usman-sikander13_edrs-are-complex-solutions-and-key-components-activity-7227289675130916864-deG5" target="_blank" class="card-link b">View Demo</a>
+      </div>
+    </div>
+
+    <div class="card demo">
+      <div class="card-img-wrap"><img src="https://offensive-panda.github.io/DefenseEvasionTechniques/Assets/shadow_AI.png" alt="ShadowDumper" loading="lazy" onerror="this.style.display='none'"><div class="card-img-fade"></div></div>
+      <div class="card-body">
+        <div class="card-badges"><span class="badge bg">ShadowDumper</span><span class="badge bo">LSASS</span></div>
+        <div class="card-title">Shadow Dumper: Advanced LSASS Memory Dump Tool Demo</div>
+        <div class="card-desc">Flexible multi-technique LSASS dumping for red teams where standard tools are blocked by endpoint security.</div>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7261436209132949504/" target="_blank" class="card-link b">View Demo</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── WRITEUPS ── -->
+<section class="s" id="writeups">
+  <div class="sh">
+    <div><div class="sh-eye">Community Resources</div><h2 class="sh-t">PDF Writeups</h2></div>
+    <span class="sh-badge">5 PDFs</span>
+  </div>
+  <div class="wu-grid">
+
+    <a href="https://offensive-panda.github.io/DefenseEvasionTechniques/BYOVD.pdf" target="_blank" class="wu-item">
+      <div class="wu-left">
+        <div class="wu-icon wu-icon-purple">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12h8M12 8v8"/>
+          </svg>
+        </div>
+        <div>
+          <div class="wu-name">BYOVD</div>
+          <div class="wu-type">Kernel Attack Research</div>
+        
+        </div>
+      </div>
+      <div class="wu-dl"><div class="wu-dl-arrow">↓</div><span>PDF</span></div>
+    </a>
+
+    <a href="https://offensive-panda.github.io/DefenseEvasionTechniques/PEB Walk.pdf" target="_blank" class="wu-item">
+      <div class="wu-left">
+        <div class="wu-icon wu-icon-cyan">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22c5e8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>
+          </svg>
+        </div>
+        <div>
+          <div class="wu-name">PEB Walk</div>
+          <div class="wu-type">API Obfuscation Technique</div>
+          
+        </div>
+      </div>
+      <div class="wu-dl"><div class="wu-dl-arrow">↓</div><span>PDF</span></div>
+    </a>
+
+    <a href="https://offensive-panda.github.io/DefenseEvasionTechniques/EDRBYPASS.pdf" target="_blank" class="wu-item">
+      <div class="wu-left">
+        <div class="wu-icon wu-icon-red">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f87171" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="9" y1="12" x2="15" y2="12"/>
+          </svg>
+        </div>
+        <div>
+          <div class="wu-name">EDR Bypass</div>
+          <div class="wu-type">Detection Evasion Guide</div>
+        
+        </div>
+      </div>
+      <div class="wu-dl"><div class="wu-dl-arrow">↓</div><span>PDF</span></div>
+    </a>
+
+    <a href="https://offensive-panda.github.io/DefenseEvasionTechniques/Defense_Evasion.pdf" target="_blank" class="wu-item">
+      <div class="wu-left">
+        <div class="wu-icon wu-icon-green">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22d87e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/><line x1="3" y1="3" x2="21" y2="21"/>
+          </svg>
+        </div>
+        <div>
+          <div class="wu-name">Defense Evasion</div>
+          <div class="wu-type">MITRE ATT&amp;CK T1562</div>
+         
+        </div>
+      </div>
+      <div class="wu-dl"><div class="wu-dl-arrow">↓</div><span>PDF</span></div>
+    </a>
+
+    <a href="https://offensive-panda.github.io/DefenseEvasionTechniques/Shadows of LSASS Dumping_And_EDR_Struggle.pdf" target="_blank" class="wu-item">
+      <div class="wu-left">
+        <div class="wu-icon wu-icon-orange">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+          </svg>
+        </div>
+        <div>
+          <div class="wu-name">Shadows of LSASS Dumping &amp; EDR Struggle</div>
+          <div class="wu-type">Credential Access Research</div>
+         
+        </div>
+      </div>
+      <div class="wu-dl"><div class="wu-dl-arrow">↓</div><span>PDF</span></div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ── REFERENCES ── -->
+<section class="s s-alt">
+  <div class="sh">
+    <div><div class="sh-eye">Sources</div><h2 class="sh-t">References</h2></div>
+  </div>
+  <div class="refs">
+    <a href="https://attack.mitre.org/matrices/enterprise/" target="_blank" class="ref"><span class="ref-idx">01</span>attack.mitre.org — MITRE ATT&amp;CK Enterprise Matrix</a>
+    <a href="https://www.linkedin.com/in/usman-sikander13/" target="_blank" class="ref"><span class="ref-idx">02</span>linkedin.com/in/usman-sikander13</a>
+    <a href="https://github.com/deepinstinct/Dirty-Vanity" target="_blank" class="ref"><span class="ref-idx">03</span>github.com/deepinstinct/Dirty-Vanity</a>
+    <a href="https://www.securityjoes.com/post/process-mockingjay-echoing-rwx-in-userland-to-achieve-code-execution" target="_blank" class="ref"><span class="ref-idx">04</span>securityjoes.com — Process Mockingjay: Echoing RWX in Userland to Achieve Code Execution</a>
+    <a href="https://github.com/outflanknl/Dumpert" target="_blank" class="ref"><span class="ref-idx">05</span>github.com/outflanknl/Dumpert</a>
+    <a href="https://cytomate.net" target="_blank" class="ref"><span class="ref-idx">06</span>cytomate.net</a>
+  </div>
+</section>
+
+<!-- ── DISCLAIMER ── -->
+<section class="s">
+  <div class="disclaimer">
+    <div class="dis-icon">⚠️</div>
+    <div>
+      <div class="dis-t">Disclaimer</div>
+      <div class="dis-body">The content, techniques, and tools in this repository are intended solely for educational and research purposes within the cybersecurity community. The author explicitly disclaims any responsibility for misuse or unlawful use. Any actions taken based on this information are done so entirely at the user's own risk.</div>
+    </div>
+  </div>
+</section>
+
+<div class="gl"></div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-in">
+    <div>
+      <div class="fl-logo">DefenseEvasionTechniques</div>
+      <div class="fl-sub">by Offensive-Panda · For educational &amp; research purposes only</div>
+    </div>
+    <div class="flinks">
+      <a href="https://github.com/Offensive-Panda/DefenseEvasionTechniques" target="_blank" class="flink">GitHub</a>
+      <a href="https://www.linkedin.com/in/usman-sikander13/" target="_blank" class="flink">LinkedIn</a>
+      <a href="https://medium.com/@merasor07" target="_blank" class="flink">Medium</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}
+  });
+});
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.style.opacity='1';
+      e.target.style.transform='translateY(0)';
+      obs.unobserve(e.target);
+    }
+  });
+},{threshold:.07,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.card,.heat-item,.wu-item,.ref,.stat').forEach((el,i)=>{
+  el.style.cssText+='opacity:0;transform:translateY(18px);transition:opacity .45s ease '+((i%6)*.07)+'s,transform .45s ease '+((i%6)*.07)+'s,border-color .22s,box-shadow .22s,background .18s';
+  obs.observe(el);
+});
+</script>
+</body>
+</html>
